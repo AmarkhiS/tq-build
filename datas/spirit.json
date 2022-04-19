@@ -11,19 +11,19 @@
             }
         },
         "rows": {
-            "1": {
+            "40": {
                 "5": "top-bracket",
                 "6": "absorption_d_ame",
                 "12": "tourbillon_d_ames"
             },
-            "2": {
+            "32": {
                 "2": "protection_vitale",
                 "4": "invocation_de_l_etranger",
                 "5": "pipe",
                 "9": "top-bracket",
                 "10": "attaque_mystique"
             },
-            "3": {
+            "24": {
                 "5": "pipe",
                 "7": "top-bracket",
                 "8": "pouvoir_surnaturel",
@@ -31,7 +31,7 @@
                 "10": "presence_attenuee",
                 "12": "cercle_de_puissance"
             },
-            "4": {
+            "16": {
                 "1": "top-bracket",
                 "2": "secrets_de_l_arcane",
                 "3": "top-bracket",
@@ -42,7 +42,7 @@
                 "9": "middle-bracket",
                 "10": "onde_mortelle"
             },
-            "5": {
+            "10": {
                 "1": "pipe",
                 "3": "pipe",
                 "5": "middle-bracket",
@@ -54,7 +54,7 @@
                 "11": "top-bracket",
                 "12": "fleau_psychique"
             },
-            "6": {
+            "4": {
                 "1": "bottom-bracket",
                 "2": "triple_attaque",
                 "3": "middle-bracket",
@@ -64,7 +64,7 @@
                 "11": "bottom-bracket",
                 "12": "bouclier_spirituel"
             },
-            "7": {
+            "1": {
                 "3": "bottom-bracket",
                 "4": "aura_glaciale",
                 "5": "bottom-bracket",

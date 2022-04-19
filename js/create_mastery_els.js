@@ -135,8 +135,9 @@ var create_cell_skill = function ( mastery, skill, el_tr, el_td ) {
  * @param {dom} el_table Table of mastery
  * @param {dict} row_datas Datas to add to row
  * @param {dict} table_conf Additional conf for table
+ * @param {int} mastery_level Mastery level of current row
  */
-var add_row = function ( mastery, el_table, row_datas, table_conf ) {
+var add_row = function ( mastery, el_table, row_datas, table_conf, mastery_level ) {
     /**
      * New row
      * @type {dom}
@@ -178,6 +179,19 @@ var add_row = function ( mastery, el_table, row_datas, table_conf ) {
         continue;
     }
 
+    /**
+     * Mastery gauge cell
+     * @type {dom}
+     */
+    let el_td = $(
+        '<td >'
+    ).addClass (
+        'gauge-mastery-cell'
+    ).html (
+        mastery_level
+    );
+    el_tr.prepend ( el_td );
+    
     el_table.append ( el_tr );
 };
 
@@ -196,7 +210,7 @@ var create_table = function ( mastery, datas ) {
     let row_nums = Object.keys ( datas [ 'rows' ] ).map ( function ( row_num ) {
         return parseInt ( row_num );
     } );
-    row_nums.sort ();
+    row_nums.reverse ();
     
     // Create all table rows
     
@@ -205,14 +219,44 @@ var create_table = function ( mastery, datas ) {
             mastery,
             els_table_mastery [ mastery ],
             datas [ 'rows' ] [ row_num ],
-            datas [ 'conf' ]
+            datas [ 'conf' ],
+            row_num
         );
     } );
+
+    /**
+     * Additional row to add button to increment mastery
+     * @type {dom}
+     */
+    let el_tr = $( '<tr />' );
+
+    /**
+     * Cell with button to increment mastery
+     * @type {dom}
+     */
+    let el_td = $( '<td />' ).attr (
+        'id',
+        `button-add-mastery-${mastery}`
+    ).html (
+        $( '<img />' ).attr (
+            'src',
+            './img/global/add_mastery.jpg'
+        ).attr (
+            'alt',
+            '+'
+        )
+    );
+    els_table_mastery [ mastery ].append ( el_td );
     
     $( `#div-mastery-${mastery}-1` ).append ( els_table_mastery [ mastery ] );
 };
 
 
+/**
+ * Create display place for mastery
+ *
+ * @param {string} mastery Mastery
+ */
 var create_display_place = function ( mastery ) {
     $( `#div-mastery-${mastery}-2` ).addClass (
         `display-skill-${mastery}`
@@ -220,14 +264,26 @@ var create_display_place = function ( mastery ) {
 };
 
 
+/**
+ * Create mastery table & display place
+ *
+ * @param {string} mastery Mastery
+ * @param {datas} Mastery datas
+ */
 var create_mastery = function ( mastery, datas ) {
     // Create mastery table
     create_table ( mastery, datas );
     
+    // Mastery skill's display place
     create_display_place ( mastery, datas );
 };
 
 
+/**
+ * Create mastery blocs
+ *
+ * @param {string} mastery Mastery
+ */
 var create_mastery_els = function ( mastery ) {
     els_mastery [ mastery ] = $( '<table />' ).attr (
         'id',
@@ -254,230 +310,17 @@ var create_mastery_els = function ( mastery ) {
  * @param {string} mastery Mastery to load
  */
 var load_datas = function ( mastery ) {
+    // Create mastery blocs
     create_mastery_els ( mastery );
     
     $.getJSON ( `./datas/${mastery}.json`, function ( datas ) {
         // Store mastery datas
         masteries_skills [ mastery ] = datas [ 'spells' ];
-
+        // Create mastery table
         create_mastery ( mastery, datas [ 'table' ] );
-        
-    } );
-};
-
-
-/**
- * Display skill infos
- *
- * @param {string} mastery Current skill mastery
- * @param {string} skill Current skill
- */
-var display_skill_infos = function ( mastery, skill ) {
-    /**
-     * Current skill level
-     * @type {string}
-     */
-    let current_skill_level = $( `span#counter-${mastery}-${skill}` ).html ();
-    if ( parseInt ( current_skill_level ) < 10 ) {
-        current_skill_level = `0${current_skill_level}`;
-    }
-    
-    /**
-     * Current skill image to display
-     * @type {dom}
-     */
-    let skill_img = $( '<img />' ).attr (
-        'src',
-        `./img/${mastery}/${skill}/${current_skill_level}.jpg`
-    ).attr (
-        'alt',
-        `${mastery} - ${skill} - ${current_skill_level}`
-    ).attr (
-        'id',
-        'skill-display'
-    );
-
-    $( `.display-skill-${mastery}` ).html ( skill_img );
-};
-
-
-/**
- * Hide skill infos
- */
-var hide_skill_infos = function () {
-    $( '#skill-display' ).remove ();
-};
-
-
-/**
- * Handler : skill mouseover : display skill infos
- *
- * @param {string} mastery Current skill mastery
- * @param {string} skill Current skill
- */
-var mouseover_skill = function ( mastery, skill ) {
-    display_skill_infos (
-        mastery,
-        skill
-    );
-};
-
-
-var update_skill_gauge = function ( mastery, skill, level, incr = true ) {
-    /**
-     * Max level of current skill
-     * @type {int}
-     */
-    let max_skill_level = masteries_skills [ mastery ] [ skill ] [ 'max' ];
-
-    level += ( incr ) ? 1 : -1;
-    
-    if ( level > max_skill_level ) {
-        return false;
-    }
-    
-    if ( level < 0 ) {
-        return false;
-    }
-    
-    $( `span#counter-${mastery}-${skill}` ).html (
-        level
-    );
-    
-    if ( level !== max_skill_level ) {
-        $( `#gauge-${mastery}-${skill}` ).removeClass ( 'gauge-full' );
-    } else {
-        $( `#gauge-${mastery}-${skill}` ).addClass ( 'gauge-full' );
-    }
-    
-    return true;
-};
-
-
-/**
- * Handler : skill left click : add one level to skill
- *
- * @param {string} mastery Current skill mastery
- * @param {string} skill Current skill
- *
- * @return {bool} False if already at the max level. True otherwise
- */
-var left_click_skill  = function ( mastery, skill ) {
-    /**
-     * Current skill level
-     * @type {int}
-     */
-    let current_skill_level = parseInt ( $( `span#counter-${mastery}-${skill}` ).html () );
-    
-    /**
-     * Max level of current skill
-     * @type {int}
-     */
-    let max_skill_level = masteries_skills [ mastery ] [ skill ] [ 'max' ];
-
-    if ( current_skill_level >= max_skill_level ) {
-        return false;
-    }
-
-    update_skill_gauge (
-        mastery,
-        skill,
-        current_skill_level
-    );
-    
-    hide_skill_infos ();
-    display_skill_infos (
-        mastery,
-        skill
-    );
-    
-    return true;
-};
-
-
-/**
- * Handler : skill right click : remove one level to skill
- *
- * @param {string} mastery Current skill mastery
- * @param {string} skill Current skill
- *
- * @return {bool} False if already at the level 0. True otherwise
- */
-var right_click_skill  = function ( mastery, skill ) {
-    /**
-     * Current skill level
-     * @type {int}
-     */
-    let current_skill_level = parseInt ( $( `span#counter-${mastery}-${skill}` ).html () );
-    
-    if ( current_skill_level <= 0 ) {
-        return false;
-    }
-    
-    update_skill_gauge (
-        mastery,
-        skill,
-        current_skill_level,
-        false
-    );
-    
-    hide_skill_infos ();
-    display_skill_infos (
-        mastery,
-        skill
-    );
-    
-    return true;
-};
-
-
-/**
- * Init all handler
- */
-var init_handler = function () {
-    /**
-     * Handler to match mouseover on a skill
-     */
-    el_div_masteries.on ( 'mouseover', 'tr > td.skill > img', function ( event ) {
-        mouseover_skill (
-            $( event.target ).data ( 'mastery' ),
-            $( event.target ).data ( 'skill' )
-        );
-    } );
-
-    
-    /**
-     * Handler to match mouseout from a skill
-     */
-    el_div_masteries.on ( 'mouseout', 'tr > td.skill > img', function ( event ) {
-        hide_skill_infos ();
-    } );
-
-    
-    /**
-     * Handler to match left click on a skill
-     */
-    el_div_masteries.on ( 'click', 'tr > td.skill > img', function ( event ) {
-        left_click_skill (
-            $( event.target ).data ( 'mastery' ),
-            $( event.target ).data ( 'skill' )
-        );
-    } );
-    
-    
-    /**
-     * Handler to match right click on a skill
-     */
-    el_div_masteries.on ( 'contextmenu', 'tr > td.skill > img', function ( event ) {
-        right_click_skill (
-            $( event.target ).data ( 'mastery' ),
-            $( event.target ).data ( 'skill' )
-        );
-        return false;
     } );
 };
 
 
 $( function () {
-    init_handler ();
 } );
