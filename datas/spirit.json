@@ -1,0 +1,197 @@
+{
+    "table": {
+        "conf": {
+            "tr": {
+                "border_color": {
+                    "r": 40,
+                    "g": 76,
+                    "b": 62,
+                    "a": 0.5
+                }
+            }
+        },
+        "rows": {
+            "1": {
+                "5": "top-bracket",
+                "6": "absorption_d_ame",
+                "12": "tourbillon_d_ames"
+            },
+            "2": {
+                "2": "protection_vitale",
+                "4": "invocation_de_l_etranger",
+                "5": "pipe",
+                "9": "top-bracket",
+                "10": "attaque_mystique"
+            },
+            "3": {
+                "5": "pipe",
+                "7": "top-bracket",
+                "8": "pouvoir_surnaturel",
+                "9": "middle-bracket",
+                "10": "presence_attenuee",
+                "12": "cercle_de_puissance"
+            },
+            "4": {
+                "1": "top-bracket",
+                "2": "secrets_de_l_arcane",
+                "3": "top-bracket",
+                "4": "necrose",
+                "5": "pipe",
+                "6": "asservissement_des_ennemis",
+                "7": "pipe",
+                "9": "middle-bracket",
+                "10": "onde_mortelle"
+            },
+            "5": {
+                "1": "pipe",
+                "3": "pipe",
+                "5": "middle-bracket",
+                "6": "cascade",
+                "7": "bottom-bracket",
+                "8": "alliance_noire",
+                "9": "bottom-bracket",
+                "10": "invocation_du_roi_spectre",
+                "11": "top-bracket",
+                "12": "fleau_psychique"
+            },
+            "6": {
+                "1": "bottom-bracket",
+                "2": "triple_attaque",
+                "3": "middle-bracket",
+                "4": "ravages_du_temps",
+                "5": "pipe",
+                "8": "vision_mortelle",
+                "11": "bottom-bracket",
+                "12": "bouclier_spirituel"
+            },
+            "7": {
+                "3": "bottom-bracket",
+                "4": "aura_glaciale",
+                "5": "bottom-bracket",
+                "6": "absorption_de_vie"
+            }
+        }
+    },
+    "spells": {
+        "aura_glaciale": {
+            "name": "Aura glaciale",
+            "mastery_level": 1,
+            "max": 6
+        },
+        "absorption_de_vie": {
+            "name": "Absorption de vie",
+            "mastery_level": 1,
+            "max": 12
+        },
+        "triple_attaque": {
+            "name": "Triple attaque",
+            "mastery_level": 4,
+            "max": 12
+        },
+        "ravages_du_temps": {
+            "name": "Ravages du temps",
+            "mastery_level": 4,
+            "max": 8,
+            "dependency": "aura_glaciale"
+        },
+        "vision_mortelle": {
+            "name": "Vision mortelle",
+            "mastery_level": 4,
+            "max": 6
+        },
+        "bouclier_spirituel": {
+            "name": "Bouclier spirituel",
+            "mastery_level": 4,
+            "max": 8
+        },
+        "cascade": {
+            "name": "Cascade",
+            "mastery_level": 10,
+            "max": 10,
+            "dependency": "absorption_de_vie"
+        },
+        "alliance_noire": {
+            "name": "Alliance noire",
+            "mastery_level": 10,
+            "max": 6
+        },
+        "invocation_du_roi_spectre": {
+            "name": "Invocation du Roi spectre",
+            "mastery_level": 10,
+            "max": 16
+        },
+        "fleau_psychique": {
+            "name": "Fl&eacute;au psychique",
+            "mastery_level": 10,
+            "max": 6,
+            "dependency": "bouclier_spirituel"
+        },
+        "secrets_de_l_arcane": {
+            "name": "Secrets de l&quot;arcane",
+            "mastery_level": 16,
+            "max": 6,
+            "dependency": "triple_attaque"
+        },
+        "necrose": {
+            "name": "N&eacute;crose",
+            "mastery_level": 16,
+            "max": 8,
+            "dependency": "ravages_du_temps"
+        },
+        "asservissement_des_ennemis": {
+            "name": "Asservissement des ennemis",
+            "mastery_level": 16,
+            "max": 12
+        },
+        "onde_mortelle": {
+            "name": "Onde mortelle",
+            "mastery_level": 16,
+            "max": 12,
+            "dependency": "invocation_du_roi_spectre"
+        },
+        "pouvoir_surnaturel": {
+            "name": "Pouvoir surnaturel",
+            "mastery_level": 24,
+            "max": 8,
+            "dependency": "alliance_noire"
+        },
+        "presence_attenuee": {
+            "name": "Presence att&eacute;nu&eacute;e",
+            "mastery_level": 24,
+            "max": 12,
+            "dependency": "onde_mortelle"
+        },
+        "cercle_de_puissance": {
+            "name": "Cercle de puissance",
+            "mastery_level": 24,
+            "max": 12
+        },
+        "protection_vitale": {
+            "name": "Protection vitale",
+            "mastery_level": 32,
+            "max": 8
+        },
+        "invocation_de_l_etranger": {
+            "name": "Invocation de l&apos;&eacute;tranger",
+            "mastery_level": 32,
+            "max": 16
+        },
+        "attaque_mystique": {
+            "name": "Attaque mystique",
+            "mastery_level": 32,
+            "max": 16,
+            "dependency": "presence_attenuee"
+        },
+        "absorption_d_ame": {
+            "name": "Absorption_d&quot;&acirc;me",
+            "mastery_level": 40,
+            "max": 6,
+            "dependency": "cascade"
+        },
+        "tourbillon_d_ames": {
+            "name": "Tourbillon d&quot;&acirc;mes",
+            "mastery_level": 40,
+            "max": 10
+        }
+    }
+}

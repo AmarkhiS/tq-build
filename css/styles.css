@@ -1,0 +1,113 @@
+body {
+    font-family: mono;
+    font-size: 9px;
+    background-color: #000;
+    color: #fff;
+}
+
+
+table[class^="mastery-"] {
+    border-spacing: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    display: block;
+}
+
+
+table[class^="mastery-"] tr {
+    border-top: 1px solid;
+}
+
+
+table[class^="mastery-"] tr:first-child {
+    border-top: unset;
+}
+
+
+table[class^="mastery-"] tr td {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border: unset;
+}
+
+
+table[class^="mastery-"] tr td:nth-child(even) {
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    height: 70px;
+    min-height: 70px;
+    max-height: 70px;
+}
+
+
+table[class^="mastery-"] tr td:nth-child(odd) {
+    width: 36px;
+    min-width: 36px;
+    max-width: 36px;
+}
+
+
+table[class^="mastery-"] tr td img {
+    display: block;
+    margin: auto;
+}
+
+
+table[class^="mastery-"] tr td span {
+    font-size: 12px;
+    cursor: default;
+}
+
+
+img#skill-display {
+    z-index: 999;
+}
+
+
+.gauge-full {
+    font-weight: bold;
+    text-shadow: 0 0 10px #007ba7;
+}
+
+
+td[class^="display-skill-"] {
+    text-align: left;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border: unset;
+}
+
+
+table[id^="gauge-mastery-"] {
+    border-spacing: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    display: block;
+    border: 1px solid #fff000;
+}
+
+
+table[id^="gauge-mastery-"] tr td {
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    height: 70px;
+    min-height: 70px;
+    max-height: 70px; 
+    text-align: center;
+    vertical-align: top;
+}
+
+table[class^="div-mastery-"] td#div-mastery-spirit-2 {
+    vertical-align: top;
+}
