@@ -178,7 +178,7 @@ var right_click_skill  = function ( mastery, skill ) {
 /**
  * Init all handler
  */
-var init_handler = function () {
+var init_handler_skills = function () {
     /**
      * Handler to match mouseover on a skill
      */
@@ -225,5 +225,5 @@ var init_handler = function () {
 
 
 $( function () {
-    init_handler ();
+    init_handler_skills ();
 } );

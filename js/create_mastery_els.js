@@ -27,6 +27,13 @@ var masteries_skills = {};
 
 
 /**
+ * Datas to each mastery
+ * @type {dict}
+ */
+var masteries_mastery = {};
+
+
+/**
  * Create empty cell
  *
  * @param {dom} el_tr Row to add cell
@@ -179,9 +186,9 @@ var add_row = function ( mastery, el_table, row_datas, table_conf, mastery_level
      * @type {dom}
      */
     let el_td = $(
-        '<td >'
+        '<td />'
     ).addClass (
-        'gauge-mastery-cell'
+        `gauge-mastery-cell-${mastery}-${mastery_level}`
     ).html (
         mastery_level
     );
@@ -229,9 +236,8 @@ var create_table = function ( mastery, datas ) {
      * Cell with button to increment mastery
      * @type {dom}
      */
-    let el_td = $( '<td />' ).attr (
-        'id',
-        `button-add-mastery-${mastery}`
+    let el_td = $( '<td />' ).addClass (
+        'button-add-mastery'
     ).html (
         $( '<img />' ).attr (
             'src',
@@ -239,6 +245,12 @@ var create_table = function ( mastery, datas ) {
         ).attr (
             'alt',
             '+'
+        ).attr (
+            'id',
+            `button-add-mastery-${mastery}`
+        ).data (
+            'mastery',
+            mastery
         )
     );
     els_table_mastery [ mastery ].append ( el_td );
@@ -265,8 +277,14 @@ var load_datas = function ( mastery ) {
     $.getJSON ( `./datas/${mastery}.json`, function ( datas ) {
         // Store mastery datas
         masteries_skills [ mastery ] = datas [ 'spells' ];
+        
+        // Init mastery level
+        masteries_mastery [ mastery ] = 0;
+        
         // Create mastery table
         create_table ( mastery, datas [ 'table' ] );
+        
+        update_mastery_gauge ( mastery, 27 );
     } );
 };
 

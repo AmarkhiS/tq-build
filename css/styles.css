@@ -18,7 +18,7 @@ table[class^="mastery-"] {
 
 
 table[class^="mastery-"] tr {
-    border-top: 1px solid rgba(204, 204, 0, 0.3);
+    border-top: 1px solid rgba(255, 240, 0, 0.3);
 }
 
 
@@ -85,9 +85,9 @@ td[class^="display-skill-"] {
 }
 
 
-td.gauge-mastery-cell {
+td[class^=gauge-mastery-cell-] {
     vertical-align: top !important;
-    background-color: rgba(204, 204, 0, 0.1);
+    background-color: rgba(255, 240, 0, 0.1);
     min-width: 60px !important;
     width: 60px !important;
     color: #fff;
@@ -95,7 +95,13 @@ td.gauge-mastery-cell {
 }
 
 
-td[id^="button-add-mastery-"] {
+td.gauge-mastery-cell-acquired {
+    background-color: rgba(255, 240, 0, .9);
+    color: #000;
+}
+
+
+td.button-add-mastery {
     text-align: center;
 }
 
