@@ -39,10 +39,8 @@ var display_skill_infos = function ( mastery, skill ) {
 
 /**
  * Hide skill infos
- *
- * @param {string} mastery Current mastery
  */
-var hide_skill_infos = function ( mastery ) {
+var hide_skill_infos = function () {
     el_display_skill.html ( '&nbsp;' );
 };
 
@@ -123,9 +121,7 @@ var left_click_skill  = function ( mastery, skill ) {
         current_skill_level
     );
     
-    hide_skill_infos (
-        mastery
-    );
+    hide_skill_infos ();
     
     display_skill_infos (
         mastery,
@@ -162,9 +158,7 @@ var right_click_skill  = function ( mastery, skill ) {
         false
     );
     
-    hide_skill_infos (
-        mastery
-    );
+    hide_skill_infos ();
     
     display_skill_infos (
         mastery,
@@ -194,9 +188,7 @@ var init_handler_skills = function () {
      * Handler to match mouseout from a skill
      */
     el_div_masteries.on ( 'mouseout', 'tr > td.skill > img', function ( event ) {
-        hide_skill_infos (
-            $( event.target ).data ( 'mastery' )
-        );
+        hide_skill_infos ();
     } );
 
     
