@@ -231,7 +231,7 @@ var create_table = function ( mastery, datas ) {
      * @type {dom}
      */
     let el_tr = $( '<tr />' );
-
+    
     /**
      * Cell with button to increment mastery
      * @type {dom}
@@ -283,8 +283,6 @@ var load_datas = function ( mastery ) {
         
         // Create mastery table
         create_table ( mastery, datas [ 'table' ] );
-        
-        update_mastery_gauge ( mastery, 27 );
     } );
 };
 

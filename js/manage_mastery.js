@@ -1,23 +1,33 @@
+/**
+ * Update mastery gauge level. Increment or decrement level & highlight correct parts
+ *
+ * @param {string} mastery Current mastery
+ * @param {int} level New mastery level
+ *
+ * @return {bool} False if new level is out of gauge. True otherwise
+ */
 var update_mastery_gauge = function ( mastery, level ) {
     if ( level > 40 ) {
+        // Mastery already at max level
         return false;
     }
     
     if ( level < 0 ) {
+        // Mastery already at 0
         return false;
     }
-
+    
     masteries_mastery [ mastery ] = level;
-
+    
+    // Remove all mastery gauge highlight
     $( `td[class^="gauge-mastery-cell-${mastery}-"` ).removeClass ( 'gauge-mastery-cell-acquired' );
-
+    
+    // Highlight all correct mastery gauge part
     [ 1, 4, 10, 16, 24, 32, 40 ].forEach ( function ( mastery_level ) {
         if ( level >= mastery_level ) {
             $( `td.gauge-mastery-cell-${mastery}-${mastery_level}` ).addClass ( 'gauge-mastery-cell-acquired' );
         }
     } );
-    
-    console.log ( masteries_mastery );
     
     return true;
 };
@@ -38,6 +48,7 @@ var left_click_mastery  = function ( mastery ) {
     let current_mastery_level = masteries_mastery [ mastery ];
     
     if ( current_mastery_level >= 40 ) {
+        // Mastery already at max level
         return false;
     }
     
@@ -45,7 +56,7 @@ var left_click_mastery  = function ( mastery ) {
         mastery,
         ++current_mastery_level
     );
-
+    
     return true;
 };
 
@@ -65,6 +76,7 @@ var right_click_mastery  = function ( mastery ) {
     let current_mastery_level = masteries_mastery [ mastery ];
     
     if ( current_mastery_level <= 0 ) {
+        // Mastery already at level 0
         return false;
     }
     

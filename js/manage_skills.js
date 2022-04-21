@@ -59,6 +59,16 @@ var mouseover_skill = function ( mastery, skill ) {
 };
 
 
+/**
+ * Update skill gauge value & highlight gauge if full
+ *
+ * @param {string} mastery Current mastery
+ * @param {skill} Current skill
+ * @param {int} level Old skill level
+ * @param {bool} incr True to increment skill level, false to decrement
+ *
+ * @return {bool} False if next level out of gauge. True otherwithe
+ */
 var update_skill_gauge = function ( mastery, skill, level, incr = true ) {
     /**
      * Max level of current skill
@@ -66,13 +76,16 @@ var update_skill_gauge = function ( mastery, skill, level, incr = true ) {
      */
     let max_skill_level = masteries_skills [ mastery ] [ skill ] [ 'max' ];
 
+    // New skill level
     level += ( incr ) ? 1 : -1;
     
     if ( level > max_skill_level ) {
+        // Skill already at max level
         return false;
     }
     
     if ( level < 0 ) {
+        // Skill already at 0
         return false;
     }
     
@@ -121,6 +134,8 @@ var left_click_skill  = function ( mastery, skill ) {
         current_skill_level
     );
     
+    // Refresh skill infos
+    
     hide_skill_infos ();
     
     display_skill_infos (
@@ -138,7 +153,7 @@ var left_click_skill  = function ( mastery, skill ) {
  * @param {string} mastery Current skill mastery
  * @param {string} skill Current skill
  *
- * @return {bool} False if already at the level 0. True otherwise
+ * @return {bool} False if already at level 0. True otherwise
  */
 var right_click_skill  = function ( mastery, skill ) {
     /**
@@ -157,6 +172,8 @@ var right_click_skill  = function ( mastery, skill ) {
         current_skill_level,
         false
     );
+    
+    // Refresh skill info
     
     hide_skill_infos ();
     
