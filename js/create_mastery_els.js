@@ -45,6 +45,13 @@ var masteries_mastery = {};
 
 
 /**
+ * Global datas
+ * @type {dict}
+ */
+var global_datas = {};
+
+
+/**
  * Create empty cell
  *
  * @param {dom} el_tr Row to add cell
@@ -216,18 +223,9 @@ var add_row = function ( mastery, el_table, row_datas, table_conf, mastery_level
  * @param {dict} Table datas
  */
 var create_table = function ( mastery, datas ) {
-    /**
-     * Each row num
-     * @type {int[]}
-     */
-    let row_nums = Object.keys ( datas [ 'rows' ] ).map ( function ( row_num ) {
-        return parseInt ( row_num );
-    } );
-    row_nums.reverse ();
-    
     // Create all table rows
     
-    row_nums.forEach ( function ( row_num ) {
+    global_datas [ 'mastery_level' ].forEach ( function ( row_num ) {
         add_row (
             mastery,
             els_table_mastery [ mastery ],
@@ -294,7 +292,8 @@ var load_mastery = function ( mastery ) {
         
         // Create mastery table
         create_table ( mastery, datas [ 'table' ] );
-
+        
+        // Load next datas
         load_datas ();
     } );
 };
@@ -305,7 +304,18 @@ var load_mastery = function ( mastery ) {
  */
 var load_global_datas = function () {
     $.getJSON ( `./datas/global.json`, function ( datas ) {
-        console.log ( datas );
+        global_datas = datas;
+        
+        // Max mastery level
+        global_datas [ 'max_mastery_level' ] = Math.max.apply (
+            Math,
+            global_datas [ 'mastery_level' ]
+        );
+        
+        // Clean reverse sort mastery level
+        global_datas [ 'mastery_level' ].sort ( ( a, b ) => b - a );
+        
+        // Load next datas
         load_datas ();
     } );
 };

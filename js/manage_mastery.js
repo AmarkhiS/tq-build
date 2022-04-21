@@ -7,7 +7,7 @@
  * @return {bool} False if new level is out of gauge. True otherwise
  */
 var update_mastery_gauge = function ( mastery, level ) {
-    if ( level > 40 ) {
+    if ( level > global_datas [ 'max_mastery_level' ] ) {
         // Mastery already at max level
         return false;
     }
@@ -23,7 +23,7 @@ var update_mastery_gauge = function ( mastery, level ) {
     $( `td[class^="gauge-mastery-cell-${mastery}-"` ).removeClass ( 'gauge-mastery-cell-acquired' );
     
     // Highlight all correct mastery gauge part
-    [ 1, 4, 10, 16, 24, 32, 40 ].forEach ( function ( mastery_level ) {
+    global_datas [ 'mastery_level' ].forEach ( function ( mastery_level ) {
         if ( level >= mastery_level ) {
             $( `td.gauge-mastery-cell-${mastery}-${mastery_level}` ).addClass ( 'gauge-mastery-cell-acquired' );
         }
