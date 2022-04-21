@@ -104,12 +104,36 @@ var update_skill_gauge = function ( mastery, skill, level, incr = true ) {
 
 
 /**
+ * Valid if all skill deps are acquired
+ *
+ * @param {string} mastery Current mastery
+ * @param {string} skill Current mastery skill to valid
+ *
+ * @return True if all skill deps are acquired. False otherwise
+ */
+var is_all_skill_deps = function ( mastery, skill ) {
+    if ( masteries_mastery [ mastery ] < masteries_skills [ mastery ] [ skill ] [ 'mastery_level' ] ) {
+        // Not enought mastery level
+        return false;
+    }
+    
+    if ( ( 'dependency' in masteries_skills [ mastery ] [ skill ] ) === false ) {
+        // No more deps to valid
+        return true;
+    }
+    
+    // All deps acquired
+    return true;
+};
+
+
+/**
  * Handler : skill left click : add one level to skill
  *
  * @param {string} mastery Current skill mastery
  * @param {string} skill Current skill
  *
- * @return {bool} False if already at the max level. True otherwise
+ * @return {bool} False if already at the max level or do not have deps acquired. True otherwise
  */
 var left_click_skill  = function ( mastery, skill ) {
     /**
@@ -125,6 +149,10 @@ var left_click_skill  = function ( mastery, skill ) {
     let max_skill_level = masteries_skills [ mastery ] [ skill ] [ 'max' ];
     
     if ( current_skill_level >= max_skill_level ) {
+        return false;
+    }
+    
+    if ( is_all_skill_deps ( mastery, skill ) === false ) {
         return false;
     }
     
