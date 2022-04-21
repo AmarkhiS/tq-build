@@ -1,15 +1,5 @@
 {
     "table": {
-        "conf": {
-            "tr": {
-                "border_color": {
-                    "r": 40,
-                    "g": 76,
-                    "b": 62,
-                    "a": 0.5
-                }
-            }
-        },
         "rows": {
             "40": {
                 "5": "top-bracket",

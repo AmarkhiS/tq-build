@@ -1,6 +1,6 @@
 body {
     font-family: mono;
-    font-size: 9px;
+    font-size: 12px;
     background-color: #000;
     color: #fff;
 }
@@ -18,7 +18,7 @@ table[class^="mastery-"] {
 
 
 table[class^="mastery-"] tr {
-    border-top: 1px solid;
+    border-top: 1px solid rgba(204, 204, 0, 0.3);
 }
 
 

@@ -142,12 +142,7 @@ var add_row = function ( mastery, el_table, row_datas, table_conf, mastery_level
      * New row
      * @type {dom}
      */
-    let el_tr = $( '<tr/>' ).addClass (
-        `row-mastery-${mastery}`,
-    ).css (
-        "border-color",
-        `rgba(${table_conf.tr.border_color.r},${table_conf.tr.border_color.g},${table_conf.tr.border_color.b},${table_conf.tr.border_color.a})`
-    );
+    let el_tr = $( '<tr/>' );
     
     for ( var col_num = 1 ; col_num < 13 ; col_num++ ) {
         /**
@@ -248,59 +243,7 @@ var create_table = function ( mastery, datas ) {
     );
     els_table_mastery [ mastery ].append ( el_td );
     
-    $( `#div-mastery-${mastery}-1` ).append ( els_table_mastery [ mastery ] );
-};
-
-
-/**
- * Create display place for mastery
- *
- * @param {string} mastery Mastery
- */
-var create_display_place = function ( mastery ) {
-    $( `#div-mastery-${mastery}-2` ).addClass (
-        `display-skill-${mastery}`
-    );
-};
-
-
-/**
- * Create mastery table & display place
- *
- * @param {string} mastery Mastery
- * @param {datas} Mastery datas
- */
-var create_mastery = function ( mastery, datas ) {
-    // Create mastery table
-    create_table ( mastery, datas );
-    
-    // Mastery skill's display place
-    create_display_place ( mastery, datas );
-};
-
-
-/**
- * Create mastery blocs
- *
- * @param {string} mastery Mastery
- */
-var create_mastery_els = function ( mastery ) {
-    els_mastery [ mastery ] = $( '<table />' ).attr (
-        'id',
-        `div-mastery-${mastery}`
-    );
-    let el_tr = $( '<tr />' );
-    for ( let i = 0 ; i < 3 ; i++ ) {
-        let el_td = $( '<td />' ).attr (
-            'id',
-            `div-mastery-${mastery}-${i}`
-        );
-        el_tr.append ( el_td );
-    }
-    
-    els_mastery [ mastery ].append ( el_tr );
-    els_table_mastery [ mastery ] = $( '<table />' ).addClass ( `mastery-${mastery}` );
-    el_div_masteries.append ( els_mastery [ mastery ] );
+    $( `#div-mastery-${mastery}` ).append ( els_table_mastery [ mastery ] );
 };
 
 
@@ -310,14 +253,20 @@ var create_mastery_els = function ( mastery ) {
  * @param {string} mastery Mastery to load
  */
 var load_datas = function ( mastery ) {
-    // Create mastery blocs
-    create_mastery_els ( mastery );
+    els_mastery [ mastery ] = $( '<div />' ).attr (
+        'id',
+        `div-mastery-${mastery}`
+    );
+    
+    els_table_mastery [ mastery ] = $( '<table />' ).addClass ( `mastery-${mastery}` );
+    el_div_masteries.append ( els_mastery [ mastery ] );
+    
     
     $.getJSON ( `./datas/${mastery}.json`, function ( datas ) {
         // Store mastery datas
         masteries_skills [ mastery ] = datas [ 'spells' ];
         // Create mastery table
-        create_mastery ( mastery, datas [ 'table' ] );
+        create_table ( mastery, datas [ 'table' ] );
     } );
 };
 
