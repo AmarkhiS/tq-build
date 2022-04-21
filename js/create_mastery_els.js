@@ -1,4 +1,15 @@
 /**
+ * Flags to loaded datas
+ * @type {dict}
+ */
+var datas_loaded = {
+    'global': false,
+    'mastery_1': false,
+    'mastery_2': false
+};
+
+
+/**
  * All masteries
  * @type {dom}
  */
@@ -264,7 +275,7 @@ var create_table = function ( mastery, datas ) {
  *
  * @param {string} mastery Mastery to load
  */
-var load_datas = function ( mastery ) {
+var load_mastery = function ( mastery ) {
     els_mastery [ mastery ] = $( '<div />' ).attr (
         'id',
         `div-mastery-${mastery}`
@@ -283,9 +294,64 @@ var load_datas = function ( mastery ) {
         
         // Create mastery table
         create_table ( mastery, datas [ 'table' ] );
+
+        load_datas ();
     } );
 };
 
 
+/**
+ * Load global datas
+ */
+var load_global_datas = function () {
+    $.getJSON ( `./datas/global.json`, function ( datas ) {
+        console.log ( datas );
+        load_datas ();
+    } );
+};
+
+
+/**
+ * Synchronous datas loading
+ *
+ * @return {bool} True if some datas are load. False otherwise
+ */
+var load_datas = function () {
+    if ( datas_loaded [ 'global' ] === false ) {
+        // Load datas : global
+        datas_loaded [ 'global' ] = true;
+        load_global_datas ();
+        return true;
+    }
+    
+    if ( datas_loaded [ 'mastery_1' ] === false ) {
+        // Load datas : first mastery
+        datas_loaded [ 'mastery_1' ] = true;
+        load_mastery (
+            mastery_1
+        );
+        return true;
+    }
+    
+    if ( datas_loaded [ 'mastery_2' ] === false ) {
+        datas_loaded [ 'mastery_2' ] = true;
+        if ( mastery_2 !== null ) {
+            // Load datas : second mastery
+            load_mastery (
+                mastery_2
+            );
+            return true;
+        }
+        
+        // Only one mastery
+        return false;
+    }
+    
+    // Nothing more to load
+    return false;
+};
+
+
 $( function () {
+    load_datas ();
 } );

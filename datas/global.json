@@ -1,2 +1,9 @@
-Esprit = Théurgiste
-Esprit + Défense = Ensorceleur
+{
+    "mastery_level": [
+        1, 4, 10, 16, 24, 32, 40
+    ],
+    "masteries": {
+        "theurgiste": { "name": "Théurgiste", "mastery_1": "spirit" },
+        "ensorceleur": { "name": "Ensorceleur", "mastery_1": "spirit", "mastery_2": "defense" }
+    }
+}
