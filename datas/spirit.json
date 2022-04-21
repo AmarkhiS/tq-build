@@ -62,126 +62,168 @@
             }
         }
     },
-    "spells": {
+    "skills": {
         "01": {
-            "name": "Aura glaciale",
-            "mastery_level": 1,
-            "max": 6
+            "name": "Aura&nbsp;glaciale",
+            "mastery_level":1,
+            "max":6
         },
         "02": {
-            "name": "Absorption de vie",
-            "mastery_level": 1,
-            "max": 12
+            "name": "Absorption&nbsp;de&nbsp;vie",
+            "mastery_level":1,
+            "max":12
         },
         "03": {
-            "name": "Triple attaque",
-            "mastery_level": 4,
-            "max": 12
+            "name": "Triple&nbsp;attaque",
+            "mastery_level":4,
+            "max":12
         },
         "04": {
-            "name": "Ravages du temps",
-            "mastery_level": 4,
-            "max": 8,
+            "name": "Ravages&nbsp;du&nbsp;temps",
+            "mastery_level":4,
+            "max":8,
             "dependency": "01"
         },
         "05": {
-            "name": "Vision mortelle",
-            "mastery_level": 4,
-            "max": 6
+            "name": "Vision&nbsp;mortelle",
+            "mastery_level":4,
+            "max":6
         },
         "06": {
-            "name": "Bouclier spirituel",
-            "mastery_level": 4,
-            "max": 8
+            "name": "Bouclier&nbsp;spirituel",
+            "mastery_level":4,
+            "max":8
         },
         "07": {
             "name": "Cascade",
-            "mastery_level": 10,
-            "max": 10,
+            "mastery_level":10,
+            "max":10,
             "dependency": "02"
         },
         "08": {
-            "name": "Alliance noire",
-            "mastery_level": 10,
-            "max": 6
+            "name": "Alliance&nbsp;noire",
+            "mastery_level":10,
+            "max":6
         },
         "09": {
-            "name": "Invocation du Roi spectre",
-            "mastery_level": 10,
-            "max": 16
+            "name": "Invocation&nbsp;du&nbsp;Roi&nbsp;spectre",
+            "mastery_level":10,
+            "max":16
         },
         "10": {
-            "name": "Fl&eacute;au psychique",
-            "mastery_level": 10,
-            "max": 6,
+            "name": "Fl&eacute;au&nbsp;psychique",
+            "mastery_level":10,
+            "max":6,
             "dependency": "06"
         },
         "11": {
-            "name": "Secrets de l&quot;arcane",
-            "mastery_level": 16,
-            "max": 6,
+            "name": "Secrets&nbsp;de&nbsp;l&quot;arcane",
+            "mastery_level":16,
+            "max":6,
             "dependency": "03"
         },
         "12": {
             "name": "N&eacute;crose",
-            "mastery_level": 16,
-            "max": 8,
+            "mastery_level":16,
+            "max":8,
             "dependency": "04"
         },
         "13": {
-            "name": "Asservissement des ennemis",
-            "mastery_level": 16,
-            "max": 12
+            "name": "Asservissement&nbsp;des&nbsp;ennemis",
+            "mastery_level":16,
+            "max":12
         },
         "14": {
-            "name": "Onde mortelle",
-            "mastery_level": 16,
-            "max": 12,
+            "name": "Onde&nbsp;mortelle",
+            "mastery_level":16,
+            "max":12,
             "dependency": "09"
         },
         "15": {
-            "name": "Pouvoir surnaturel",
-            "mastery_level": 24,
-            "max": 8,
+            "name": "Pouvoir&nbsp;surnaturel",
+            "mastery_level":24,
+            "max":8,
             "dependency": "08"
         },
         "16": {
-            "name": "Presence att&eacute;nu&eacute;e",
-            "mastery_level": 24,
-            "max": 12,
+            "name": "Presence&nbsp;att&eacute;nu&eacute;e",
+            "mastery_level":24,
+            "max":12,
             "dependency": "14"
         },
         "17": {
-            "name": "Cercle de puissance",
-            "mastery_level": 24,
-            "max": 12
+            "name": "Cercle&nbsp;de&nbsp;puissance",
+            "mastery_level":24,
+            "max":12
         },
         "18": {
-            "name": "Protection vitale",
-            "mastery_level": 32,
-            "max": 8
+            "name": "Protection&nbsp;vitale",
+            "mastery_level":32,
+            "max":8
         },
         "19": {
-            "name": "Invocation de l&apos;&eacute;tranger",
-            "mastery_level": 32,
-            "max": 16
+            "name": "Invocation&nbsp;de&nbsp;l&apos;&eacute;tranger",
+            "mastery_level":32,
+            "max":16
         },
         "20": {
-            "name": "Attaque mystique",
-            "mastery_level": 32,
-            "max": 16,
+            "name": "Attaque&nbsp;mystique",
+            "mastery_level":32,
+            "max":16,
             "dependency": "16"
         },
         "21": {
             "name": "Absorption_d&quot;&acirc;me",
-            "mastery_level": 40,
-            "max": 6,
+            "mastery_level":40,
+            "max":6,
             "dependency": "07"
         },
         "22": {
-            "name": "Tourbillon d&quot;&acirc;mes",
-            "mastery_level": 40,
-            "max": 10
+            "name": "Tourbillon&nbsp;d&quot;&acirc;mes",
+            "mastery_level":40,
+            "max":10
         }
+    },
+    "stats": {
+        "1": { "health":20, "energy":8, "int":3, "dex":2 },
+        "2": { "health":40, "energy":16, "int":6, "dex":3 },
+        "3": { "health":60, "energy":24, "int":9, "dex":5 },
+        "4": { "health":80, "energy":32, "int":12, "dex":6 },
+        "5": { "health":100, "energy":40, "int":15, "dex":8 },
+        "6": { "health":120, "energy":48, "int":18, "dex":9 },
+        "7": { "health":140, "energy":56, "int":21, "dex":11 },
+        "8": { "health":160, "energy":64, "int":24, "dex":12 },
+        "9": { "health":180, "energy":72, "int":27, "dex":14 },
+        "10": { "health":200, "energy":80, "int":30, "dex":15 },
+        "11": { "health":220, "energy":88, "int":33, "dex":17 },
+        "12": { "health":240, "energy":96, "int":36, "dex":18 },
+        "13": { "health":260, "energy":104, "int":39, "dex":20 },
+        "14": { "health":280, "energy":112, "int":42, "dex":21 },
+        "15": { "health":300, "energy":120, "int":45, "dex":23 },
+        "16": { "health":320, "energy":128, "int":48, "dex":24 },
+        "17": { "health":340, "energy":136, "int":51, "dex":26 },
+        "18": { "health":360, "energy":144, "int":54, "dex":27 },
+        "19": { "health":380, "energy":152, "int":57, "dex":29 },
+        "20": { "health":400, "energy":160, "int":60, "dex":30 },
+        "21": { "health":420, "energy":168, "int":63, "dex":32 },
+        "22": { "health":440, "energy":176, "int":66, "dex":33 },
+        "23": { "health":460, "energy":184, "int":69, "dex":35 },
+        "24": { "health":480, "energy":192, "int":72, "dex":36 },
+        "25": { "health":500, "energy":200, "int":75, "dex":38 },
+        "26": { "health":520, "energy":208, "int":78, "dex":39 },
+        "27": { "health":540, "energy":216, "int":81, "dex":40 },
+        "28": { "health":560, "energy":224, "int":84, "dex":42 },
+        "29": { "health":580, "energy":232, "int":87, "dex":44 },
+        "30": { "health":600, "energy":240, "int":90, "dex":45 },
+        "31": { "health":620, "energy":248, "int":93, "dex":47 },
+        "32": { "health":640, "energy":256, "int":96, "dex":48 },
+        "33": { "health":660, "energy":264, "int":99, "dex":50 },
+        "34": { "health":680, "energy":272, "int":102, "dex":51 },
+        "35": { "health":700, "energy":280, "int":105, "dex":53 },
+        "36": { "health":720, "energy":288, "int":108, "dex":54 },
+        "37": { "health":740, "energy":296, "int":111, "dex":56 },
+        "38": { "health":760, "energy":304, "int":114, "dex":57 },
+        "39": { "health":780, "energy":312, "int":117, "dex":59 },
+        "40": { "health":800, "energy":320, "int":120, "dex":60 }
     }
 }

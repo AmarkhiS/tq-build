@@ -29,6 +29,8 @@ var update_mastery_gauge = function ( mastery, level ) {
         }
     } );
     
+    display_player_masteries ();
+    
     return true;
 };
 
@@ -57,6 +59,8 @@ var left_click_mastery  = function ( mastery ) {
         ++current_mastery_level
     );
     
+    update_player_mastery_points ( true );
+    
     return true;
 };
 
@@ -84,6 +88,8 @@ var right_click_mastery  = function ( mastery ) {
         mastery,
         --current_mastery_level
     );
+
+    update_player_mastery_points ( false );
 
     return true;
 };

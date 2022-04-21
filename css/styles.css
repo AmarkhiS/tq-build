@@ -76,15 +76,6 @@ img#skill-display {
 }
 
 
-td[class^="display-skill-"] {
-    text-align: left;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-    border: unset;
-}
-
-
 td[class^=gauge-mastery-cell-] {
     vertical-align: top !important;
     background-color: rgba(255, 240, 0, 0.1);
@@ -111,6 +102,7 @@ div#display-skill {
     top: 0px;
     left: 650px;
     bottom: 0px;
+    z-index: 999;
 }
 
 
@@ -122,4 +114,20 @@ div#display-skill img {
     right: 0;  
     margin: auto;
     max-height: 90%;
+}
+
+
+div#display-stats {
+    position: fixed;
+    top: 0px;
+    left: 650px;
+    bottom: 0px;
+    z-index: 100;
+}
+
+
+div#display-stats > div {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(0,-50%);
 }

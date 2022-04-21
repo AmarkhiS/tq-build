@@ -75,9 +75,17 @@ var update_skill_gauge = function ( mastery, skill, level, incr = true ) {
      * @type {int}
      */
     let max_skill_level = masteries_skills [ mastery ] [ skill ] [ 'max' ];
-
+    
     // New skill level
     level += ( incr ) ? 1 : -1;
+    update_player_mastery_points (
+        incr
+    );
+    
+    update_player_skills (
+        masteries_skills [ mastery ] [ skill ] [ 'name' ],
+        level
+    );
     
     if ( level > max_skill_level ) {
         // Skill already at max level

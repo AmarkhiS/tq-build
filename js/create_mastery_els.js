@@ -31,14 +31,21 @@ var els_table_mastery = {};
 
 
 /**
- * Datas to each mastery
+ * Skills to each mastery
  * @type {dict}
  */
 var masteries_skills = {};
 
 
 /**
- * Datas to each mastery
+ * Stats to each mastery
+ * @type {dict}
+ */
+var masteries_stats = {};
+
+
+/**
+ * Levels to each mastery
  * @type {dict}
  */
 var masteries_mastery = {};
@@ -285,13 +292,22 @@ var load_mastery = function ( mastery ) {
     
     $.getJSON ( `./datas/${mastery}.json`, function ( datas ) {
         // Store mastery datas
-        masteries_skills [ mastery ] = datas [ 'spells' ];
+        masteries_skills [ mastery ] = datas [ 'skills' ];
+        
+        // Store mastery stats
+        masteries_stats [ mastery ] = datas [ 'stats' ];
         
         // Init mastery level
         masteries_mastery [ mastery ] = 0;
         
         // Create mastery table
         create_table ( mastery, datas [ 'table' ] );
+        
+        display_player_masteries ();
+
+        for ( let i = 0 ; i < 7 ; i++ ) {
+            left_click_mastery ( mastery );
+        }
         
         // Load next datas
         load_datas ();

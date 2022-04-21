@@ -8,13 +8,42 @@
   </head>
   <body>
     <div id="masteries"></div>
-
+    
     <div id="display-skill">&nbsp;</div>
+    
+    <div id="display-stats">
+      <div>
+        <div>
+          Niveau&nbsp;:&nbsp;<span id="player-level">12</span>
+        </div>
+        
+        <div>
+          Attributs&nbsp;:<br />
+          <ul>
+            <li>Vie&nbsp;:&nbsp;<span id="player-health">300</span></li>
+            <li>&Eacute;nergy&nbsp;:&nbsp;<span id="player-energy">300</span></li>
+            <li>Force&nbsp;:&nbsp;<span id="player-str">50</span></li>
+            <li>Intelligence&nbsp;:&nbsp;<span id="player-int">50</span></li>
+            <li>Dexterit&eacute;&nbsp;:&nbsp;<span id="player-dex">50</span></li>
+        </div>
+        
+        <div>
+          Ma&icirc;trises&nbsp;:&nbsp;(point&nbsp;:&nbsp;<span id="player-mastery-points">0</span>)
+          <ul id="player-masteries"></ul>
+        </div>
+        
+        <div>
+          Liste des comp&eacute;tences&nbsp;:
+          <ul id="player-skills"></ul>
+        </div>
+      </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/create_mastery_els.js"></script>
     <script src="./js/manage_skills.js"></script>
     <script src="./js/manage_mastery.js"></script>
+    <script src="./js/manage_player.js"></script>
     <script src="./js/spirit.js"></script>
   </body>
 </html>
