@@ -1,4 +1,11 @@
 /**
+ * Display skill place
+ * @type {dom}
+ */
+var el_display_skill = $( 'div#display-skill' );
+
+
+/**
  * Display skill infos
  *
  * @param {string} mastery Current skill mastery
@@ -24,12 +31,9 @@ var display_skill_infos = function ( mastery, skill ) {
     ).attr (
         'alt',
         `${mastery} - ${skill} - ${current_skill_level}`
-    ).attr (
-        'id',
-        'skill-display'
     );
 
-    $( `.display-skill-${mastery}` ).html ( skill_img );
+    el_display_skill.html ( skill_img );
 };
 
 
@@ -39,7 +43,7 @@ var display_skill_infos = function ( mastery, skill ) {
  * @param {string} mastery Current mastery
  */
 var hide_skill_infos = function ( mastery ) {
-    $( `.display-skill-${mastery}` ).html ( '&nbsp;' );
+    el_display_skill.html ( '&nbsp;' );
 };
 
 

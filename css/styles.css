@@ -94,6 +94,26 @@ td.gauge-mastery-cell {
     font-size: 12px;
 }
 
+
 td[id^="button-add-mastery-"] {
     text-align: center;
+}
+
+
+div#display-skill {
+    position: fixed;
+    top: 0px;
+    left: 700px;
+    bottom: 0px;
+}
+
+
+div#display-skill img {
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    max-height: 90%;
 }
