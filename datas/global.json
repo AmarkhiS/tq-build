@@ -35,7 +35,6 @@
         "juggernaut": { "name": "Mastodonte", "mastery_1": "earth", "mastery_2": "defense" },
         "magician": { "name": "Magicien", "mastery_1": "rogue", "mastery_2": "earth" },
         "monk": { "name": "Moine", "mastery_1": "defense", "mastery_2": "neidan" },
-        "name": { "name": "name_fr", "mastery_1": "mastery_1", "mastery_2": "mastery_2" },
         "nedian": { "name": "Neidan", "mastery_1": "neidan", "mastery_2": null },
         "oracle": { "name": "Oracle", "mastery_1": "spirit", "mastery_2": "storm" },
         "paladin": { "name": "Paladin", "mastery_1": "storm", "mastery_2": "defense" },

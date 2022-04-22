@@ -1,0 +1,33 @@
+div[id^="classes-"] {
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+div#classes-combo {
+    margin-top: 50px;
+}
+
+
+div[id^="classes-"] > div {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 250px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+div[id^="classes-"] > div > a {
+    line-height: 35px;
+    margin: auto;
+    display: inline-block;
+}
+
+
+div[id^="classes-"] > div img {
+    display: inline-block;
+    float: left;
+    max-height: 35px;
+    margin-right: 10px;
+}
