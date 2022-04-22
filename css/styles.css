@@ -59,6 +59,11 @@ table[class^="mastery-"] tr td img {
 }
 
 
+table[class^="mastery-"] tr td img[id^="logo-"] {
+    cursor: pointer;
+}
+
+
 table[class^="mastery-"] tr td span {
     font-size: 12px;
     cursor: default;
@@ -91,9 +96,14 @@ td.gauge-mastery-cell-acquired {
     color: #000;
 }
 
-
+    
 td.button-add-mastery {
     text-align: center;
+}
+
+
+td.button-add-mastery img {
+    cursor: pointer;
 }
 
 
