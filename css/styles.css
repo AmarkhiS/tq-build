@@ -5,6 +5,18 @@ body {
     color: #fff;
 }
 
+a,
+a:hover,
+a:visited,
+a:active {
+    color: #fff;
+    text-decoration: unset;
+}
+
+a:hover {
+    font-style: italic;
+}
+
 
 table[class^="mastery-"] {
     border-spacing: 0;
@@ -138,6 +150,36 @@ div#display-stats {
 
 div#display-stats > div {
     position: absolute;
-    top: 50%; left: 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(0,-50%);
+}
+
+
+div#classes-base {
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+
+div#classes-base > div {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 170px;
+}
+
+
+div#classes-base > div > a {
+    line-height: 35px;
+    margin: auto;
+    display: inline-block;
+}
+
+
+div#classes-base > div img {
+    display: inline-block;
+    float: left;
+    max-height: 35px;
+    margin-right: 10px;
 }
