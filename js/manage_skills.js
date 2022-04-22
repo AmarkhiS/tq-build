@@ -113,25 +113,55 @@ var update_skill_gauge = function ( mastery, skill, level, incr = true ) {
 
 
 /**
- * Valid if all skill deps are acquired
+ * Valid if skill mastery dep is acquired
  *
  * @param {string} mastery Current mastery
  * @param {string} skill Current mastery skill to valid
  *
- * @return True if all skill deps are acquired. False otherwise
+ * @return True if skill mastery dep is acquired. False otherwise
  */
-var is_all_skill_deps = function ( mastery, skill ) {
+var is_skill_mastery_dep = function ( mastery, skill ) {
     if ( masteries_mastery [ mastery ] < masteries_skills [ mastery ] [ skill ] [ 'mastery_level' ] ) {
         // Not enought mastery level
         return false;
     }
     
-    if ( ( 'dependency' in masteries_skills [ mastery ] [ skill ] ) === false ) {
-        // No more deps to valid
+    // Mastery dep acquired
+    return true;
+};
+
+
+/**
+ * Valid if skill down dep is acquired
+ *
+ * @param {string} mastery Current mastery
+ * @param {string} skill Current mastery skill to valid
+ *
+ * @return True if skill down dep is acquired. False otherwise
+ */
+var is_skill_down_dep = function ( mastery, skill ) {
+    if ( ( 'dep_down' in masteries_skills [ mastery ] [ skill ] ) === false ) {
+        // No down dep
         return true;
     }
     
-    // All deps acquired
+    if ( ( mastery in player_stats [ 'skills' ] ) == false ) {
+        // Dep down required but no skill acquired
+        return false;
+    }
+
+    /**
+     * Skill down (dep) id
+     * @type {string}
+     */
+    let skill_down = masteries_skills [ mastery ] [ skill ] [ 'dep_down' ];
+    
+    if ( ( skill_down in player_stats [ 'skills' ] [ mastery ] ) === false ) {
+        // Dep not acquired
+        return false;
+    }
+    
+    // Down dep acquired
     return true;
 };
 
@@ -161,7 +191,11 @@ var left_click_skill  = function ( mastery, skill ) {
         return false;
     }
     
-    if ( is_all_skill_deps ( mastery, skill ) === false ) {
+    if ( is_skill_mastery_dep ( mastery, skill ) === false ) {
+        return false;
+    }
+    
+    if ( is_skill_down_dep ( mastery, skill ) === false ) {
         return false;
     }
     
