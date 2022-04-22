@@ -219,6 +219,36 @@ var left_click_skill  = function ( mastery, skill ) {
 
 
 /**
+ * Valid if skill up dep is acquired
+ *
+ * @param {string} mastery Current mastery
+ * @param {string} skill Current mastery skill to valid
+ *
+ * @return True if skill up dep is acquired. False otherwise
+ */
+var is_skill_up_dep = function ( mastery, skill ) {
+    if ( ( 'dep_up' in masteries_skills [ mastery ] [ skill ] ) === false ) {
+        // No up dep
+        return false;
+    }
+    
+    /**
+     * Skill up (dep) id
+     * @type {string}
+     */
+    let skill_up = masteries_skills [ mastery ] [ skill ] [ 'dep_up' ];
+    
+    if ( ( skill_up in player_stats [ 'skills' ] [ mastery ] ) === false ) {
+        // Dep not acquired
+        return false;
+    }
+    
+    // Up dep acquired
+    return true;
+};
+
+
+/**
  * Handler : skill right click : remove one level to skill
  *
  * @param {string} mastery Current skill mastery
@@ -235,6 +265,13 @@ var right_click_skill  = function ( mastery, skill ) {
     
     if ( current_skill_level <= 0 ) {
         return false;
+    }
+    
+    if ( current_skill_level == 1 ) {
+        // Do not reduce skill to 0 if a dep up
+        if ( is_skill_up_dep ( mastery, skill ) === true ) {
+            return false;
+        }
     }
     
     update_skill_gauge (
