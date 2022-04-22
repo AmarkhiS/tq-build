@@ -290,28 +290,32 @@ var load_mastery = function ( mastery ) {
     el_div_masteries.append ( els_mastery [ mastery ] );
     
     
-    $.getJSON ( `./datas/${mastery}.json`, function ( datas ) {
-        // Store mastery datas
-        masteries_skills [ mastery ] = datas [ 'skills' ];
-        
-        // Store mastery stats
-        masteries_stats [ mastery ] = datas [ 'stats' ];
-        
-        // Init mastery level
-        masteries_mastery [ mastery ] = 0;
-        
-        // Create mastery table
-        create_table ( mastery, datas [ 'table' ] );
-        
-        display_player_masteries ();
-
-        for ( let i = 0 ; i < 7 ; i++ ) {
-            left_click_mastery ( mastery );
+    $.getJSON (
+        `./datas/${mastery}.json`,
+        { _: new Date ().getTime () },
+        function ( datas ) {
+            // Store mastery datas
+            masteries_skills [ mastery ] = datas [ 'skills' ];
+            
+            // Store mastery stats
+            masteries_stats [ mastery ] = datas [ 'stats' ];
+            
+            // Init mastery level
+            masteries_mastery [ mastery ] = 0;
+            
+            // Create mastery table
+            create_table ( mastery, datas [ 'table' ] );
+            
+            display_player_masteries ();
+            
+            for ( let i = 0 ; i < 7 ; i++ ) {
+                left_click_mastery ( mastery );
+            }
+            
+            // Load next datas
+            load_datas ();
         }
-        
-        // Load next datas
-        load_datas ();
-    } );
+    );
 };
 
 
@@ -319,21 +323,25 @@ var load_mastery = function ( mastery ) {
  * Load global datas
  */
 var load_global_datas = function () {
-    $.getJSON ( `./datas/global.json`, function ( datas ) {
-        global_datas = datas;
-        
-        // Max mastery level
-        global_datas [ 'max_mastery_level' ] = Math.max.apply (
-            Math,
-            global_datas [ 'mastery_level' ]
-        );
-        
-        // Clean reverse sort mastery level
-        global_datas [ 'mastery_level' ].sort ( ( a, b ) => b - a );
-        
-        // Load next datas
-        load_datas ();
-    } );
+    $.getJSON (
+        `./datas/global.json`,
+        { _: new Date ().getTime () },
+        function ( datas ) {
+            global_datas = datas;
+            
+            // Max mastery level
+            global_datas [ 'max_mastery_level' ] = Math.max.apply (
+                Math,
+                global_datas [ 'mastery_level' ]
+            );
+            
+            // Clean reverse sort mastery level
+            global_datas [ 'mastery_level' ].sort ( ( a, b ) => b - a );
+            
+            // Load next datas
+            load_datas ();
+        }
+    );
 };
 
 
