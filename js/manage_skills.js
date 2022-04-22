@@ -83,7 +83,8 @@ var update_skill_gauge = function ( mastery, skill, level, incr = true ) {
     );
     
     update_player_skills (
-        masteries_skills [ mastery ] [ skill ] [ 'name' ],
+        mastery,
+        skill,
         level
     );
     

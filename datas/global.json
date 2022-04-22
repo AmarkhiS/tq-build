@@ -6,7 +6,7 @@
         "theurgiste": { "name": "Théurgiste", "mastery_1": "spirit" },
         "ensorceleur": { "name": "Ensorceleur", "mastery_1": "spirit", "mastery_2": "defense" }
     },
-    "masteriy_name": {
+    "mastery_name": {
         "spirit": "Esprit",
         "defense": "D&eacute;fense"
     }

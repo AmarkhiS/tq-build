@@ -122,7 +122,7 @@ var display_player_masteries = function () {
          * Current mastery name
          * @type {string}
          */
-        let name = global_datas [ 'masteriy_name' ] [ mastery ];
+        let name = global_datas [ 'mastery_name' ] [ mastery ];
         
         /**
          * Current mastery list value
@@ -140,31 +140,106 @@ var display_player_masteries = function () {
 
 
 /**
+ * Convert playser_stats.skills to clean html display
+ *
+ * @return {dict} Player skills per mastery
+ */
+var player_skills_to_display = function () {
+    /**
+     * Player skills per mastery
+     * @type {dict}
+     */
+    let ret = {};
+    
+    /**
+     * All masteries
+     * @type {string[]}
+     */
+    let masteries = Object.keys ( player_stats [ 'skills' ] );
+    
+    masteries.forEach ( function ( mastery ) {
+        /**
+         * Current mastery name
+         * @type {string}
+         */
+        let mastery_name = `${global_datas [ 'mastery_name' ] [ mastery ]}&nbsp;:`;
+        ret [ mastery_name ] = [];
+        
+        /**
+         * Mastery skills
+         * @type {string[]}
+         */
+        let skills = Object.keys ( player_stats [ 'skills' ] [ mastery ] );
+        
+        skills.forEach ( function ( skill ) {
+            ret [ mastery_name ].push (
+                `${masteries_skills [ mastery ] [ skill ] [ 'name' ]}&nbsp;:&nbsp;${player_stats [ 'skills' ] [ mastery ] [ skill ]}`
+            );
+        } );
+    } );
+    
+    return ret;
+};
+
+
+/**
  * Refresh player skills
  */
 var display_player_skills = function () {
     // Flush old list
     $( 'ul#player-skills li' ).remove ();
-
+    
     /**
      * Skills list
      * @type {dom}
      */
-    let el_ul = $( 'ul#player-skills' );
+    let el_ul_main = $( 'ul#player-skills' );
 
     /**
-     * Sorted acquired skills
+     * All skill acquired sorted per mastery
+     * @type {dict}
+     */
+    let datas = player_skills_to_display ();
+    
+    /**
+     * Sorted acquired masteries
      * @type {string[]}
      */
-    let skills = Object.keys ( player_stats [ 'skills' ] );
-    skills.sort ();
+    let masteries = Object.keys ( datas );
+    masteries.sort ();
     
-    skills.forEach ( function ( skill ) {
-        let el_li = $( '<li />' ).html (
-            `${skill}&nbsp;:&nbsp;${player_stats [ 'skills' ] [ skill ]}`
-        );
+    masteries.forEach ( function ( mastery ) {
+        /**
+         * Mastery list
+         * @type {dom}
+         */
+        let el_ul = $( '<ul />' );
         
-        el_ul.append ( el_li );
+        /**
+         * Sorted acquired skills
+         * @type {string[]}
+         */
+        let skills = datas [ mastery ];
+        skills.sort ();
+        
+        skills.forEach ( function ( skill ) {
+            /**
+             * Skill element
+             * @type {dom}
+             */
+            let el_li = $( '<li />' ).html (
+                skill
+            );
+            
+            el_ul.append ( el_li );
+        } );
+        
+        /**
+         * Mastery element
+         * @type {dom}
+         */
+        let el_li = $( '<li />' ).html ( mastery ).append ( el_ul );
+        el_ul_main.append ( el_li );
     } );
 };
 
@@ -175,15 +250,24 @@ var display_player_skills = function () {
  * @param {string} skill Skill name
  * @param {int} level Skill level
  */
-var update_player_skills = function ( skill, level ) {
+var update_player_skills = function ( mastery, skill, level ) {
+    if ( ( mastery in player_stats [ 'skills' ] ) == false ) {
+        player_stats [ 'skills' ] [ mastery ] = {};
+    }
+    
     if ( level !== 0 ) {
         // Add/update skill level
-        player_stats [ 'skills' ] [ skill ] = level;
+        player_stats [ 'skills' ] [ mastery ] [ skill ] = level;
     } else {
-        if ( skill in player_stats [ 'skills' ] ) {
+        if ( skill in player_stats [ 'skills' ] [ mastery ] ) {
             // Delete skill from list
-            delete ( player_stats [ 'skills' ] [ skill ] );
+            delete ( player_stats [ 'skills' ] [ mastery ] [ skill ] );
         }
+    }
+
+    if ( Object.keys ( player_stats [ 'skills' ] [ mastery ] ).length === 0 ) {
+        // No skill for current mastery, remove it
+        delete ( player_stats [ 'skills' ] [ mastery ] );
     }
     
     display_player_skills ();    
