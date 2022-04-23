@@ -5,7 +5,8 @@
 var datas_loaded = {
     'global': false,
     'mastery_1': false,
-    'mastery_2': false
+    'mastery_2': false,
+    'build': false
 };
 
 
@@ -308,10 +309,6 @@ var load_mastery = function ( mastery ) {
             
             display_player_masteries ();
             
-            for ( let i = 0 ; i < 7 ; i++ ) {
-                left_click_mastery ( mastery );
-            }
-            
             // Load next datas
             load_datas ();
         }
@@ -377,8 +374,15 @@ var load_datas = function () {
             return true;
         }
         
+        load_datas ();
         // Only one mastery
         return false;
+    }
+
+    if ( datas_loaded [ 'build' ] === false ) {
+        datas_loaded [ 'build' ] = true;
+        load_build ();
+        return true;
     }
     
     // Nothing more to load
