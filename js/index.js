@@ -34,6 +34,13 @@ var hightligh = false;
 
 
 /**
+ * Build base url
+ * @param {string}
+ */
+var build_base_url = './build.html';
+
+
+/**
  * Store all mastery assoc en>fr & fr>en
  *
  * @param {dict} All mastery name (en>fr)
@@ -112,11 +119,20 @@ var create_class_link = function ( mastery_1, mastery_2 ) {
         return '';
     }
     
+    /**
+     * Build url
+     * @type {string}
+     */
+    let url = `${build_base_url}?m1=m:${mastery_1}`;
+    if ( mastery_2 !== 'base' ) {
+        url = `${url}&m2=m:${mastery_2}`;
+    }
+    
     return $(
         '<a />'
     ).attr (
         'href',
-        'http://www.google.fr'
+        url
     ).html (
         string_remove_nbsp (
             class_name,

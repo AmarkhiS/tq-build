@@ -23,6 +23,13 @@ var mastery_name_fr = {};
 
 
 /**
+ * Build base url
+ * @param {string}
+ */
+var build_base_url = './build.html';
+
+
+/**
  * Parse classes datas to sort by mono/duo
  *
  * @param {dict} datas Classes datas
@@ -97,7 +104,7 @@ var parse_classes_base = function () {
             '<a />'
         ).attr (
             'href',
-            'http://www.google.fr'
+            `${build_base_url}?m1=m:${mastery}`
         ).html (
             class_name
         ).prepend (
@@ -213,7 +220,7 @@ var parse_classes_combo = function () {
             '<a />'
         ).attr (
             'href',
-            'http://www.google.fr'
+            `${build_base_url}?m1=m:${masteries [ 0 ]}?m2=m:${masteries [ 1 ]}`
         ).html (
             tq_class
         );
