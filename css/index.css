@@ -68,3 +68,15 @@ div#classes table th img {
 .highligth {
     background-color: rgba(0, 123, 167, 0.1) !important;
 }
+
+
+div#header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+div#footer {
+    text-align: center;
+    margin-top: 20px;
+}
