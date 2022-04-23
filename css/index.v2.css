@@ -1,0 +1,72 @@
+div[id^="classes-"] {
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+
+div#classes-combo {
+    margin-top: 50px;
+}
+
+
+div[id^="classes-"] > div {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 250px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+div#classes-combo > div {
+    text-align: left;
+}
+
+
+div[id^="classes-"] > div > a {
+    line-height: 35px;
+    margin: auto;
+    display: inline-block;
+}
+
+
+div#classes-combo > div > a {
+    margin-left: 10px;
+}
+
+    
+div[id^="classes-"] > div img {
+    display: inline-block;
+    float: left;
+    max-height: 35px;
+    margin-right: 10px;
+}
+
+
+div#filter-classes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+div#filter-classes select {
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+
+option.option-hr {
+    font-size: 1pt;
+    background-color: #fff;
+}
+
+
+.hide {
+    display: none !important;
+}
