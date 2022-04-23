@@ -325,6 +325,7 @@ var init_handler_skills = function () {
             $( event.target ).data ( 'mastery' ),
             $( event.target ).data ( 'skill' )
         );
+        generate_build_url ();
     } );
     
     
@@ -336,6 +337,7 @@ var init_handler_skills = function () {
             $( event.target ).data ( 'mastery' ),
             $( event.target ).data ( 'skill' )
         );
+        generate_build_url ();
         return false;
     } );
 };

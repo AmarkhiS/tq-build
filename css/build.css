@@ -155,3 +155,15 @@ div#display-stats > div {
     left: 50%;
     transform: translate(0,-50%);
 }
+
+
+input#export-build::placeholder {
+    color: #000;
+    font-style: italic;
+}
+
+
+input#export-build {
+    cursor: pointer;
+    color: #000;
+}

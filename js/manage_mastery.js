@@ -139,6 +139,7 @@ var init_handler_mastery = function () {
         left_click_mastery (
             $( event.target ).data ( 'mastery' )
         );
+        generate_build_url ();
     } );
     
     
@@ -149,6 +150,7 @@ var init_handler_mastery = function () {
         right_click_mastery (
             $( event.target ).data ( 'mastery' )
         );
+        generate_build_url ();
         return false;
     } );
 };
