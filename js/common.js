@@ -20,3 +20,15 @@ var array_str_sort_desc = function ( arr ) {
         return b.localeCompare ( a );
     } );
 };
+
+
+/**
+ * Decode html entities
+ *
+ * @param {string} value Value to decode
+ *
+ * @return {string} Value decoded
+ */
+var decode_html_entities = function ( value ) {
+    return $( '<div/>' ).html ( value ).text ();
+};

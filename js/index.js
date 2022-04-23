@@ -9,10 +9,17 @@ var classes = {
 
 
 /**
- * Translated mastery name
+ * Mastery name (EN)
  * @type {dict}
  */
 var mastery_name = {};
+
+
+/**
+ * Mastery name (FR)
+ * @type {dict}
+ */
+var mastery_name_fr = {};
 
 
 /**
@@ -34,18 +41,6 @@ var parse_classes = function ( datas ) {
 
 
 /**
- * Decode html entities
- *
- * @param {string} value Value to decode
- *
- * @return {string} Value decoded
- */
-var decode_html_entities = function ( value ) {
-    return $( '<div/>' ).html ( value ).text ();
-};
-
-
-/**
  * Parse classes list to a clean ordered display
  *
  * @return {dict} Classes
@@ -62,9 +57,7 @@ var parse_classes_base = function () {
      * @type {string[]}
      */
     let tq_classes = Object.keys ( classes [ 'base' ] );
-    tq_classes.sort ( function ( a, b ) {
-        return a.localeCompare ( b );
-    } );
+    array_str_sort_asc ( tq_classes );
     
     tq_classes.forEach ( function ( tq_class ) {
         /**
@@ -111,7 +104,10 @@ var parse_classes_base = function () {
             el_img
         );
 
-        ret [ class_name ] = el_name;
+        ret [ class_name ] = {
+            'mastery': mastery,
+            'el': el_name
+        };
     } );
     
     return ret;
@@ -139,13 +135,17 @@ var display_classes_base = function () {
      * @type {str[]}
      */
     let tq_classes = Object.keys ( datas );
-    tq_classes.sort ( function ( a, b ) {
-        return a.localeCompare ( b );
-    } );
+    array_str_sort_asc ( tq_classes );
     
     tq_classes.forEach ( function ( tq_class ) {
         el_div.append (
-            $( '<div />' ).append ( datas [ tq_class ] )
+            $(
+                '<div />'
+            ).addClass (
+                `mastery-${datas [ tq_class ] [ 'mastery' ]}`
+            ).append (
+                datas [ tq_class ] [ 'el' ]
+            )
         );
     } );
 };
@@ -197,6 +197,7 @@ var parse_classes_combo = function () {
         masteries.forEach ( function ( mastery ) {
             masteries_fr [ decode_html_entities ( mastery_name [ mastery ] ) ] = mastery;
         } );
+        
         /**
          * French masteries of current class
          * @type {string[]}
@@ -240,7 +241,11 @@ var parse_classes_combo = function () {
             );
         } );
         
-        ret [ tq_class ] = el_name;
+        ret [ tq_class ] = {
+            'mastery_1': datas [ tq_class ] [ 'mastery_1' ],
+            'mastery_2': datas [ tq_class ] [ 'mastery_2' ],
+            'el': el_name
+        };
     } );
     
     return ret;
@@ -272,7 +277,15 @@ var display_classes_combo = function () {
     
     tq_classes.forEach ( function ( tq_class ) {
         el_div.append (
-            $( '<div />' ).append ( datas [ tq_class ] )
+            $(
+                '<div />'
+            ).addClass (
+                `mastery-${datas [ tq_class ] [ 'mastery_1' ]}`
+            ).addClass (
+                `mastery-${datas [ tq_class ] [ 'mastery_2' ]}`
+            ).append (
+                datas [ tq_class ] [ 'el' ]
+            )
         );
     } );
 };
@@ -340,6 +353,19 @@ var create_filter = function () {
 
 
 /**
+ * Store all mastery assoc en>fr & fr>en
+ *
+ * @param {dict} All mastery name (en>fr)
+ */
+var parse_masteries = function ( datas ) {
+    mastery_name = datas;
+    for ( let mastery in mastery_name ) {
+        mastery_name_fr [ mastery_name [ mastery ] ] = mastery;
+    }
+};
+
+
+/**
  * Load global datas
  */
 var load_global_datas = function () {
@@ -351,7 +377,9 @@ var load_global_datas = function () {
                 datas [ 'classes' ]
             );
             
-            mastery_name = datas [ 'mastery_name' ];
+            parse_masteries (
+                datas [ 'mastery_name' ]
+            );
             
             display_classes ();
             
