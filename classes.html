@@ -5,16 +5,23 @@
     <title>Titan quest - Calculator</title>
     <link rel="icon" type="image/png" href="http://kepry.free.fr/beee/img/favicon.png" />
     <link rel="stylesheet" href="./css/styles.css"/>
-    <link rel="stylesheet" href="./css/index.v3.css"/>
+    <link rel="stylesheet" href="./css/classes.css"/>
   </head>
   <body>
-    
-    <div id="classes">
-      <table></table>
+
+    <div id="filter-classes">
+      <select>
+        <option disabled selected>Ma&icirc;trise</option>
+        <option class="option-hr" disabled>&nbsp;</option>
+        <option value="all">Toutes</option>
+        <option class="option-hr" disabled>&nbsp;</option>
+      </select>
     </div>
+    <div id="classes-base"></div>
+    <div id="classes-combo"></div>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/index.v3.js"></script>
+    <script src="./js/classes.js"></script>
   </body>
 </html>

@@ -1,57 +1,70 @@
-div[id^="classes-"] {
+div#classes {
     text-align: center;
-    margin: 0;
-    margin-top: 50px;
 }
 
 
-div[id^="classes-"] > div {
-    display: inline-block;
-    margin-bottom: 20px;
-    width: 250px;
+div#classes table {
+    margin: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+
+div#classes table th,
+div#classes table td {
+    height: 100px;
+    width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+    text-align: center;
+    vertical-align: middle;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 
-div[id^="classes-"] > div > a {
-    line-height: 35px;
-    margin: auto;
-    display: inline-block;
+div#classes table th:nth-child(1),
+div#classes table tr:nth-child(1) > th:nth-child(3) {
+    border-left: unset;
 }
 
 
-div[id^="classes-"] > div img {
-    display: inline-block;
-    float: left;
-    max-height: 35px;
-    margin-right: 10px;
-}
-
-
-div#filter-classes {
-    text-align: center;
-    margin-top: 20px;
-}
-
-
-div#filter-classes select {
-    height: 30px;
-    width: 150px;
-    text-align: center;
+div#classes table tr:nth-child(2n+2) {
     background-color: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
 }
 
 
-option.option-hr {
-    font-size: 1pt;
-    background-color: #fff;
+div#classes table th:last-child,
+div#classes table td:last-child {
+    border-right: unset;
 }
 
 
-.hide {
-    display: none !important;
+div#classes table td.empty-cell {
+    border: unset;
+}
+
+
+div#classes table th {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+div#classes table td {
+    font-size: 9px;
+}
+
+
+div#classes table th img {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    max-height: 35px;
+}
+
+
+.highligth {
+    background-color: rgba(0, 123, 167, 0.1) !important;
 }
