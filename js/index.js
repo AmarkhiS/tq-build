@@ -130,6 +130,7 @@ var display_classes_base = function () {
     
     /**
      * Datas to display
+     * @type {dict}
      */
     let datas = parse_classes_base ();
     
@@ -163,13 +164,20 @@ var parse_classes_combo = function () {
     let ret = {};
 
     /**
-     * Ordered classes
+     * Classes indexes by name str
+     * @type {dict}
+     */
+    let datas = {};
+    for ( let tq_class in classes [ 'combo' ] ) {
+        datas [ decode_html_entities ( classes [ 'combo' ] [ tq_class ] [ 'name' ] ) ] = classes [ 'combo' ] [ tq_class ];
+    }
+    
+    /**
+     * All classes sorted by name
      * @type {string[]}
      */
-    let tq_classes = Object.keys ( classes [ 'combo' ] );
-    tq_classes.sort ( function ( a, b ) {
-        return a.localeCompare ( b );
-    } );
+    let tq_classes = Object.keys ( datas );
+    array_str_sort_asc ( tq_classes );
     
     tq_classes.forEach ( function ( tq_class ) {
         /**
@@ -177,29 +185,24 @@ var parse_classes_combo = function () {
          * @type {str}
          */
         let masteries = [
-            classes [ 'combo' ] [ tq_class ] [ 'mastery_1' ],
-            classes [ 'combo' ] [ tq_class ] [ 'mastery_2' ]
+            datas [ tq_class ] [ 'mastery_1' ],
+            datas [ tq_class ] [ 'mastery_2' ]
         ];
 
         /**
-         * Masteries on french version
+         * Assoc with current masteries fr
          * @type {dict}
          */
         let masteries_fr = {};
         masteries.forEach ( function ( mastery ) {
-            masteries_fr [ mastery_name [ mastery ] ] = mastery;
+            masteries_fr [ decode_html_entities ( mastery_name [ mastery ] ) ] = mastery;
         } );
-        
-        masteries = Object.keys ( masteries_fr );
-        masteries.sort ( function ( a, b ) {
-            return b.localeCompare ( a );
-        } );
-        
         /**
-         * Current class name
-         * @type {str}
+         * French masteries of current class
+         * @type {string[]}
          */
-        let class_name = classes [ 'combo' ] [ tq_class ] [ 'name' ];
+        let tmp = Object.keys ( masteries_fr );
+        array_str_sort_desc ( tmp );
         
         /**
          * Class name : link with image & name
@@ -211,12 +214,10 @@ var parse_classes_combo = function () {
             'href',
             'http://www.google.fr'
         ).html (
-            class_name
+            tq_class
         );
         
-        masteries.forEach ( function ( mastery ) {
-            mastery = masteries_fr [ mastery ];
-            
+        tmp.forEach ( function ( mastery_fr ) {
             /**
              * Class image
              * @type {dom}
@@ -225,21 +226,21 @@ var parse_classes_combo = function () {
                 '<img />'
             ).attr (
                 'src',
-                `./img/global/logo-${mastery}.png`
+                `./img/global/logo-${masteries_fr [ mastery_fr ]}.png`
             ).attr (
                 'alt',
-                decode_html_entities ( mastery_name [ mastery ] )
+                mastery_fr
             ).attr (
                 'title',
-                decode_html_entities ( mastery_name [ mastery ] )
+                mastery_fr
             );
             
             el_name.prepend (
                 el_img
             );
         } );
-
-        ret [ class_name ] = el_name;
+        
+        ret [ tq_class ] = el_name;
     } );
     
     return ret;
@@ -255,7 +256,11 @@ var display_classes_combo = function () {
      * @type {dom}
      */
     let el_div = $( 'div#classes-combo' );
-    
+
+    /**
+     * Classes to display
+     * @type {dict}
+     */
     let datas = parse_classes_combo ();
     
     /**
@@ -263,7 +268,7 @@ var display_classes_combo = function () {
      * @type {str[]}
      */
     let tq_classes = Object.keys ( datas );
-    tq_classes.sort ();
+    array_str_sort_asc ( tq_classes );
     
     tq_classes.forEach ( function ( tq_class ) {
         el_div.append (
