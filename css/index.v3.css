@@ -1,0 +1,48 @@
+div#classes {
+    border: 1px solid #ff0000;
+    text-align: center;
+}
+
+
+div#classes table {
+    margin: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+
+div#classes table th,
+div#classes table td {
+    border: 1px solid #0000ff;
+    height: 100px;
+    width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+div#classes table td.empty-cell {
+    border: unset;
+}
+
+
+div#classes table th {
+    font-size: 12px;
+}
+
+div#classes table td {
+    font-size: 9px;
+}
+
+div#classes table td a {
+}
+
+div#classes table th img {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    max-height: 35px;
+}

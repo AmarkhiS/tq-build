@@ -32,3 +32,16 @@ var array_str_sort_desc = function ( arr ) {
 var decode_html_entities = function ( value ) {
     return $( '<div/>' ).html ( value ).text ();
 };
+
+
+/**
+ * Replace all '&nbsp;' on text
+ *
+ * @param {string} value Text
+ * @param {string} replace Value to replace nbsp, default ' '
+ *
+ * @return {string} Text with nbsp replaced
+ */
+var string_remove_nbsp = function ( value, replace = ' ' ) {
+    return value.replaceAll ( '&nbsp;', replace );
+};
