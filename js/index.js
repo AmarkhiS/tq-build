@@ -373,19 +373,88 @@ var load_global_datas = function () {
         `./datas/global.json`,
         { _: new Date ().getTime () },
         function ( datas ) {
+            // Parse classes datas
             parse_classes (
                 datas [ 'classes' ]
             );
             
+            // Parse masteries datas
             parse_masteries (
                 datas [ 'mastery_name' ]
             );
             
+            // Display all classes
             display_classes ();
             
+            // Create filter
             create_filter ();
+
+            // Init handler
+            init_handler ();
         }
     );
+};
+
+
+/**
+ * Hide all classes
+ */
+var add_filter_classes = function () {
+    $( 'div[class^="mastery-"]' ).addClass (
+        'hide'
+    );
+};
+
+
+/**
+ * Show all classes
+ */
+var remove_filter_classes = function () {
+    $( 'div[class^="mastery-"]' ).removeClass (
+        'hide'
+    );
+};
+
+
+/**
+ * Filter classes : show only classes with mastery
+ *
+ * @param {string} mastery Mastery to filter classes
+ *
+ * @return {bool} True if correct mastery. False otherwise
+ */
+var filter_classes = function ( mastery ) {
+    // Show all
+    remove_filter_classes ();
+    
+    if ( ( mastery in mastery_name ) === false ) {
+        return false;
+    }
+    
+    // Hide all
+    add_filter_classes ();
+    
+    // Show fitered
+    $( `div.mastery-${mastery}` ).removeClass (
+        'hide'
+    );
+    
+    return true;
+};
+
+
+/**
+ * Init all handler
+ */
+var init_handler = function () {
+    /**
+     * Handler to match filter change
+     */
+    $( 'div#filter-classes select' ).on ( 'change', function ( event ) {
+        filter_classes (
+            $( event.target ).val ()
+        );
+    } );
 };
 
 
