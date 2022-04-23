@@ -66,6 +66,28 @@ var left_click_mastery  = function ( mastery ) {
 
 
 /**
+ * Valid if mastery could be reduce (check min level required to skills)
+ *
+ * @param {string} mastery Current mastery to check
+ * @param {int} level Mastery level to valid
+ *
+ * @return {bool} True of level could be reduce. False otherwise
+ */
+var is_mastery_skill_dep = function ( mastery, level ) {
+    if ( ( mastery in player_stats [ 'mastery_level_required' ] ) === false ) {
+        // No mastery level found
+        return false;
+    }
+    
+    if ( level >= player_stats [ 'mastery_level_required' ] [ mastery ] ) {
+        return true;
+    }
+    
+    return false;
+};
+
+
+/**
  * Handler : mastery right click : remove one level to mastery
  *
  * @param {string} mastery Current mastery
@@ -84,11 +106,22 @@ var right_click_mastery  = function ( mastery ) {
         return false;
     }
     
+    /**
+     * Next mastery level
+     * @type {int}
+     */
+    let level = current_mastery_level - 1;
+    
+    if ( is_mastery_skill_dep ( mastery, level ) === false ) {
+        // Mastery level required to a skill
+        return false;
+    }
+    
     update_mastery_gauge (
         mastery,
-        --current_mastery_level
+        level
     );
-
+    
     update_player_mastery_points ( false );
 
     return true;

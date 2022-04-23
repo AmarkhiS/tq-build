@@ -9,7 +9,8 @@ var player_stats = {
     'int': 0,
     'dex': 0,
     'skills': {},
-    'mastery_point': 0
+    'mastery_point': 0,
+    'mastery_level_required': {}
 };
 
 
@@ -245,6 +246,43 @@ var display_player_skills = function () {
 
 
 /**
+ * Update required level to each mastery
+ *
+ * @param {string} mastery Mastery to calcul required level
+ *
+ * @return {bool} False if no skill to check. True otherwise
+ */
+var update_player_mastery_level_required = function ( mastery ) {
+    if ( ( mastery in player_stats [ 'mastery_level_required' ] ) === false ) {
+        player_stats [ 'mastery_level_required' ] [ mastery ] = 0;
+    }
+    
+    if ( typeof ( player_stats [ 'skills' ] [ mastery ] ) === undefined ) {
+        // No skill to check
+        player_stats [ 'mastery_level_required' ] [ mastery ] = 0;
+        return false;
+    }
+
+    /**
+     * All skill levels to mastery
+     * @param {int[]}
+     */
+    let skill_levels = [];
+    
+    for ( let skill_id in player_stats [ 'skills' ] [ mastery ] ) {
+        skill_levels.push ( masteries_skills [ mastery ] [ skill_id ] [ 'mastery_level' ] );
+    }
+    
+    player_stats [ 'mastery_level_required' ] [ mastery ] = Math.max.apply (
+        Math,
+        skill_levels
+    );
+    
+    return true;
+};
+
+
+/**
  * Update player skills
  *
  * @param {string} skill Skill name
@@ -270,7 +308,11 @@ var update_player_skills = function ( mastery, skill, level ) {
         delete ( player_stats [ 'skills' ] [ mastery ] );
     }
     
-    display_player_skills ();    
+    display_player_skills ();
+    
+    update_player_mastery_level_required (
+        mastery
+    );
 };
 
 
