@@ -1,5 +1,4 @@
 div#classes {
-    border: 1px solid #ff0000;
     text-align: center;
 }
 
@@ -14,13 +13,31 @@ div#classes table {
 
 div#classes table th,
 div#classes table td {
-    border: 1px solid #0000ff;
     height: 100px;
     width: 100px;
     max-height: 100px;
     max-width: 100px;
     text-align: center;
     vertical-align: middle;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+div#classes table th:nth-child(1),
+div#classes table tr:nth-child(1) > th:nth-child(3) {
+    border-left: unset;
+}
+
+
+div#classes table tr:nth-child(2n+2) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+div#classes table th:last-child,
+div#classes table td:last-child {
+    border-right: unset;
 }
 
 
@@ -31,18 +48,23 @@ div#classes table td.empty-cell {
 
 div#classes table th {
     font-size: 12px;
+    cursor: pointer;
 }
+
 
 div#classes table td {
     font-size: 9px;
 }
 
-div#classes table td a {
-}
 
 div#classes table th img {
     display: block;
     margin: auto;
     margin-bottom: 5px;
     max-height: 35px;
+}
+
+
+.highligth {
+    background-color: rgba(0, 123, 167, 0.1) !important;
 }

@@ -18,7 +18,19 @@ var mastery_name = {};
  */
 var mastery_name_fr = {};
 
+
+/**
+ * Sort class per masteries
+ * @type {doc}
+ */
 var masteries_class = {};
+
+
+/**
+ * Highlighting mastery flag
+ * @type {bool|string}
+ */
+var hightligh = false;
 
 
 /**
@@ -135,14 +147,22 @@ var create_mastery_cell = function ( mastery, mastery_fr ) {
     ).attr (
         'alt',
         mastery_fr
+    ).data (
+        'mastery',
+        mastery
     );
     
     return $(
         '<th />'
+    ).addClass (
+        `mastery-${mastery}`
     ).append (
         el_img
     ).append (
         mastery_fr
+    ).data (
+        'mastery',
+        mastery
     );
 };
 
@@ -189,6 +209,8 @@ var add_row = function ( mastery_row, masteries_col ) {
      */
     let el_td = $(
         '<td />'
+    ).addClass (
+        `mastery-${mastery_row_name}`
     ).html (
         create_class_link (
             mastery_row_name,
@@ -212,6 +234,10 @@ var add_row = function ( mastery_row, masteries_col ) {
          */
         let el_td = $(
             '<td />'
+        ).addClass (
+            `mastery-${mastery_row_name}`
+        ).addClass (
+            `mastery-${mastery_col_name}`
         ).html (
             create_class_link (
                 mastery_row_name,
@@ -367,8 +393,73 @@ var load_global_datas = function () {
             
             // Create classes table
             display_classes ();
+            
+            // Init handler
+            init_handler ();
         }
     );
+};
+
+
+/**
+ * Remove all highligth
+ */
+var remove_highlight = function () {
+    $( '.highligth' ).removeClass (
+        'highligth'
+    );
+};
+
+
+/**
+ * Add highligth on all classes of a mastery
+ *
+ * @param {string} mastery Mastery to find all classes to highlight
+ */
+var add_highlight = function ( mastery ) {
+    $( `.mastery-${mastery}` ).addClass (
+        'highligth'
+    );
+};
+
+
+/**
+ * Hightlight all classes of a mastery
+ *
+ * @param {string} mastery Mastery to find all classes to highligth
+ *
+ * @return {bool} False if remove old highligth. True otherwise
+ */
+var highligh_mastery = function ( mastery ) {
+    // Flush all highlight
+    remove_highlight ();
+    
+    if ( hightligh === mastery ) {
+        hightligh = false;
+        return false;
+    }
+    
+    // Highlight on a mastery
+    add_highlight (
+        mastery
+    );
+    hightligh = mastery;
+    return true;
+};
+
+
+/**
+ * Init all handler
+ */
+var init_handler = function () {
+    /**
+     * Handler to match mastery click
+     */
+    $( 'div#classes table' ).on ( 'click', 'th', function ( event ) {
+        highligh_mastery (
+            $( event.target ).data ( 'mastery' )
+        );
+    } );
 };
 
 
