@@ -387,5 +387,4 @@ var load_datas = function () {
 
 
 $( function () {
-    load_datas ();
 } );

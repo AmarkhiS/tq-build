@@ -109,7 +109,7 @@ var display_player_masteries = function () {
      * @type {string[]}
      */
     let masteries = Object.keys ( masteries_mastery );
-    masteries.sort ();
+    array_str_sort_asc ( masteries );
 
     masteries.forEach ( function ( mastery ) {
         /**
@@ -206,7 +206,7 @@ var display_player_skills = function () {
      * @type {string[]}
      */
     let masteries = Object.keys ( datas );
-    masteries.sort ();
+    array_str_sort_asc ( masteries );
     
     masteries.forEach ( function ( mastery ) {
         /**
@@ -220,7 +220,7 @@ var display_player_skills = function () {
          * @type {string[]}
          */
         let skills = datas [ mastery ];
-        skills.sort ();
+        array_str_sort_asc ( skills );
         
         skills.forEach ( function ( skill ) {
             /**
