@@ -97,9 +97,9 @@ var parse_get_params = function ( name ) {
 
 
 /**
- * Load build from get params
+ * Load builds from get params
  */
-var load_build = function () {
+var load_builds = function () {
     /**
      * Masteries name
      * @type {string[]}
@@ -137,6 +137,8 @@ var load_build = function () {
             }
         } );
     } );
+
+    hide_skill_infos ();
 };
 
 

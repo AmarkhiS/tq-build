@@ -381,7 +381,7 @@ var load_datas = function () {
 
     if ( datas_loaded [ 'build' ] === false ) {
         datas_loaded [ 'build' ] = true;
-        load_build ();
+        load_builds ();
         return true;
     }
     
