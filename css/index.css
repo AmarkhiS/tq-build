@@ -1,10 +1,6 @@
 div[id^="classes-"] {
     text-align: center;
     margin: 0;
-    margin-top: 20px;
-}
-
-div#classes-combo {
     margin-top: 50px;
 }
 
@@ -30,4 +26,32 @@ div[id^="classes-"] > div img {
     float: left;
     max-height: 35px;
     margin-right: 10px;
+}
+
+
+div#filter-classes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+div#filter-classes select {
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+
+option.option-hr {
+    font-size: 1pt;
+    background-color: #fff;
+}
+
+
+.hide {
+    display: none !important;
 }

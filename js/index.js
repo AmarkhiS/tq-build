@@ -291,6 +291,55 @@ var display_classes = function () {
 
 
 /**
+ * Fill filter with all masteries
+ */
+var create_filter = function () {
+    /**
+     * Select to add all options
+     * @type {dom}
+     */
+    let el_select = $( 'div#filter-classes select' );
+
+    /**
+     * All masteries indexed by fr name
+     * @type {dict}
+     */
+    let masteries = {};
+    
+    for ( let mastery in mastery_name ) {
+        masteries [ decode_html_entities ( mastery_name [ mastery ] ) ] = {
+            'name_fr': mastery_name [ mastery ],
+            'name': mastery
+        };
+    };
+    
+    /**
+     * All masteries
+     * @type {string[]}
+     */
+    let tmp = Object.keys  ( masteries );
+    array_str_sort_asc ( tmp );
+    
+    tmp.forEach ( function ( mastery ) {
+        /**
+         * Option element
+         * @type {dom}
+         */
+        let el_opt = $(
+            '<option />'
+        ).attr (
+            'value',
+            masteries [ mastery ] [ 'name' ]
+        ).html (
+            masteries [ mastery ] [ 'name_fr' ]
+        );
+        
+        el_select.append ( el_opt );
+    } );
+};
+
+
+/**
  * Load global datas
  */
 var load_global_datas = function () {
@@ -305,6 +354,8 @@ var load_global_datas = function () {
             mastery_name = datas [ 'mastery_name' ];
             
             display_classes ();
+            
+            create_filter ();
         }
     );
 };
