@@ -181,3 +181,13 @@ div#alert-msg {
     z-index: 1000;
     display: none;
 }
+
+
+div#masteries div[id^=div-mastery-]:last-child {
+    margin-top: 20px;
+}
+
+
+div#masteries div[id^=div-mastery-] table tr {
+    background-color: rgba(17, 17, 17, 0.4);
+}
