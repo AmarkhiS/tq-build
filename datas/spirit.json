@@ -67,26 +67,25 @@
             "name": "Aura&nbsp;glaciale",
             "mastery_level": 1,
             "max": 6,
-            "dep_up": "04"
+            "dep_up": [ "04", "12" ]
         },
         "02": {
             "name": "Absorption&nbsp;de&nbsp;vie",
             "mastery_level": 1,
             "max": 12,
-            "dep_up": "07"
+            "dep_up": [ "07", "21" ]
         },
         "03": {
             "name": "Triple&nbsp;attaque",
             "mastery_level": 4,
             "max": 12,
-            "dep_up": "11"
+            "dep_up": [ "11" ]
         },
         "04": {
             "name": "Ravages&nbsp;du&nbsp;temps",
             "mastery_level": 4,
             "max": 8,
-            "dep_down": "01",
-            "dep_up": "12"
+            "dep_down": [ "01" ]
         },
         "05": {
             "name": "Vision&nbsp;mortelle",
@@ -97,44 +96,43 @@
             "name": "Bouclier&nbsp;spirituel",
             "mastery_level": 4,
             "max": 8,
-            "dep_up": "10"
+            "dep_up": [ "10" ]
         },
         "07": {
             "name": "Cascade",
             "mastery_level": 10,
             "max": 10,
-            "dep_down": "02",
-            "dep_up": "21"
+            "dep_down": [ "02" ]
         },
         "08": {
             "name": "Alliance&nbsp;noire",
             "mastery_level": 10,
             "max": 6,
-            "dep_up": "15"
+            "dep_up": [ "15" ]
         },
         "09": {
             "name": "Invocation&nbsp;du&nbsp;Roi&nbsp;spectre",
             "mastery_level": 10,
             "max": 16,
-            "dep_up": "14"
+            "dep_up": [ "14" ]
         },
         "10": {
             "name": "Fl&eacute;au&nbsp;psychique",
             "mastery_level": 10,
             "max": 6,
-            "dep_down": "06"
+            "dep_down": [ "06" ]
         },
         "11": {
             "name": "Secrets&nbsp;de&nbsp;l&quot;arcane",
             "mastery_level": 16,
             "max": 6,
-            "dep_down": "03"
+            "dep_down": [ "03" ]
         },
         "12": {
             "name": "N&eacute;crose",
             "mastery_level": 16,
             "max": 8,
-            "dep_down": "04"
+            "dep_down": [ "01" ]
         },
         "13": {
             "name": "Asservissement&nbsp;des&nbsp;ennemis",
@@ -145,21 +143,21 @@
             "name": "Onde&nbsp;mortelle",
             "mastery_level": 16,
             "max": 12,
-            "dep_down": "09",
-            "dep_up": "16"
+            "dep_down": [ "09" ],
+            "dep_up": [ "16" ]
         },
         "15": {
             "name": "Pouvoir&nbsp;surnaturel",
             "mastery_level": 24,
             "max": 8,
-            "dep_down": "08"
+            "dep_down": [ "08" ]
         },
         "16": {
             "name": "Presence&nbsp;att&eacute;nu&eacute;e",
             "mastery_level": 24,
             "max": 12,
-            "dep_down": "14",
-            "dep_up": "20"
+            "dep_down": [ "14" ],
+            "dep_up": [ "20" ]
         },
         "17": {
             "name": "Cercle&nbsp;de&nbsp;puissance",
@@ -180,13 +178,13 @@
             "name": "Attaque&nbsp;mystique",
             "mastery_level": 32,
             "max": 16,
-            "dep_down": "16"
+            "dep_down": [ "16" ]
         },
         "21": {
             "name": "Absorption_d&quot;&acirc;me",
             "mastery_level": 40,
             "max": 6,
-            "dep_down": "07"
+            "dep_down": [ "02" ]
         },
         "22": {
             "name": "Tourbillon&nbsp;d&quot;&acirc;mes",

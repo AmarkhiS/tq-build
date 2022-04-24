@@ -70,13 +70,13 @@
 	    "name": "Conscience&nbsp;du&nbsp;combat",
 	    "mastery_level": 1,
 	    "max": 12,
-	    "dep_up": "10"
+	    "dep_up": [ "10", "16" ]
 	},
 	"03": {
 	    "name": "Frappe&nbsp;de&nbsp;bouclier",
 	    "mastery_level": 1,
 	    "max": 12,
-	    "dep_up": "13"
+	    "dep_up": [ "13" ]
 	},
 	"04": {
 	    "name": "Connaissance&nbsp;des&nbsp;armures",
@@ -87,13 +87,13 @@
 	    "name": "Adr&eacute;naline",
 	    "mastery_level": 4,
 	    "max": 12,
-	    "dep_up": "09"
+	    "dep_up": [ "09", "15" ]
 	},
 	"06": {
 	    "name": "Nouveau&nbsp;souffle",
 	    "mastery_level": 4,
 	    "max": 12,
-	    "dep_up": "12"
+	    "dep_up": [ "12", "18" ]
 	},
 	"07": {
 	    "name": "R&eacute;cup&eacute;ration&nbsp;rapide",
@@ -109,31 +109,31 @@
 	    "name": "Fr&eacute;quence",
 	    "mastery_level": 10,
 	    "max": 6,
-	    "dep_down": "05"
+	    "dep_down": [ "05" ]
 	},
 	"10": {
 	    "name": "Concentration",
 	    "mastery_level": 10,
 	    "max": 6,
-	    "dep_down": "02"
+	    "dep_down": [ "02" ]
 	},
 	"11": {
 	    "name": "Charge&nbsp;de&nbsp;bouclier",
 	    "mastery_level": 10,
 	    "max": 12,
-	    "dep_up": "17"
+	    "dep_up": [ "17" ]
 	},
 	"12": {
 	    "name": "Inspiration",
 	    "mastery_level": 16,
 	    "max": 6,
-	    "dep_down": "06"
+	    "dep_down": [ "06" ]
 	},
 	"13": {
 	    "name": "Perce-armure",
 	    "mastery_level": 16,
 	    "max": 12,
-	    "dep_down": "03"
+	    "dep_down": [ "03" ]
 	},
 	"14": {
 	    "name": "D&eacute;s&eacute;quilibre",
@@ -144,25 +144,25 @@
 	    "name": "R&eacute;action&nbsp;d&eacute;fensive",
 	    "mastery_level": 24,
 	    "max": 8,
-	    "dep_down": "05"
+	    "dep_down": [ "05" ]
 	},
 	"16": {
 	    "name": "Volont&eacute;&nbsp;de&nbsp;fer",
 	    "mastery_level": 24,
 	    "max": 6,
-	    "dep_down": "02"
+	    "dep_down": [ "02" ]
 	},
 	"17": {
 	    "name": "&Eacute;branlement",
 	    "mastery_level": 24,
 	    "max": 6,
-	    "dep_down": "11"
+	    "dep_down": [ "11" ]
 	},
 	"18": {
 	    "name": "Renversement",
 	    "mastery_level": 32,
 	    "max": 12,
-	    "dep_down": "06"
+	    "dep_down": [ "06" ]
 	},
 	"19": {
 	    "name": "Colosse",

@@ -149,20 +149,21 @@ var is_skill_down_dep = function ( mastery, skill ) {
         // Dep down required but no skill acquired
         return false;
     }
-
+    
     /**
-     * Skill down (dep) id
-     * @type {string}
+     * Skill has down dep
+     * @type {bool}
      */
-    let skill_down = masteries_skills [ mastery ] [ skill ] [ 'dep_down' ];
+    let ret = false;
     
-    if ( ( skill_down in player_stats [ 'skills' ] [ mastery ] ) === false ) {
-        // Dep not acquired
-        return false;
-    }
+    masteries_skills [ mastery ] [ skill ] [ 'dep_down' ].forEach ( function ( skill_down ) {
+        if ( skill_down in player_stats [ 'skills' ] [ mastery ] ) {
+            // Dep acquired
+            ret = true;
+        }
+    } );
     
-    // Down dep acquired
-    return true;
+    return ret;
 };
 
 
@@ -233,18 +234,19 @@ var is_skill_up_dep = function ( mastery, skill ) {
     }
     
     /**
-     * Skill up (dep) id
-     * @type {string}
+     * Skill has up dep
+     * @type {bool}
      */
-    let skill_up = masteries_skills [ mastery ] [ skill ] [ 'dep_up' ];
+    let ret = false;
     
-    if ( ( skill_up in player_stats [ 'skills' ] [ mastery ] ) === false ) {
-        // Dep not acquired
-        return false;
-    }
+    masteries_skills [ mastery ] [ skill ] [ 'dep_up' ].forEach ( function ( skill_up ) {
+        if ( skill_up in player_stats [ 'skills' ] [ mastery ] ) {
+            // Dep acquired
+            ret = true;
+        }
+    } );
     
-    // Up dep acquired
-    return true;
+    return ret;
 };
 
 
