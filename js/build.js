@@ -272,6 +272,11 @@ var init_handler_build = function () {
     $( '#export-build' ).on ( 'click', function ( event ) {
         $( event.target ).select ();
         document.execCommand ( 'copy' );
+        
+        $( 'div#alert-msg' ).css ( 'display', 'block' );
+        setTimeout ( function () {
+            $( 'div#alert-msg' ).css ( 'display', 'none' );
+        }, 1000 );
     } );
     
     /**
