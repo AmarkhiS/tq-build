@@ -290,7 +290,6 @@ var load_mastery = function ( mastery ) {
     els_table_mastery [ mastery ] = $( '<table />' ).addClass ( `mastery-${mastery}` );
     el_div_masteries.append ( els_mastery [ mastery ] );
     
-    
     $.getJSON (
         `./datas/${mastery}.json`,
         { _: new Date ().getTime () },

@@ -19,6 +19,10 @@ var mastery_2 = null;
 var build_datas = {};
 
 
+/**
+ * URL : /build/
+ * @type {?string}
+ */
 var current_url = null;
 
 
@@ -164,6 +168,12 @@ var builds_from_url = function () {
     
     mastery_1 = datas [ 'mastery' ];
     build_datas [ mastery_1 ] = datas;
+    
+    datas = parse_get_params ( 'm2' );
+    if ( datas [ 'mastery' ] !== null ) {
+        mastery_2 = datas [ 'mastery' ];
+        build_datas [ mastery_2 ] = datas;
+    }
 };
 
 
