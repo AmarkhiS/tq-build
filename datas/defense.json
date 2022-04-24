@@ -17,7 +17,7 @@
 		"3": "pipe",
 		"5": "top-bracket",
 		"6": "16",
-		"7": "tp",
+		"7": "top-bracket",
 		"8": "17"
 	    },
 	    "16": {
@@ -32,7 +32,7 @@
 	    },
 	    "10": {
 		"1": "middle-bracket",
-		"2": "9",
+		"2": "09",
 		"3": "pipe",
 		"5": "middle-bracket",
 		"6": "10",
@@ -42,27 +42,27 @@
 	    },
 	    "4": {
 		"1": "bottom-bracket",
-		"2": "5",
+		"2": "05",
 		"3": "bottom-bracket",
-		"4": "6",
+		"4": "06",
 		"5": "pipe",
-		"8": "7",
+		"8": "07",
 		"9": "pipe",
-		"12": "8"
+		"12": "08"
 	    },
 	    "1": {
-		"2": "1",
+		"2": "01",
 		"5": "bottom-bracket",
-		"6": "2",
+		"6": "02",
 		"9": "bottom-bracket",
-		"10": "3",
-		"12": "4"
+		"10": "03",
+		"12": "04"
 	    }
 	}
     },
     "skills":{
 	"01": {
-	    "name": "&Eacute;tourdissement&nbsp;prolongé",
+	    "name": "&Eacute;tourdissement&nbsp;prolong&eacute;",
 	    "mastery_level": 1,
 	    "max": 8
 	},
@@ -133,7 +133,7 @@
 	    "name": "Perce-armure",
 	    "mastery_level": 16,
 	    "max": 12,
-	    "dep_down": "13"
+	    "dep_down": "03"
 	},
 	"14": {
 	    "name": "D&eacute;s&eacute;quilibre",
@@ -186,15 +186,15 @@
 	}	
     },
     "stats": {
-	"01": { "str": 2, "dex": 2, "health": 50 },
-	"02": { "str": 3, "dex": 4, "health": 100 },
-	"03": { "str": 5, "dex": 6, "health": 150 },
-	"04": { "str": 6, "dex": 8, "health": 200 },
-	"05": { "str": 8, "dex": 10, "health": 250 },
-	"06": { "str": 9, "dex": 12, "health": 300 },
-	"07": { "str": 11, "dex": 14, "health": 350 },
-	"08": { "str": 12, "dex": 16, "health": 400 },
-	"09": { "str": 14, "dex": 18, "health": 450 },
+	"1": { "str": 2, "dex": 2, "health": 50 },
+	"2": { "str": 3, "dex": 4, "health": 100 },
+	"3": { "str": 5, "dex": 6, "health": 150 },
+	"4": { "str": 6, "dex": 8, "health": 200 },
+	"5": { "str": 8, "dex": 10, "health": 250 },
+	"6": { "str": 9, "dex": 12, "health": 300 },
+	"7": { "str": 11, "dex": 14, "health": 350 },
+	"8": { "str": 12, "dex": 16, "health": 400 },
+	"9": { "str": 14, "dex": 18, "health": 450 },
 	"10": { "str": 15, "dex": 20, "health": 500 },
 	"11": { "str": 17, "dex": 22, "health": 550 },
 	"12": { "str": 18, "dex": 24, "health": 600 },
