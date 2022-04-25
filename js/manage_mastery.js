@@ -78,7 +78,7 @@ var left_click_mastery  = function ( mastery ) {
 var is_mastery_skill_dep = function ( mastery, level ) {
     if ( ( mastery in player_stats [ 'mastery_level_required' ] ) === false ) {
         // No mastery level found
-        return false;
+        return true;
     }
     
     if ( level >= player_stats [ 'mastery_level_required' ] [ mastery ] ) {
@@ -125,7 +125,7 @@ var right_click_mastery  = function ( mastery ) {
     );
     
     update_player_mastery_points ( false );
-
+    
     return true;
 };
 
