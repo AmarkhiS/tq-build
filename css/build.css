@@ -170,3 +170,13 @@ div#masteries div[id^=div-mastery-]:last-child {
 div#masteries div[id^=div-mastery-] table tr {
     background-color: rgba(17, 17, 17, 0.4);
 }
+
+
+span[id^="gauge-total-mastery-"] {
+    cursor: default;
+}
+
+
+td[class^="gauge-mastery-cell-"] {
+    cursor: default;
+}

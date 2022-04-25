@@ -30,6 +30,8 @@ var update_mastery_gauge = function ( mastery, level ) {
     } );
     
     display_player_masteries ();
+
+    $( `span#counter-mastery-${mastery}` ).html ( level );
     
     return true;
 };

@@ -225,6 +225,40 @@ var add_row = function ( mastery, el_table, row_datas, table_conf, mastery_level
 
 
 /**
+ * Create mastery gauge
+ *
+ * @param {string} mastery Mastery
+ *
+ * @return {dom} Element with gauge counter
+ */
+var create_mastery_gauge = function ( mastery ) {
+    /**
+     * Mastery counter
+     * @type {dom}
+     */
+    let el_counter = $(
+        '<span />'
+    ).attr (
+        'id',
+        `counter-mastery-${mastery}`
+    ).html (
+        0
+    );
+    
+    return $(
+        '<span />'
+    ).attr (
+        'id',
+        `gauge-total-mastery-${mastery}`
+    ).append (
+        el_counter
+    ).append (
+        ' / 40'
+    );
+};
+
+
+/**
  * Create mastery table
  *
  * @param {string} mastery Current mastery table
@@ -270,7 +304,11 @@ var create_table = function ( mastery, datas ) {
             mastery
         )
     );
-    els_table_mastery [ mastery ].append ( el_td );
+    els_table_mastery [ mastery ].append (
+        el_td
+    ).append (
+        create_mastery_gauge ( mastery )
+    );
     
     $( `#div-mastery-${mastery}` ).append ( els_table_mastery [ mastery ] );
 };
