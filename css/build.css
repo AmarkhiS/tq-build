@@ -1,24 +1,3 @@
-body {
-    font-family: mono;
-    font-size: 12px;
-    background-color: #000;
-    color: #fff;
-}
-
-
-a,
-a:hover,
-a:visited,
-a:active {
-    color: #fff;
-    text-decoration: unset;
-}
-
-a:hover {
-    font-style: italic;
-}
-
-
 table[class^="mastery-"] {
     border-spacing: 0;
     border-collapse: collapse;

@@ -1,9 +1,10 @@
 body {
-    font-family: mono;
-    font-size: 12px;
+    font-family: 'Albertus MT Std', sans-serif;
+    font-size: 13px;
     background-color: #000;
     color: #fff;
 }
+
 
 a,
 a:hover,
@@ -12,6 +13,7 @@ a:active {
     color: #fff;
     text-decoration: unset;
 }
+
 
 a:hover {
     font-style: italic;
