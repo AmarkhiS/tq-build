@@ -220,7 +220,7 @@ var parse_classes_combo = function () {
             '<a />'
         ).attr (
             'href',
-            `${build_base_url}?m1=m:${masteries [ 0 ]}?m2=m:${masteries [ 1 ]}`
+            `${build_base_url}?m1=m:${masteries [ 0 ]}&m2=m:${masteries [ 1 ]}`
         ).html (
             tq_class
         );
