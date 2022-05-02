@@ -6,7 +6,6 @@ Maîtrises :
 * Guerre
 * Nature
 * Neidan
-* Rêve
 * Runes
 * Ruse
 * Tempête
