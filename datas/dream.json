@@ -1,0 +1,238 @@
+{
+    "table": {
+        "rows": {
+            "40": {
+                "4": "21",
+                "7": "top-bracket",
+                "8": "22"
+            },
+            "32": {
+                "2": "18",
+                "5": "top-bracket",
+                "6": "19",
+                "7": "pipe",
+                "9": "top-bracket",
+                "10": "20"
+            },
+            "24": {
+                "3": "top-bracket",
+                "4": "16",
+                "5": "pipe",
+                "7": "pipe",
+                "9": "pipe",
+                "11": "top-bracket",
+                "12": "17"
+            },
+            "16": {
+                "2": "12",
+                "3": "pipe",
+                "5": "middle-bracket",
+                "6": "13",
+                "7": "pipe",
+                "8": "14",
+                "9": "bottom-bracket",
+                "10": "15",
+                "11": "pipe"
+            },
+            "10": {
+                "3": "middle-bracket",
+                "4": "7",
+                "5": "bottom-bracket",
+                "6": "8",
+                "7": "middle-bracket",
+                "8": "9",
+                "9": "top-bracket",
+                "10": "10",
+                "11": "middle-bracket",
+                "12": "11"
+            },
+            "4": {
+                "2": "4",
+                "3": "bottom-bracket",
+                "4": "5",
+                "7": "pipe",
+                "9": "bottom-bracket",
+                "10": "6",
+                "11": "pipe"
+            },
+            "1": {
+                "6": "1",
+                "7": "bottom-bracket",
+                "8": "2",
+                "11": "bottom-bracket",
+                "12": "3"
+            }
+        }
+    },
+    "skills": {
+        "01": {
+            "name": "Marchand&nbsp;de&nbsp;sable",
+            "mastery_level": 1,
+            "max": 8
+        },
+        "02": {
+            "name": "Contact&nbsp;psionique",
+            "mastery_level": 1,
+            "max": 12,
+            "dep_up": [ "09", "22" ]
+        },
+        "03": {
+            "name": "Vague&nbsp;de&nbsp;distorsion",
+            "mastery_level": 1,
+            "max": 12,
+            "dep_up": [ "11", "17" ]
+        },
+        "04": {
+            "name": "Transe&nbsp;d&apos;empathie",
+            "mastery_level": 4,
+            "max": 12
+        },
+        "05": {
+            "name": "R&ecirc;ve&nbsp;lucide",
+            "mastery_level": 4,
+            "max": 8,
+            "dep_up": [ "07", "16" ]
+        },
+        "06": {
+            "name": "Attaque&nbsp;fant&ocirc;me",
+            "mastery_level": 4,
+            "max": 12,
+            "dep_up": [ "10" ]
+        },
+        "07": {
+            "name": "Pr&eacute;monition",
+            "mastery_level": 10,
+            "max": 6,
+            "dep_down": [ "05" ]
+        },
+        "08": {
+            "name": "Invocation&nbsp;de&nbsp;cauchemar",
+            "mastery_level": 10,
+            "max": 16,
+            "dep_up": [ "13" ]
+        },
+        "09": {
+            "name": "Br&ucirc;lure&nbsp;psionique",
+            "mastery_level": 10,
+            "max": 8,
+            "dep_down": [ "02" ]
+        },
+        "10": {
+            "name": "Voleur&nbsp;de&nbsp;r&ecirc;ves",
+            "mastery_level": 10,
+            "max": 8,
+            "dep_down": [ "06" ]
+        },
+        "11": {
+            "name": "R&eacute;sonance&nbsp;chaotique",
+            "mastery_level": 10,
+            "max": 8,
+            "dep_down": [ "03" ]
+        },
+        "12": {
+            "name": "Transe&nbsp;de&nbsp;convalescence",
+            "mastery_level": 16,
+            "max": 12
+        },
+        "13": {
+            "name": "Regard&nbsp;hypnotique",
+            "mastery_level": 16,
+            "max": 8,
+            "dep_up": [ "19" ],
+            "dep_down": [ "08" ]
+        },
+        "14": {
+            "name": "Champ&nbsp;de&nbsp;distorsion",
+            "mastery_level": 16,
+            "max": 8
+        },
+        "15": {
+            "name": "R&eacute;alit&eacute;&nbsp;distordue",
+            "mastery_level": 16,
+            "max": 12,
+            "dep_up": [ "20" ]
+        },
+        "16": {
+            "name": "Flux&nbsp;temporel",
+            "mastery_level": 24,
+            "max": 6,
+            "dep_down": [ "05" ]
+        },
+        "17": {
+            "name": "Immolation&nbsp;psionique",
+            "mastery_level": 24,
+            "max": 12,
+            "dep_down": [ "03" ]
+        },
+        "18": {
+            "name": "Transe&nbsp;de&nbsp;col&egrave;re",
+            "mastery_level": 32,
+            "max": 12
+        },
+        "19": {
+            "name": "Intelligence&nbsp;sup&eacute;rieure",
+            "mastery_level": 32,
+            "max": 8,
+            "dep_down": [ "13" ]
+        },
+        "20": {
+            "name": "Faille&nbsp;temporelle",
+            "mastery_level": 32,
+            "max": 12,
+            "dep_down": [ "15" ]
+        },
+        "21": {
+            "name": "Image&nbsp;onirique",
+            "mastery_level": 40,
+            "max": 8
+        },
+        "22": {
+            "name": "Faisceau&nbsp;psionique",
+            "mastery_level": 40,
+            "max": 6,
+            "dep_down": [ "02" ]
+        }
+    },
+    "stats": {
+        "1": { "str": 2, "int": 2, "health": 35, "energy": 8 },
+        "2": { "str": 4, "int": 4, "health": 70, "energy": 16 },
+        "3": { "str": 6, "int": 5, "health": 105, "energy": 24 },
+        "4": { "str": 8, "int": 7, "health": 140, "energy": 32 },
+        "5": { "str": 10, "int": 9, "health": 175, "energy": 40 },
+        "6": { "str": 12, "int": 11, "health": 210, "energy": 48 },
+        "7": { "str": 14, "int": 12, "health": 245, "energy": 56 },
+        "8": { "str": 16, "int": 14, "health": 280, "energy": 64 },
+        "9": { "str": 18, "int": 16, "health": 315, "energy": 72 },
+        "10": { "str": 20, "int": 18, "health": 350, "energy": 80 },
+        "11": { "str": 22, "int": 19, "health": 385, "energy": 88 },
+        "12": { "str": 24, "int": 21, "health": 420, "energy": 96 },
+        "13": { "str": 26, "int": 23, "health": 455, "energy": 104 },
+        "14": { "str": 28, "int": 25, "health": 490, "energy": 112 },
+        "15": { "str": 30, "int": 26, "health": 525, "energy": 120 },
+        "16": { "str": 32, "int": 28, "health": 560, "energy": 128 },
+        "17": { "str": 34, "int": 30, "health": 595, "energy": 136 },
+        "18": { "str": 36, "int": 32, "health": 630, "energy": 144 },
+        "19": { "str": 38, "int": 33, "health": 665, "energy": 152 },
+        "20": { "str": 40, "int": 35, "health": 700, "energy": 160 },
+        "21": { "str": 42, "int": 37, "health": 735, "energy": 168 },
+        "22": { "str": 44, "int": 39, "health": 770, "energy": 176 },
+        "23": { "str": 46, "int": 40, "health": 805, "energy": 184 },
+        "24": { "str": 48, "int": 42, "health": 840, "energy": 192 },
+        "25": { "str": 50, "int": 44, "health": 875, "energy": 200 },
+        "26": { "str": 52, "int": 46, "health": 910, "energy": 208 },
+        "27": { "str": 54, "int": 47, "health": 945, "energy": 216 },
+        "28": { "str": 56, "int": 49, "health": 980, "energy": 224 },
+        "29": { "str": 58, "int": 51, "health": 1015, "energy": 232 },
+        "30": { "str": 60, "int": 53, "health": 1050, "energy": 240 },
+        "31": { "str": 62, "int": 54, "health": 1085, "energy": 248 },
+        "32": { "str": 64, "int": 56, "health": 1120, "energy": 256 },
+        "33": { "str": 66, "int": 58, "health": 1155, "energy": 264 },
+        "34": { "str": 68, "int": 60, "health": 1190, "energy": 272 },
+        "35": { "str": 70, "int": 61, "health": 1225, "energy": 280 },
+        "36": { "str": 72, "int": 63, "health": 1260, "energy": 288 },
+        "37": { "str": 74, "int": 65, "health": 1295, "energy": 296 },
+        "38": { "str": 76, "int": 67, "health": 1330, "energy": 304 },
+        "39": { "str": 78, "int": 68, "health": 1365, "energy": 312 },
+        "40": { "str": 80, "int": 70, "health": 1400, "energy": 320 }
+    }
+}
