@@ -1,4 +1,199 @@
 {
+    "table": {
+        "rows": {
+            "40": {
+                "3": "tp",
+                "4": "21",
+                "10": "22"
+            },
+            "32": {
+                "1": "tp",
+                "2": "18",
+                "3": "pipe",
+                "5": "tp",
+                "6": "19",
+                "8": "20"
+            },
+            "24": {
+                "1": "pipe",
+                "3": "mp",
+                "4": "15",
+                "5": "pipe",
+                "9": "tp",
+                "10": "16",
+                "11": "tp",
+                "12": "17"
+            },
+            "16": {
+                "1": "bp",
+                "2": "11",
+                "3": "pipe",
+                "5": "mp",
+                "6": "12",
+                "8": "13",
+                "9": "mp",
+                "10": "14",
+                "11": "pipe"
+            },
+            "10": {
+                "1": "tp",
+                "2": "07",
+                "3": "bp",
+                "4": "08",
+                "5": "pipe",
+                "7": "tp",
+                "8": "09",
+                "9": "pipe",
+                "11": "bp",
+                "12": "10"
+            },
+            "4": {
+                "1": "pipe",
+                "5": "bp",
+                "6": "04",
+                "7": "pipe",
+                "9": "bp",
+                "10": "05",
+                "12": "06"
+            },
+            "1": {
+                "1": "bp",
+                "2": "01",
+                "7": "bp",
+                "8": "02",
+                "12": "03"
+            }
+        }
+    },
+    "skills": {
+        "01": {
+            "name": "Filet",
+            "mastery_level": 1,
+            "max": 6,
+            "dep_up": [ "07" ]
+        },
+        "02": {
+            "name": "Destruction",
+            "mastery_level": 1,
+            "max": 12,
+            "dep_up": [ "09" ]
+        },
+        "03": {
+            "name": "Esprit&nbsp;du&nbsp;bois",
+            "mastery_level": 1,
+            "max": 6
+        },
+        "04": {
+            "name": "Adresse&nbsp;au&nbsp;tir",
+            "mastery_level": 4,
+            "max": 12,
+            "dep_up": [ "12", "19" ]
+        },
+        "05": {
+            "name": "Art&nbsp;de&nbsp;la&nbsp;chasse",
+            "mastery_level": 4,
+            "max": 12,
+            "dep_up": [ "14", "16" ]
+        },
+        "06": {
+            "name": "Rem&egrave;de&nbsp;&agrave;&nbsp;base&nbsp;d&apos;herbes",
+            "mastery_level": 4,
+            "max": 6
+        },
+        "07": {
+            "name": "Filet&nbsp;blessant",
+            "mastery_level": 10,
+            "max": 8,
+            "dep_down": [ "01" ]
+        },
+        "08": {
+            "name": "Appel&nbsp;de&nbsp;la&nbsp;chasse",
+            "mastery_level": 10,
+            "max": 8,
+            "dep_up": [ "15", "21" ]
+        },
+        "09": {
+            "name": "&Eacute;visc&eacute;ration",
+            "mastery_level": 10,
+            "max": 10,
+            "dep_down": [ "02" ]
+        },
+        "10": {
+            "name": "Leurre&nbsp;&agrave;&nbsp;monstres",
+            "mastery_level": 10,
+            "max": 6,
+            "dep_up": [ "17" ]
+        },
+        "11": {
+            "name": "Observation&nbsp;de&nbsp;la&nbsp;proie",
+            "mastery_level": 16,
+            "max": 8,
+            "dep_up": [ "18" ]
+        },
+        "12": {
+            "name": "Fl&egrave;ches&nbsp;perforantes",
+            "mastery_level": 16,
+            "max": 12,
+            "dep_down": [ "04" ]
+        },
+        "13": {
+            "name": "Attaque&nbsp;perforante",
+            "mastery_level": 16,
+            "max": 6
+        },
+        "14": {
+            "name": "&Agrave;&nbsp;couvert",
+            "mastery_level": 16,
+            "max": 8,
+            "dep_down": [ "05" ]
+        },
+        "15": {
+            "name": "Point&nbsp;faible",
+            "mastery_level": 24,
+            "max": 10,
+            "dep_down": [ "08" ]
+        },
+        "16": {
+            "name": "Art&nbsp;du&nbsp;pistage",
+            "mastery_level": 24,
+            "max": 6,
+            "dep_down": [ "05" ]
+        },
+        "17": {
+            "name": "D&eacute;tonateur",
+            "mastery_level": 24,
+            "max": 12,
+            "dep_down": [ "10" ]
+        },
+        "18": {
+            "name": "D&eacute;busquer",
+            "mastery_level": 32,
+            "max": 6,
+            "dep_down": [ "11" ]
+        },
+        "19": {
+            "name": "Fl&egrave;ches&nbsp;explosives",
+            "mastery_level": 32,
+            "max": 12,
+            "dep_down": [ "04" ]
+        },
+        "20": {
+            "name": "Encha&icirc;nement",
+            "mastery_level": 32,
+            "max": 6
+        },
+        "21": {
+            "name": "Finesse",
+            "mastery_level": 40,
+            "max": 8,
+            "dep_down": [ "08" ]
+        },
+        "22": {
+            "name": "Lance&nbsp;virevoltante",
+            "mastery_level": 40,
+            "max": 12
+        }
+    },
     "stats": {
         "1": { "str": 2, "dex": 3, "health": 35 },
         "2": { "str": 4, "dex": 5, "health": 70 },
