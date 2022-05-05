@@ -2,64 +2,64 @@
     "table": {
         "rows": {
             "40": {
-                "3": "tp",
+                "3": "top-bracket",
                 "4": "21",
                 "10": "22"
             },
             "32": {
-                "1": "tp",
+                "1": "top-bracket",
                 "2": "18",
                 "3": "pipe",
-                "5": "tp",
+                "5": "top-bracket",
                 "6": "19",
                 "8": "20"
             },
             "24": {
                 "1": "pipe",
-                "3": "mp",
+                "3": "middle-bracket",
                 "4": "15",
                 "5": "pipe",
-                "9": "tp",
+                "9": "top-bracket",
                 "10": "16",
-                "11": "tp",
+                "11": "top-bracket",
                 "12": "17"
             },
             "16": {
-                "1": "bp",
+                "1": "bottom-bracket",
                 "2": "11",
                 "3": "pipe",
-                "5": "mp",
+                "5": "middle-bracket",
                 "6": "12",
                 "8": "13",
-                "9": "mp",
+                "9": "middle-bracket",
                 "10": "14",
                 "11": "pipe"
             },
             "10": {
-                "1": "tp",
+                "1": "top-bracket",
                 "2": "07",
-                "3": "bp",
+                "3": "bottom-bracket",
                 "4": "08",
                 "5": "pipe",
-                "7": "tp",
+                "7": "top-bracket",
                 "8": "09",
                 "9": "pipe",
-                "11": "bp",
+                "11": "bottom-bracket",
                 "12": "10"
             },
             "4": {
                 "1": "pipe",
-                "5": "bp",
+                "5": "bottom-bracket",
                 "6": "04",
                 "7": "pipe",
-                "9": "bp",
+                "9": "bottom-bracket",
                 "10": "05",
                 "12": "06"
             },
             "1": {
-                "1": "bp",
+                "1": "bottom-bracket",
                 "2": "01",
-                "7": "bp",
+                "7": "bottom-bracket",
                 "8": "02",
                 "12": "03"
             }

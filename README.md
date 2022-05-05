@@ -2,7 +2,6 @@
 
 Maîtrises :
 
-* Chasse
 * Guerre
 * Nature
 * Neidan
