@@ -184,6 +184,28 @@ var player_skills_to_display = function () {
 
 
 /**
+ * Create dict of skills with decoded value as key, encoded as value
+ *
+ * @param {string[]} skills List of skills to create dict
+ *
+ * @return {dict} Dict of skills
+ */
+var parse_skills_html = function ( skills ) {
+    /**
+     * Dict of skills
+     * @type {dict}
+     */
+    let ret = {};
+    
+    skills.forEach ( function ( skill ) {
+        ret [ decode_html_entities ( skill ) ] = skill;
+    } );
+    
+    return ret;
+};
+
+
+/**
  * Refresh player skills
  */
 var display_player_skills = function () {
@@ -217,10 +239,18 @@ var display_player_skills = function () {
         let el_ul = $( '<ul />' );
         
         /**
-         * Sorted acquired skills
+         * All skills with decoded>encoded
+         * @type {dict}
+         */
+        let skills_fr = parse_skills_html (
+            datas [ mastery ]
+        );
+        
+        /**
+         * Sorted acquired skills (decoded)
          * @type {string[]}
          */
-        let skills = datas [ mastery ];
+        let skills = Object.keys ( skills_fr );
         array_str_sort_asc ( skills );
         
         skills.forEach ( function ( skill ) {
@@ -229,7 +259,7 @@ var display_player_skills = function () {
              * @type {dom}
              */
             let el_li = $( '<li />' ).html (
-                skill
+                skills_fr [ skill ]
             );
             
             el_ul.append ( el_li );
