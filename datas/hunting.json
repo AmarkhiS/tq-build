@@ -1,0 +1,239 @@
+{
+    "table": {
+        "rows": {
+            "40": {
+                "3": "top-bracket",
+                "4": "21",
+                "10": "22"
+            },
+            "32": {
+                "1": "top-bracket",
+                "2": "18",
+                "3": "pipe",
+                "5": "top-bracket",
+                "6": "19",
+                "8": "20"
+            },
+            "24": {
+                "1": "pipe",
+                "3": "middle-bracket",
+                "4": "15",
+                "5": "pipe",
+                "9": "top-bracket",
+                "10": "16",
+                "11": "top-bracket",
+                "12": "17"
+            },
+            "16": {
+                "1": "bottom-bracket",
+                "2": "11",
+                "3": "pipe",
+                "5": "middle-bracket",
+                "6": "12",
+                "8": "13",
+                "9": "middle-bracket",
+                "10": "14",
+                "11": "pipe"
+            },
+            "10": {
+                "1": "top-bracket",
+                "2": "07",
+                "3": "bottom-bracket",
+                "4": "08",
+                "5": "pipe",
+                "7": "top-bracket",
+                "8": "09",
+                "9": "pipe",
+                "11": "bottom-bracket",
+                "12": "10"
+            },
+            "4": {
+                "1": "pipe",
+                "5": "bottom-bracket",
+                "6": "04",
+                "7": "pipe",
+                "9": "bottom-bracket",
+                "10": "05",
+                "12": "06"
+            },
+            "1": {
+                "1": "bottom-bracket",
+                "2": "01",
+                "7": "bottom-bracket",
+                "8": "02",
+                "12": "03"
+            }
+        }
+    },
+    "skills": {
+        "01": {
+            "name": "Filet",
+            "mastery_level": 1,
+            "max": 6,
+            "dep_up": [ "07" ]
+        },
+        "02": {
+            "name": "Destruction",
+            "mastery_level": 1,
+            "max": 12,
+            "dep_up": [ "09" ]
+        },
+        "03": {
+            "name": "Esprit&nbsp;du&nbsp;bois",
+            "mastery_level": 1,
+            "max": 6
+        },
+        "04": {
+            "name": "Adresse&nbsp;au&nbsp;tir",
+            "mastery_level": 4,
+            "max": 12,
+            "dep_up": [ "12", "19" ]
+        },
+        "05": {
+            "name": "Art&nbsp;de&nbsp;la&nbsp;chasse",
+            "mastery_level": 4,
+            "max": 12,
+            "dep_up": [ "14", "16" ]
+        },
+        "06": {
+            "name": "Rem&egrave;de&nbsp;&agrave;&nbsp;base&nbsp;d&apos;herbes",
+            "mastery_level": 4,
+            "max": 6
+        },
+        "07": {
+            "name": "Filet&nbsp;blessant",
+            "mastery_level": 10,
+            "max": 8,
+            "dep_down": [ "01" ]
+        },
+        "08": {
+            "name": "Appel&nbsp;de&nbsp;la&nbsp;chasse",
+            "mastery_level": 10,
+            "max": 8,
+            "dep_up": [ "15", "21" ]
+        },
+        "09": {
+            "name": "&Eacute;visc&eacute;ration",
+            "mastery_level": 10,
+            "max": 10,
+            "dep_down": [ "02" ]
+        },
+        "10": {
+            "name": "Leurre&nbsp;&agrave;&nbsp;monstres",
+            "mastery_level": 10,
+            "max": 6,
+            "dep_up": [ "17" ]
+        },
+        "11": {
+            "name": "Observation&nbsp;de&nbsp;la&nbsp;proie",
+            "mastery_level": 16,
+            "max": 8,
+            "dep_up": [ "18" ]
+        },
+        "12": {
+            "name": "Fl&egrave;ches&nbsp;perforantes",
+            "mastery_level": 16,
+            "max": 12,
+            "dep_down": [ "04" ]
+        },
+        "13": {
+            "name": "Attaque&nbsp;perforante",
+            "mastery_level": 16,
+            "max": 6
+        },
+        "14": {
+            "name": "&Agrave;&nbsp;couvert",
+            "mastery_level": 16,
+            "max": 8,
+            "dep_down": [ "05" ]
+        },
+        "15": {
+            "name": "Point&nbsp;faible",
+            "mastery_level": 24,
+            "max": 10,
+            "dep_down": [ "08" ]
+        },
+        "16": {
+            "name": "Art&nbsp;du&nbsp;pistage",
+            "mastery_level": 24,
+            "max": 6,
+            "dep_down": [ "05" ]
+        },
+        "17": {
+            "name": "D&eacute;tonateur",
+            "mastery_level": 24,
+            "max": 12,
+            "dep_down": [ "10" ]
+        },
+        "18": {
+            "name": "D&eacute;busquer",
+            "mastery_level": 32,
+            "max": 6,
+            "dep_down": [ "11" ]
+        },
+        "19": {
+            "name": "Fl&egrave;ches&nbsp;explosives",
+            "mastery_level": 32,
+            "max": 12,
+            "dep_down": [ "04" ]
+        },
+        "20": {
+            "name": "Encha&icirc;nement",
+            "mastery_level": 32,
+            "max": 6
+        },
+        "21": {
+            "name": "Finesse",
+            "mastery_level": 40,
+            "max": 8,
+            "dep_down": [ "08" ]
+        },
+        "22": {
+            "name": "Lance&nbsp;virevoltante",
+            "mastery_level": 40,
+            "max": 12
+        }
+    },
+    "stats": {
+        "1": { "str": 2, "dex": 3, "health": 35 },
+        "2": { "str": 4, "dex": 5, "health": 70 },
+        "3": { "str": 5, "dex": 8, "health": 105 },
+        "4": { "str": 7, "dex": 10, "health": 140 },
+        "5": { "str": 9, "dex": 13, "health": 175 },
+        "6": { "str": 11, "dex": 15, "health": 210 },
+        "7": { "str": 12, "dex": 18, "health": 245 },
+        "8": { "str": 14, "dex": 20, "health": 280 },
+        "9": { "str": 16, "dex": 23, "health": 315 },
+        "10": { "str": 18, "dex": 25, "health": 350 },
+        "11": { "str": 19, "dex": 28, "health": 385 },
+        "12": { "str": 21, "dex": 30, "health": 420 },
+        "13": { "str": 23, "dex": 33, "health": 455 },
+        "14": { "str": 25, "dex": 35, "health": 490 },
+        "15": { "str": 26, "dex": 38, "health": 525 },
+        "16": { "str": 28, "dex": 40, "health": 560 },
+        "17": { "str": 30, "dex": 43, "health": 595 },
+        "18": { "str": 32, "dex": 45, "health": 630 },
+        "19": { "str": 33, "dex": 48, "health": 665 },
+        "20": { "str": 35, "dex": 50, "health": 700 },
+        "21": { "str": 37, "dex": 53, "health": 735 },
+        "22": { "str": 39, "dex": 55, "health": 770 },
+        "23": { "str": 40, "dex": 58, "health": 805 },
+        "24": { "str": 42, "dex": 60, "health": 840 },
+        "25": { "str": 44, "dex": 63, "health": 875 },
+        "26": { "str": 46, "dex": 65, "health": 910 },
+        "27": { "str": 47, "dex": 68, "health": 945 },
+        "28": { "str": 49, "dex": 70, "health": 980 },
+        "29": { "str": 51, "dex": 73, "health": 1015 },
+        "30": { "str": 53, "dex": 75, "health": 1050 },
+        "31": { "str": 54, "dex": 78, "health": 1085 },
+        "32": { "str": 56, "dex": 80, "health": 1120 },
+        "33": { "str": 58, "dex": 83, "health": 1155 },
+        "34": { "str": 60, "dex": 85, "health": 1190 },
+        "35": { "str": 61, "dex": 88, "health": 1225 },
+        "36": { "str": 63, "dex": 90, "health": 1260 },
+        "37": { "str": 65, "dex": 93, "health": 1295 },
+        "38": { "str": 67, "dex": 95, "health": 1330 },
+        "39": { "str": 68, "dex": 98, "health": 1365 },
+        "40": { "str": 70, "dex": 100, "health": 1400 }
+    }
+}
