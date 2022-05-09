@@ -1,0 +1,246 @@
+{
+    "table": {
+        "rows": {
+            "40": {
+                "6": "21",
+                "9": "top-bracket",
+                "10": "22"
+            },
+            "32": {
+                "4": "18",
+                "5": "top-bracket",
+                "6": "19",
+                "9": "middle-bracket",
+                "10": "20"
+            },
+            "24": {
+                "1": "top-bracket",
+                "2": "14",
+                "5": "pipe",
+                "7": "top-bracket",
+                "8": "15",
+                "9": "middle-bracket",
+                "10": "16",
+                "11": "top-bracket",
+                "12": "17"
+            },
+            "16": {
+                "1": "middle-bracket",
+                "2": "10",
+                "3": "top-bracket",
+                "4": "11",
+                "5": "middle-bracket",
+                "6": "12",
+                "7": "pipe",
+                "9": "bottom-bracket",
+                "10": "13",
+                "11": "pipe"
+            },
+            "10": {
+                "1": "pipe",
+                "3": "pipe",
+                "5": "bottom-bracket",
+                "6": "07",
+                "7": "middle-bracket",
+                "8": "08",
+                "11": "middle-bracket",
+                "12": "09"
+            },
+            "4": {
+                "1": "bottom-bracket",
+                "2": "03",
+                "3": "middle-bracket",
+                "4": "04",
+                "7": "middle-bracket",
+                "8": "05",
+                "11": "bottom-bracket",
+                "12": "06"
+            },
+            "1": {
+                "3": "bottom-bracket",
+                "4": "01",
+                "7": "bottom-bracket",
+                "8": "02"
+            }
+        }
+    },
+    "skills": {
+        "01": {
+            "name": "R&eacute;g&eacute;n&eacute;ration",
+            "mastery_level": 1,
+            "max": 16,
+            "dep_up": [ "04", "11" ]
+        },
+        "02": {
+            "name": "Appel&nbsp;sauvage",
+            "mastery_level": 1,
+            "max": 16,
+            "dep_up": [ "05" ]
+        },
+        "03": {
+            "name": "C&oelig;ur&nbsp;de&nbsp;ch&ecirc;ne",
+            "mastery_level": 4,
+            "max": 12,
+            "dep_up": [ "10", "14" ]
+        },
+        "04": {
+            "name": "R&eacute;g&eacute;n&eacute;ration&nbsp;acc&eacute;l&eacute;r&eacute;e",
+            "mastery_level": 4,
+            "max": 8,
+            "dep_down": [ "01" ]
+        },
+        "05": {
+            "name": "Attaque&nbsp;puissante",
+            "mastery_level": 4,
+            "max": 12,
+            "dep_up": [ "08" ],
+            "dep_down": [ "02" ]
+        },
+        "06": {
+            "name": "Fl&eacute;au",
+            "mastery_level": 4,
+            "max": 8,
+            "dep_up": [ "09", "17" ]
+        },
+        "07": {
+            "name": "Mur&nbsp;de&nbsp;ronces",
+            "mastery_level": 10,
+            "max": 16,
+            "dep_up": [ "12", "19" ]
+        },
+        "08": {
+            "name": "Instinct&nbsp;de&nbsp;survie",
+            "mastery_level": 10,
+            "max": 16,
+            "dep_up": [ "15" ],
+            "dep_down": [ "05" ]
+        },
+        "09": {
+            "name": "&Eacute;puisement",
+            "mastery_level": 10,
+            "max": 8,
+            "dep_down": [ "06" ]
+        },
+        "10": {
+            "name": "Calme&nbsp;aquatique",
+            "mastery_level": 16,
+            "max": 6,
+            "dep_down": [ "03" ]
+        },
+        "11": {
+            "name": "R&eacute;g&eacute;n&eacute;ration&nbsp;&eacute;tendue",
+            "mastery_level": 16,
+            "max": 12,
+            "dep_down": [ "01" ]
+        },
+        "12": {
+            "name": "Ortie&nbsp;v&eacute;n&eacute;neuse",
+            "mastery_level": 16,
+            "max": 8,
+            "dep_up": [ "19" ],
+            "dep_down": [ "07" ]
+        },
+        "13": {
+            "name": "Nymphe&nbsp;sylvestre",
+            "mastery_level": 16,
+            "max": 16,
+            "dep_up": [ "16" ]
+        },
+        "14": {
+            "name": "R&eacute;sistance&nbsp;de&nbsp;pierre",
+            "mastery_level": 24,
+            "max": 6,
+            "dep_down": [ "03" ]
+        },
+        "15": {
+            "name": "Force&nbsp;de&nbsp;la&nbsp;meute",
+            "mastery_level": 24,
+            "max": 12,
+            "dep_down": [ "08" ]
+        },
+        "16": {
+            "name": "Bouclier&nbsp;vivant",
+            "mastery_level": 24,
+            "max": 12,
+            "dep_up": [ "20" ],
+            "dep_down": [ "13" ]
+        },
+        "17": {
+            "name": "Faiblesse",
+            "mastery_level": 24,
+            "max": 8,
+            "dep_down": [ "06" ]
+        },
+        "18": {
+            "name": "Renouveau",
+            "mastery_level": 32,
+            "max": 12
+        },
+        "19": {
+            "name": "Sanctuaire",
+            "mastery_level": 32,
+            "max": 8,
+            "dep_down": [ "12" ]
+        },
+        "20": {
+            "name": "Ire&nbsp;de&nbsp;la&nbsp;nature",
+            "mastery_level": 32,
+            "max": 12,
+            "dep_up": [ "22" ],
+            "dep_down": [ "16" ]
+        },
+        "21": {
+            "name": "Liens&nbsp;terrestres",
+            "mastery_level": 40,
+            "max": 12
+        },
+        "22": {
+            "name": "Protection&nbsp;sylvaine",
+            "mastery_level": 40,
+            "max": 8,
+            "dep_down": [ "20" ]
+        }
+    },
+    "stats": {
+        "1": { "int": 3, "dex": 2, "health": 20, "energy": 16 },
+        "2": { "int": 5, "dex": 3, "health": 40, "energy": 32 },
+        "3": { "int": 8, "dex": 5, "health": 60, "energy": 48 },
+        "4": { "int": 10, "dex": 6, "health": 80, "energy": 64 },
+        "5": { "int": 13, "dex": 8, "health": 100, "energy": 80 },
+        "6": { "int": 15, "dex": 9, "health": 120, "energy": 96 },
+        "7": { "int": 18, "dex": 11, "health": 140, "energy": 112 },
+        "8": { "int": 20, "dex": 12, "health": 160, "energy": 128 },
+        "9": { "int": 23, "dex": 14, "health": 180, "energy": 144 },
+        "10": { "int": 25, "dex": 15, "health": 200, "energy": 160 },
+        "11": { "int": 28, "dex": 17, "health": 220, "energy": 176 },
+        "12": { "int": 30, "dex": 18, "health": 240, "energy": 192 },
+        "13": { "int": 33, "dex": 20, "health": 260, "energy": 208 },
+        "14": { "int": 35, "dex": 21, "health": 280, "energy": 224 },
+        "15": { "int": 38, "dex": 23, "health": 300, "energy": 240 },
+        "16": { "int": 40, "dex": 24, "health": 320, "energy": 256 },
+        "17": { "int": 43, "dex": 26, "health": 340, "energy": 272 },
+        "18": { "int": 45, "dex": 27, "health": 360, "energy": 288 },
+        "19": { "int": 48, "dex": 29, "health": 380, "energy": 304 },
+        "20": { "int": 50, "dex": 30, "health": 400, "energy": 320 },
+        "21": { "int": 53, "dex": 32, "health": 420, "energy": 336 },
+        "22": { "int": 55, "dex": 33, "health": 440, "energy": 352 },
+        "23": { "int": 58, "dex": 35, "health": 460, "energy": 368 },
+        "24": { "int": 60, "dex": 36, "health": 480, "energy": 384 },
+        "25": { "int": 63, "dex": 38, "health": 500, "energy": 400 },
+        "26": { "int": 65, "dex": 39, "health": 520, "energy": 416 },
+        "27": { "int": 68, "dex": 41, "health": 540, "energy": 432 },
+        "28": { "int": 70, "dex": 42, "health": 560, "energy": 448 },
+        "29": { "int": 73, "dex": 44, "health": 580, "energy": 464 },
+        "30": { "int": 75, "dex": 45, "health": 600, "energy": 480 },
+        "31": { "int": 78, "dex": 47, "health": 620, "energy": 496 },
+        "32": { "int": 80, "dex": 48, "health": 640, "energy": 512 },
+        "33": { "int": 83, "dex": 50, "health": 660, "energy": 528 },
+        "34": { "int": 85, "dex": 51, "health": 680, "energy": 544 },
+        "35": { "int": 88, "dex": 53, "health": 700, "energy": 560 },
+        "36": { "int": 90, "dex": 54, "health": 720, "energy": 576 },
+        "37": { "int": 93, "dex": 56, "health": 740, "energy": 592 },
+        "38": { "int": 95, "dex": 57, "health": 760, "energy": 608 },
+        "39": { "int": 98, "dex": 59, "health": 780, "energy": 624 },
+        "40": { "int": 100, "dex": 60, "health": 800, "energy": 640 }
+    }
+}
