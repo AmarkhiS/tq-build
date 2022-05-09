@@ -2,7 +2,6 @@
 
 Maîtrises :
 
-* Nature
 * Neidan
 * Runes
 * Ruse
