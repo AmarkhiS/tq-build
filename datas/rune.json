@@ -1,0 +1,244 @@
+{
+    "table": {
+        "rows": {
+            "40": {
+                "6": "22",
+                "9": "top-bracket",
+                "10": "23"
+            },
+            "32": {
+                "1": "top-bracket",
+                "2": "18",
+                "4": "19",
+                "7": "top-bracket",
+                "8": "20",
+                "9": "pipe",
+                "11": "top-bracket",
+                "12": "21"
+            },
+            "24": {
+                "1": "pipe",
+                "4": "15",
+                "6": "16",
+                "7": "pipe",
+                "9": "middle-bracket",
+                "10": "17",
+                "11": "pipe"
+            },
+            "16": {
+                "1": "middle-bracket",
+                "2": "12",
+                "5": "top-bracket",
+                "6": "13",
+                "7": "bottom-bracket",
+                "8": "14",
+                "9": "pipe",
+                "11": "pipe"
+            },
+            "10": {
+                "1": "pipe",
+                "3": "top-bracket",
+                "4": "08",
+                "5": "bottom-bracket",
+                "6": "09",
+                "7": "top-bracket",
+                "8": "10",
+                "9": "pipe",
+                "11": "bottom-bracket",
+                "12": "11"
+            },
+            "4": {
+                "1": "middle-bracket",
+                "2": "04",
+                "3": "bottom-bracket",
+                "4": "05",
+                "7": "bottom-bracket",
+                "8": "06",
+                "9": "bottom-bracket",
+                "10": "07"
+            },
+            "1": {
+                "1": "bottom-bracket",
+                "2": "01",
+                "6": "02",
+                "12": "03"
+            }
+        }
+    },
+    "skills": {
+        "01": {
+            "name": "Arme&nbsp;runique",
+            "mastery_level": 1,
+            "max": 10,
+            "dep_up": [ "04", "12", "18" ]
+        },
+        "02": {
+            "name": "Mot&nbsp;runique&nbsp;:&nbsp;Plume",
+            "mastery_level": 1,
+            "max": 6
+        },
+        "03": {
+            "name": "Rune&nbsp;de&nbsp;vie",
+            "mastery_level": 1,
+            "max": 10
+        },
+        "04": {
+            "name": "Charge&nbsp;magique",
+            "mastery_level": 4,
+            "max": 16,
+            "dep_down": [ "01" ]
+        },
+        "05": {
+            "name": "Rage&nbsp;sacr&eacute;e",
+            "mastery_level": 4,
+            "max": 10,
+            "dep_up": [ "08" ]
+        },
+        "06": {
+            "name": "Frappe&nbsp;du&nbsp;tonnerre",
+            "mastery_level": 4,
+            "max": 10,
+            "dep_up": [ "10" ]
+        },
+        "07": {
+            "name": "Mines&nbsp;runiques",
+            "mastery_level": 4,
+            "max": 10,
+            "dep_up": [ "17", "23" ]
+        },
+        "08": {
+            "name": "Puissance&nbsp;terrifiante",
+            "mastery_level": 10,
+            "max": 6,
+            "dep_down": [ "05" ]
+        },
+        "09": {
+            "name": "Mot&nbsp;runique&nbsp;:&nbsp;Explosion",
+            "mastery_level": 10,
+            "max": 10,
+            "dep_up": [ "13" ]
+        },
+        "10": {
+            "name": "D&eacute;cha&icirc;nement",
+            "mastery_level": 10,
+            "max": 10,
+            "dep_down": [ "06" ]
+        },
+        "11": {
+            "name": "Mur&nbsp;de&nbsp;menhirs",
+            "mastery_level": 10,
+            "max": 10,
+            "dep_up": [ "21" ]
+        },
+        "12": {
+            "name": "Ponction&nbsp;d&apos;&eacute;nergie",
+            "mastery_level": 16,
+            "max": 10,
+            "dep_down": [ "01" ]
+        },
+        "13": {
+            "name": "Mot&nbsp;runique&nbsp;:&nbsp;Br&ucirc;lure",
+            "mastery_level": 16,
+            "max": 10,
+            "dep_down": [ "09" ]
+        },
+        "14": {
+            "name": "Sceau&nbsp;du&nbsp;destin",
+            "mastery_level": 16,
+            "max": 12,
+            "dep_up": [ "20" ]
+        },
+        "15": {
+            "name": "Attaque&nbsp;t&eacute;m&eacute;raire",
+            "mastery_level": 24,
+            "max": 12
+        },
+        "16": {
+            "name": "Mot&nbsp;runique&nbsp;:&nbsp;Absorption",
+            "mastery_level": 24,
+            "max": 8
+        },
+        "17": {
+            "name": "Mines&nbsp;gel&eacute;es",
+            "mastery_level": 24,
+            "max": 8,
+            "dep_down": [ "07" ]
+        },
+        "18": {
+            "name": "Transmutation",
+            "mastery_level": 32,
+            "max": 6,
+            "dep_down": [ "01" ]
+        },
+        "19": {
+            "name": "Armure&nbsp;d&apos;&eacute;nergie",
+            "mastery_level": 32,
+            "max": 8
+        },
+        "20": {
+            "name": "Contrecoup",
+            "mastery_level": 32,
+            "max": 6,
+            "dep_down": [ "14" ]
+        },
+        "21": {
+            "name": "Pierres&nbsp;gardiennes",
+            "mastery_level": 32,
+            "max": 12,
+            "dep_down": [ "11" ]
+        },
+        "22": {
+            "name": "Temp&ecirc;te&nbsp;runique",
+            "mastery_level": 40,
+            "max": 6
+        },
+        "23": {
+            "name": "Champ&nbsp;de&nbsp;runes",
+            "mastery_level": 40,
+            "max": 12,
+            "dep_down": [ "07" ]
+        }
+    },
+    "stats": {
+        "1": { "str": 1, "int": 2, "dex": 2, "health": 20 },
+        "2": { "str": 2, "int": 4, "dex": 3, "health": 40 },
+        "3": { "str": 3, "int": 6, "dex": 5, "health": 60 },
+        "4": { "str": 4, "int": 8, "dex": 6, "health": 80 },
+        "5": { "str": 5, "int": 10, "dex": 8, "health": 100 },
+        "6": { "str": 6, "int": 12, "dex": 9, "health": 120 },
+        "7": { "str": 7, "int": 14, "dex": 11, "health": 140 },
+        "8": { "str": 8, "int": 16, "dex": 12, "health": 160 },
+        "9": { "str": 9, "int": 18, "dex": 14, "health": 180 },
+        "10": { "str": 10, "int": 20, "dex": 15, "health": 200 },
+        "11": { "str": 11, "int": 22, "dex": 17, "health": 220 },
+        "12": { "str": 12, "int": 24, "dex": 18, "health": 240 },
+        "13": { "str": 13, "int": 26, "dex": 20, "health": 260 },
+        "14": { "str": 14, "int": 28, "dex": 21, "health": 280 },
+        "15": { "str": 15, "int": 30, "dex": 23, "health": 300 },
+        "16": { "str": 16, "int": 32, "dex": 24, "health": 320 },
+        "17": { "str": 17, "int": 34, "dex": 26, "health": 340 },
+        "18": { "str": 18, "int": 36, "dex": 27, "health": 360 },
+        "19": { "str": 19, "int": 38, "dex": 29, "health": 380 },
+        "20": { "str": 20, "int": 40, "dex": 30, "health": 400 },
+        "21": { "str": 21, "int": 42, "dex": 32, "health": 420 },
+        "22": { "str": 22, "int": 44, "dex": 33, "health": 440 },
+        "23": { "str": 23, "int": 46, "dex": 35, "health": 460 },
+        "24": { "str": 24, "int": 48, "dex": 36, "health": 480 },
+        "25": { "str": 25, "int": 50, "dex": 38, "health": 500 },
+        "26": { "str": 26, "int": 52, "dex": 39, "health": 520 },
+        "27": { "str": 27, "int": 54, "dex": 41, "health": 540 },
+        "28": { "str": 28, "int": 56, "dex": 42, "health": 560 },
+        "29": { "str": 29, "int": 58, "dex": 44, "health": 580 },
+        "30": { "str": 30, "int": 60, "dex": 45, "health": 600 },
+        "31": { "str": 31, "int": 62, "dex": 47, "health": 620 },
+        "32": { "str": 32, "int": 64, "dex": 48, "health": 640 },
+        "33": { "str": 33, "int": 66, "dex": 50, "health": 660 },
+        "34": { "str": 34, "int": 68, "dex": 51, "health": 680 },
+        "35": { "str": 35, "int": 70, "dex": 53, "health": 700 },
+        "36": { "str": 36, "int": 72, "dex": 54, "health": 720 },
+        "37": { "str": 37, "int": 74, "dex": 56, "health": 740 },
+        "38": { "str": 38, "int": 76, "dex": 57, "health": 760 },
+        "39": { "str": 39, "int": 78, "dex": 59, "health": 780 },
+        "40": { "str": 40, "int": 80, "dex": 60, "health": 800 }
+    }
+}
