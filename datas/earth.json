@@ -1,0 +1,238 @@
+{
+    "table": {
+        "rows": {
+            "40": {
+                "4": "21",
+                "8": "22"
+            },
+            "32": {
+                "2": "18",
+                "5": "top-bracket",
+                "6": "19",
+                "12": "20"
+            },
+            "24": {
+                "3": "top-bracket",
+                "4": "14",
+                "5": "middle-bracket",
+                "6": "15",
+                "9": "top-bracket",
+                "10": "16",
+                "11": "top-bracket",
+                "12": "17"
+            },
+            "16": {
+                "1": "top-bracket",
+                "2": "10",
+                "3": "pipe",
+                "5": "middle-bracket",
+                "6": "11",
+                "7": "top-bracket",
+                "8": "12",
+                "9": "pipe",
+                "11": "middle-bracket",
+                "12": "13"
+            },
+            "10": {
+                "1": "pipe",
+                "3": "bottom-bracket",
+                "4": "07",
+                "5": "bottom-bracket",
+                "6": "08",
+                "7": "pipe",
+                "9": "middle-bracket",
+                "10": "09",
+                "11": "pipe"
+            },
+            "4": {
+                "1": "middle-bracket",
+                "2": "03",
+                "4": "04",
+                "7": "bottom-bracket",
+                "8": "05",
+                "9": "pipe",
+                "11": "bottom-bracket",
+                "12": "06"
+            },
+            "1": {
+                "1": "bottom-bracket",
+                "2": "01",
+                "9": "bottom-bracket",
+                "10": "02"
+            }
+        }
+    },
+    "skills": {
+        "01": {
+            "name": "Enchantement&nbsp;de&nbsp;la&nbsp;terre",
+            "mastery_level": 1,
+            "max": 12,
+            "dep_up": [ "03", "10" ]
+        },
+        "02": {
+            "name": "Projection&nbsp;de&nbsp;feu",
+            "mastery_level": 1,
+            "max": 12,
+            "dep_up": [ "09", "16" ]
+        },
+        "03": {
+            "name": "Soufre",
+            "mastery_level": 4,
+            "max": 8,
+            "dep_down": [ "01" ]
+        },
+        "04": {
+            "name": "Bouclier&nbsp;de&nbsp;chaleur",
+            "mastery_level": 4,
+            "max": 12
+        },
+        "05": {
+            "name": "Cercle&nbsp;de&nbsp;feu",
+            "mastery_level": 4,
+            "max": 12,
+            "dep_up": [ "12" ]
+        },
+        "06": {
+            "name": "Orbe&nbsp;volcanique",
+            "mastery_level": 4,
+            "max": 12,
+            "dep_up": [ "13", "17" ]
+        },
+        "07": {
+            "name": "P&eacute;trification",
+            "mastery_level": 10,
+            "max": 12,
+            "dep_up": [ "14" ]
+        },
+        "08": {
+            "name": "Invocation&nbsp;du&nbsp;gardien&nbsp;du&nbsp;c&oelig;ur",
+            "mastery_level": 10,
+            "max": 16,
+            "dep_up": [ "11" ]
+        },
+        "09": {
+            "name": "Barrage",
+            "mastery_level": 10,
+            "max": 8,
+            "dep_down": [ "02" ]
+        },
+        "10": {
+            "name": "Peau&nbsp;de&nbsp;pierre",
+            "mastery_level": 16,
+            "max": 10,
+            "dep_down": [ "01" ]
+        },
+        "11": {
+            "name": "Feu&nbsp;int&eacute;rieur",
+            "mastery_level": 16,
+            "max": 8,
+            "dep_up": [ "15" ],
+            "dep_down": [ "08" ]
+        },
+        "12": {
+            "name": "M&eacute;tal&nbsp;fondu",
+            "mastery_level": 16,
+            "max": 8,
+            "dep_down": [ "05" ]
+        },
+        "13": {
+            "name": "Conflagration",
+            "mastery_level": 16,
+            "max": 8,
+            "dep_down": [ "06" ]
+        },
+        "14": {
+            "name": "Roche&nbsp;en&nbsp;fusion",
+            "mastery_level": 24,
+            "max": 8,
+            "dep_down": [ "07" ]
+        },
+        "15": {
+            "name": "Zone&nbsp;enflamm&eacute;e",
+            "mastery_level": 24,
+            "max": 12,
+            "dep_up": [ "19" ],
+            "dep_down": [ "11" ]
+        },
+        "16": {
+            "name": "Arc&nbsp;de&nbsp;feu",
+            "mastery_level": 24,
+            "max": 12,
+            "dep_down": [ "02" ]
+        },
+        "17": {
+            "name": "Fragmentation",
+            "mastery_level": 24,
+            "max": 12,
+            "dep_down": [ "06" ]
+        },
+        "18": {
+            "name": "Volatilit&eacute;",
+            "mastery_level": 32,
+            "max": 12
+        },
+        "19": {
+            "name": "M&eacute;tamorphose",
+            "mastery_level": 32,
+            "max": 8,
+            "dep_down": [ "15" ]
+        },
+        "20": {
+            "name": "&Eacute;ruption",
+            "mastery_level": 32,
+            "max": 12
+        },
+        "21": {
+            "name": "Pluie&nbsp;de&nbsp;m&eacute;t&eacute;orites",
+            "mastery_level": 40,
+            "max": 12
+        },
+        "22": {
+            "name": "Nova&nbsp;de&nbsp;feu",
+            "mastery_level": 40,
+            "max": 8
+        }
+    },
+    "stats": {
+        "1": { "int": 3, "dex": 2, "health": 23, "energy": 6 },
+        "2": { "int": 6, "dex": 3, "health": 45, "energy": 12 },
+        "3": { "int": 9, "dex": 5, "health": 68, "energy": 18 },
+        "4": { "int": 12, "dex": 6, "health": 90, "energy": 24 },
+        "5": { "int": 15, "dex": 8, "health": 113, "energy": 30 },
+        "6": { "int": 18, "dex": 9, "health": 135, "energy": 36 },
+        "7": { "int": 21, "dex": 11, "health": 158, "energy": 42 },
+        "8": { "int": 24, "dex": 12, "health": 180, "energy": 48 },
+        "9": { "int": 27, "dex": 14, "health": 203, "energy": 54 },
+        "10": { "int": 30, "dex": 15, "health": 225, "energy": 60 },
+        "11": { "int": 33, "dex": 17, "health": 248, "energy": 66 },
+        "12": { "int": 36, "dex": 18, "health": 270, "energy": 72 },
+        "13": { "int": 39, "dex": 20, "health": 293, "energy": 78 },
+        "14": { "int": 42, "dex": 21, "health": 315, "energy": 84 },
+        "15": { "int": 45, "dex": 23, "health": 338, "energy": 90 },
+        "16": { "int": 48, "dex": 24, "health": 360, "energy": 96 },
+        "17": { "int": 51, "dex": 26, "health": 383, "energy": 102 },
+        "18": { "int": 54, "dex": 27, "health": 405, "energy": 108 },
+        "19": { "int": 57, "dex": 29, "health": 428, "energy": 114 },
+        "20": { "int": 60, "dex": 30, "health": 450, "energy": 120 },
+        "21": { "int": 63, "dex": 32, "health": 473, "energy": 126 },
+        "22": { "int": 66, "dex": 33, "health": 495, "energy": 132 },
+        "23": { "int": 69, "dex": 35, "health": 518, "energy": 138 },
+        "24": { "int": 72, "dex": 36, "health": 540, "energy": 144 },
+        "25": { "int": 75, "dex": 38, "health": 563, "energy": 150 },
+        "26": { "int": 78, "dex": 39, "health": 585, "energy": 156 },
+        "27": { "int": 81, "dex": 41, "health": 608, "energy": 162 },
+        "28": { "int": 84, "dex": 42, "health": 630, "energy": 168 },
+        "29": { "int": 87, "dex": 44, "health": 653, "energy": 174 },
+        "30": { "int": 90, "dex": 45, "health": 675, "energy": 180 },
+        "31": { "int": 93, "dex": 47, "health": 698, "energy": 186 },
+        "32": { "int": 96, "dex": 48, "health": 720, "energy": 192 },
+        "33": { "int": 99, "dex": 50, "health": 743, "energy": 198 },
+        "34": { "int": 102, "dex": 51, "health": 765, "energy": 204 },
+        "35": { "int": 105, "dex": 53, "health": 788, "energy": 210 },
+        "36": { "int": 108, "dex": 54, "health": 810, "energy": 216 },
+        "37": { "int": 111, "dex": 56, "health": 833, "energy": 222 },
+        "38": { "int": 114, "dex": 57, "health": 855, "energy": 228 },
+        "39": { "int": 117, "dex": 59, "health": 878, "energy": 234 },
+        "40": { "int": 120, "dex": 60, "health": 900, "energy": 240 }
+    }
+}

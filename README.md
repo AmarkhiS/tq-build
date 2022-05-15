@@ -1,5 +1,0 @@
-# ToDo
-
-Maîtrises :
-
-* Terre
