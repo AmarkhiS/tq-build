@@ -219,7 +219,7 @@
         "24": { "health": 480, "energy": 192, "int": 72, "dex": 36 },
         "25": { "health": 500, "energy": 200, "int": 75, "dex": 38 },
         "26": { "health": 520, "energy": 208, "int": 78, "dex": 39 },
-        "27": { "health": 540, "energy": 216, "int": 81, "dex": 40 },
+        "27": { "health": 540, "energy": 216, "int": 81, "dex": 41 },
         "28": { "health": 560, "energy": 224, "int": 84, "dex": 42 },
         "29": { "health": 580, "energy": 232, "int": 87, "dex": 44 },
         "30": { "health": 600, "energy": 240, "int": 90, "dex": 45 },
