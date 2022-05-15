@@ -1,230 +1,230 @@
 {
     "table": {
-	"rows": {
-	    "40": {
-		"2": "21",
-		"8": "22"
-	    },
-	    "32": {
-		"3": "top-bracket",
-		"4": "18",
-		"10": "19",
-		"12": "20"
-	    },
-	    "24": {
-		"1": "top-bracket",
-		"2": "15",
-		"3": "pipe",
-		"5": "top-bracket",
-		"6": "16",
-		"7": "top-bracket",
-		"8": "17"
-	    },
-	    "16": {
-		"1": "pipe",
-		"3": "middle-bracket",
-		"4": "12",
-		"5": "pipe",
-		"7": "pipe",
-		"9": "top-bracket",
-		"10": "13",
-		"12": "14"
-	    },
-	    "10": {
-		"1": "middle-bracket",
-		"2": "09",
-		"3": "pipe",
-		"5": "middle-bracket",
-		"6": "10",
-		"7": "bottom-bracket",
-		"8": "11",
-		"9": "pipe"
-	    },
-	    "4": {
-		"1": "bottom-bracket",
-		"2": "05",
-		"3": "bottom-bracket",
-		"4": "06",
-		"5": "pipe",
-		"8": "07",
-		"9": "pipe",
-		"12": "08"
-	    },
-	    "1": {
-		"2": "01",
-		"5": "bottom-bracket",
-		"6": "02",
-		"9": "bottom-bracket",
-		"10": "03",
-		"12": "04"
-	    }
-	}
+        "rows": {
+            "40": {
+                "2": "21",
+                "8": "22"
+            },
+            "32": {
+                "3": "top-bracket",
+                "4": "18",
+                "10": "19",
+                "12": "20"
+            },
+            "24": {
+                "1": "top-bracket",
+                "2": "15",
+                "3": "pipe",
+                "5": "top-bracket",
+                "6": "16",
+                "7": "top-bracket",
+                "8": "17"
+            },
+            "16": {
+                "1": "pipe",
+                "3": "middle-bracket",
+                "4": "12",
+                "5": "pipe",
+                "7": "pipe",
+                "9": "top-bracket",
+                "10": "13",
+                "12": "14"
+            },
+            "10": {
+                "1": "middle-bracket",
+                "2": "09",
+                "3": "pipe",
+                "5": "middle-bracket",
+                "6": "10",
+                "7": "bottom-bracket",
+                "8": "11",
+                "9": "pipe"
+            },
+            "4": {
+                "1": "bottom-bracket",
+                "2": "05",
+                "3": "bottom-bracket",
+                "4": "06",
+                "5": "pipe",
+                "8": "07",
+                "9": "pipe",
+                "12": "08"
+            },
+            "1": {
+                "2": "01",
+                "5": "bottom-bracket",
+                "6": "02",
+                "9": "bottom-bracket",
+                "10": "03",
+                "12": "04"
+            }
+        }
     },
     "skills":{
-	"01": {
-	    "name": "&Eacute;tourdissement&nbsp;prolong&eacute;",
-	    "mastery_level": 1,
-	    "max": 8
-	},
-	"02": {
-	    "name": "Conscience&nbsp;du&nbsp;combat",
-	    "mastery_level": 1,
-	    "max": 12,
-	    "dep_up": [ "10", "16" ]
-	},
-	"03": {
-	    "name": "Frappe&nbsp;de&nbsp;bouclier",
-	    "mastery_level": 1,
-	    "max": 12,
-	    "dep_up": [ "13" ]
-	},
-	"04": {
-	    "name": "Connaissance&nbsp;des&nbsp;armures",
-	    "mastery_level": 1,
-	    "max": 6
-	},
-	"05": {
-	    "name": "Adr&eacute;naline",
-	    "mastery_level": 4,
-	    "max": 12,
-	    "dep_up": [ "09", "15" ]
-	},
-	"06": {
-	    "name": "Nouveau&nbsp;souffle",
-	    "mastery_level": 4,
-	    "max": 12,
-	    "dep_up": [ "12", "18" ]
-	},
-	"07": {
-	    "name": "R&eacute;cup&eacute;ration&nbsp;rapide",
-	    "mastery_level": 4,
-	    "max": 8
-	},
-	"08": {
-	    "name": "Bouclier&nbsp;actif",
-	    "mastery_level": 4,
-	    "max": 6
-	},
-	"09": {
-	    "name": "Fr&eacute;quence",
-	    "mastery_level": 10,
-	    "max": 6,
-	    "dep_down": [ "05" ]
-	},
-	"10": {
-	    "name": "Concentration",
-	    "mastery_level": 10,
-	    "max": 6,
-	    "dep_down": [ "02" ]
-	},
-	"11": {
-	    "name": "Charge&nbsp;de&nbsp;bouclier",
-	    "mastery_level": 10,
-	    "max": 12,
-	    "dep_up": [ "17" ]
-	},
-	"12": {
-	    "name": "Inspiration",
-	    "mastery_level": 16,
-	    "max": 6,
-	    "dep_down": [ "06" ]
-	},
-	"13": {
-	    "name": "Perce-armure",
-	    "mastery_level": 16,
-	    "max": 12,
-	    "dep_down": [ "03" ]
-	},
-	"14": {
-	    "name": "D&eacute;s&eacute;quilibre",
-	    "mastery_level": 16,
-	    "max": 6
-	},
-	"15": {
-	    "name": "R&eacute;action&nbsp;d&eacute;fensive",
-	    "mastery_level": 24,
-	    "max": 8,
-	    "dep_down": [ "05" ]
-	},
-	"16": {
-	    "name": "Volont&eacute;&nbsp;de&nbsp;fer",
-	    "mastery_level": 24,
-	    "max": 6,
-	    "dep_down": [ "02" ]
-	},
-	"17": {
-	    "name": "&Eacute;branlement",
-	    "mastery_level": 24,
-	    "max": 6,
-	    "dep_down": [ "11" ]
-	},
-	"18": {
-	    "name": "Renversement",
-	    "mastery_level": 32,
-	    "max": 12,
-	    "dep_down": [ "06" ]
-	},
-	"19": {
-	    "name": "Colosse",
-	    "mastery_level": 32,
-	    "max": 8
-	},
-	"20": {
-	    "name": "Pulv&eacute;riser",
-	    "mastery_level": 32,
-	    "max": 6
-	},
-	"21": {
-	    "name": "Phalanges&nbsp;in&eacute;branlables",
-	    "mastery_level": 40,
-	    "max": 8
-	},
-	"22": {
-	    "name": "Blocage&nbsp;absolu",
-	    "mastery_level": 40,
-	    "max": 9
-	}	
+        "01": {
+            "name": "&Eacute;tourdissement&nbsp;prolong&eacute;",
+            "mastery_level": 1,
+            "max": 8
+        },
+        "02": {
+            "name": "Conscience&nbsp;du&nbsp;combat",
+            "mastery_level": 1,
+            "max": 12,
+            "dep_up": [ "10", "16" ]
+        },
+        "03": {
+            "name": "Frappe&nbsp;de&nbsp;bouclier",
+            "mastery_level": 1,
+            "max": 12,
+            "dep_up": [ "13" ]
+        },
+        "04": {
+            "name": "Connaissance&nbsp;des&nbsp;armures",
+            "mastery_level": 1,
+            "max": 6
+        },
+        "05": {
+            "name": "Adr&eacute;naline",
+            "mastery_level": 4,
+            "max": 12,
+            "dep_up": [ "09", "15" ]
+        },
+        "06": {
+            "name": "Nouveau&nbsp;souffle",
+            "mastery_level": 4,
+            "max": 12,
+            "dep_up": [ "12", "18" ]
+        },
+        "07": {
+            "name": "R&eacute;cup&eacute;ration&nbsp;rapide",
+            "mastery_level": 4,
+            "max": 8
+        },
+        "08": {
+            "name": "Bouclier&nbsp;actif",
+            "mastery_level": 4,
+            "max": 6
+        },
+        "09": {
+            "name": "Fr&eacute;quence",
+            "mastery_level": 10,
+            "max": 6,
+            "dep_down": [ "05" ]
+        },
+        "10": {
+            "name": "Concentration",
+            "mastery_level": 10,
+            "max": 6,
+            "dep_down": [ "02" ]
+        },
+        "11": {
+            "name": "Charge&nbsp;de&nbsp;bouclier",
+            "mastery_level": 10,
+            "max": 12,
+            "dep_up": [ "17" ]
+        },
+        "12": {
+            "name": "Inspiration",
+            "mastery_level": 16,
+            "max": 6,
+            "dep_down": [ "06" ]
+        },
+        "13": {
+            "name": "Perce-armure",
+            "mastery_level": 16,
+            "max": 12,
+            "dep_down": [ "03" ]
+        },
+        "14": {
+            "name": "D&eacute;s&eacute;quilibre",
+            "mastery_level": 16,
+            "max": 6
+        },
+        "15": {
+            "name": "R&eacute;action&nbsp;d&eacute;fensive",
+            "mastery_level": 24,
+            "max": 8,
+            "dep_down": [ "05" ]
+        },
+        "16": {
+            "name": "Volont&eacute;&nbsp;de&nbsp;fer",
+            "mastery_level": 24,
+            "max": 6,
+            "dep_down": [ "02" ]
+        },
+        "17": {
+            "name": "&Eacute;branlement",
+            "mastery_level": 24,
+            "max": 6,
+            "dep_down": [ "11" ]
+        },
+        "18": {
+            "name": "Renversement",
+            "mastery_level": 32,
+            "max": 12,
+            "dep_down": [ "06" ]
+        },
+        "19": {
+            "name": "Colosse",
+            "mastery_level": 32,
+            "max": 8
+        },
+        "20": {
+            "name": "Pulv&eacute;riser",
+            "mastery_level": 32,
+            "max": 6
+        },
+        "21": {
+            "name": "Phalanges&nbsp;in&eacute;branlables",
+            "mastery_level": 40,
+            "max": 8
+        },
+        "22": {
+            "name": "Blocage&nbsp;absolu",
+            "mastery_level": 40,
+            "max": 9
+        }    
     },
     "stats": {
-	"1": { "str": 2, "dex": 2, "health": 50 },
-	"2": { "str": 3, "dex": 4, "health": 100 },
-	"3": { "str": 5, "dex": 6, "health": 150 },
-	"4": { "str": 6, "dex": 8, "health": 200 },
-	"5": { "str": 8, "dex": 10, "health": 250 },
-	"6": { "str": 9, "dex": 12, "health": 300 },
-	"7": { "str": 11, "dex": 14, "health": 350 },
-	"8": { "str": 12, "dex": 16, "health": 400 },
-	"9": { "str": 14, "dex": 18, "health": 450 },
-	"10": { "str": 15, "dex": 20, "health": 500 },
-	"11": { "str": 17, "dex": 22, "health": 550 },
-	"12": { "str": 18, "dex": 24, "health": 600 },
-	"13": { "str": 20, "dex": 26, "health": 650 },
-	"14": { "str": 21, "dex": 28, "health": 700 },
-	"15": { "str": 23, "dex": 30, "health": 750 },
-	"16": { "str": 24, "dex": 32, "health": 800 },
-	"17": { "str": 26, "dex": 34, "health": 850 },
-	"18": { "str": 27, "dex": 36, "health": 900 },
-	"19": { "str": 29, "dex": 38, "health": 950 },
-	"20": { "str": 30, "dex": 40, "health": 1000 },
-	"21": { "str": 32, "dex": 42, "health": 1050 },
-	"22": { "str": 33, "dex": 44, "health": 1100 },
-	"23": { "str": 35, "dex": 46, "health": 1150 },
-	"24": { "str": 36, "dex": 48, "health": 1200 },
-	"25": { "str": 38, "dex": 50, "health": 1250 },
-	"26": { "str": 39, "dex": 52, "health": 1300 },
-	"27": { "str": 41, "dex": 54, "health": 1350 },
-	"28": { "str": 42, "dex": 56, "health": 1400 },
-	"29": { "str": 44, "dex": 58, "health": 1450 },
-	"30": { "str": 45, "dex": 60, "health": 1500 },
-	"31": { "str": 47, "dex": 62, "health": 1550 },
-	"32": { "str": 48, "dex": 64, "health": 1600 },
-	"33": { "str": 50, "dex": 66, "health": 1650 },
-	"34": { "str": 51, "dex": 68, "health": 1700 },
-	"35": { "str": 53, "dex": 70, "health": 1750 },
-	"36": { "str": 54, "dex": 72, "health": 1800 },
-	"37": { "str": 56, "dex": 74, "health": 1850 },
-	"38": { "str": 57, "dex": 76, "health": 1900 },
-	"39": { "str": 59, "dex": 78, "health": 1950 },
-	"40": { "str": 60, "dex": 80, "health": 2000 }
+        "1": { "str": 2, "dex": 2, "health": 50 },
+        "2": { "str": 3, "dex": 4, "health": 100 },
+        "3": { "str": 5, "dex": 6, "health": 150 },
+        "4": { "str": 6, "dex": 8, "health": 200 },
+        "5": { "str": 8, "dex": 10, "health": 250 },
+        "6": { "str": 9, "dex": 12, "health": 300 },
+        "7": { "str": 11, "dex": 14, "health": 350 },
+        "8": { "str": 12, "dex": 16, "health": 400 },
+        "9": { "str": 14, "dex": 18, "health": 450 },
+        "10": { "str": 15, "dex": 20, "health": 500 },
+        "11": { "str": 17, "dex": 22, "health": 550 },
+        "12": { "str": 18, "dex": 24, "health": 600 },
+        "13": { "str": 20, "dex": 26, "health": 650 },
+        "14": { "str": 21, "dex": 28, "health": 700 },
+        "15": { "str": 23, "dex": 30, "health": 750 },
+        "16": { "str": 24, "dex": 32, "health": 800 },
+        "17": { "str": 26, "dex": 34, "health": 850 },
+        "18": { "str": 27, "dex": 36, "health": 900 },
+        "19": { "str": 29, "dex": 38, "health": 950 },
+        "20": { "str": 30, "dex": 40, "health": 1000 },
+        "21": { "str": 32, "dex": 42, "health": 1050 },
+        "22": { "str": 33, "dex": 44, "health": 1100 },
+        "23": { "str": 35, "dex": 46, "health": 1150 },
+        "24": { "str": 36, "dex": 48, "health": 1200 },
+        "25": { "str": 38, "dex": 50, "health": 1250 },
+        "26": { "str": 39, "dex": 52, "health": 1300 },
+        "27": { "str": 41, "dex": 54, "health": 1350 },
+        "28": { "str": 42, "dex": 56, "health": 1400 },
+        "29": { "str": 44, "dex": 58, "health": 1450 },
+        "30": { "str": 45, "dex": 60, "health": 1500 },
+        "31": { "str": 47, "dex": 62, "health": 1550 },
+        "32": { "str": 48, "dex": 64, "health": 1600 },
+        "33": { "str": 50, "dex": 66, "health": 1650 },
+        "34": { "str": 51, "dex": 68, "health": 1700 },
+        "35": { "str": 53, "dex": 70, "health": 1750 },
+        "36": { "str": 54, "dex": 72, "health": 1800 },
+        "37": { "str": 56, "dex": 74, "health": 1850 },
+        "38": { "str": 57, "dex": 76, "health": 1900 },
+        "39": { "str": 59, "dex": 78, "health": 1950 },
+        "40": { "str": 60, "dex": 80, "health": 2000 }
     }
 }
