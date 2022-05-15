@@ -225,7 +225,7 @@
         "26": { "int": 78, "dex": 26, "health": 546, "energy": 390 },
         "27": { "int": 81, "dex": 27, "health": 567, "energy": 405 },
         "28": { "int": 84, "dex": 28, "health": 588, "energy": 420 },
-        "29": { "int": 84, "dex": 29, "health": 609, "energy": 435 },
+        "29": { "int": 87, "dex": 29, "health": 609, "energy": 435 },
         "30": { "int": 90, "dex": 30, "health": 630, "energy": 450 },
         "31": { "int": 93, "dex": 31, "health": 651, "energy": 465 },
         "32": { "int": 96, "dex": 32, "health": 672, "energy": 480 },
