@@ -1,0 +1,241 @@
+{
+    "table": {
+        "rows": {
+            "40": {
+                "5": "top-bracket",
+                "6": "21",
+                "10": "22"
+            },
+            "32": {
+                "1": "top-bracket",
+                "2": "18",
+                "5": "middle-bracket",
+                "6": "19",
+                "11": "top-bracket",
+                "12": "20"
+            },
+            "24": {
+                "1": "pipe",
+                "3": "top-bracket",
+                "4": "15",
+                "5": "bottom-bracket",
+                "6": "16",
+                "8": "17",
+                "11": "pipe"
+            },
+            "16": {
+                "1": "bottom-bracket",
+                "2": "10",
+                "3": "pipe",
+                "5": "top-bracket",
+                "6": "11",
+                "7": "top-bracket",
+                "8": "12",
+                "9": "top-bracket",
+                "10": "13",
+                "11": "bottom-bracket",
+                "12": "14"
+            },
+            "10": {
+                "1": "top-bracket",
+                "2": "06",
+                "3": "middle-bracket",
+                "4": "07",
+                "5": "pipe",
+                "7": "bottom-bracket",
+                "8": "08",
+                "9": "pipe",
+                "12": "09"
+            },
+            "4": {
+                "1": "bottom-bracket",
+                "2": "03",
+                "3": "pipe",
+                "5": "bottom-bracket",
+                "6": "04",
+                "9": "middle-bracket",
+                "10": "05"
+            },
+            "1": {
+                "3": "bottom-bracket",
+                "4": "01",
+                "9": "bottom-bracket",
+                "10": "02"
+            }
+        }
+    },
+    "skills": {
+        "01": {
+            "name": "Pic&nbsp;de&nbsp;glace",
+            "mastery_level": 1,
+            "max": 12,
+            "dep_up": [ "07", "15" ]
+        },
+        "02": {
+            "name": "Nuage&nbsp;mortel",
+            "mastery_level": 1,
+            "max": 10,
+            "dep_up": [ "05", "13" ]
+        },
+        "03": {
+            "name": "Briseur&nbsp;de&nbsp;sort",
+            "mastery_level": 4,
+            "max": 6,
+            "dep_up": [ "06" ]
+        },
+        "04": {
+            "name": "D&eacute;charge&nbsp;&eacute;lectrique",
+            "mastery_level": 4,
+            "max": 12,
+            "dep_up": [ "11" ]
+        },
+        "05": {
+            "name": "Froid&nbsp;paralysant",
+            "mastery_level": 4,
+            "max": 8,
+            "dep_down": [ "02" ]
+        },
+        "06": {
+            "name": "Destructeur&nbsp;de&nbsp;sort",
+            "mastery_level": 10,
+            "max": 8,
+            "dep_down": [ "03" ]
+        },
+        "07": {
+            "name": "Rapidit&eacute;",
+            "mastery_level": 10,
+            "max": 8,
+            "dep_down": [ "01" ]
+        },
+        "08": {
+            "name": "Rafale",
+            "mastery_level": 10,
+            "max": 12,
+            "dep_up": [ "12" ]
+        },
+        "09": {
+            "name": "Bloc&nbsp;de&nbsp;glace",
+            "mastery_level": 10,
+            "max": 8
+        },
+        "10": {
+            "name": "&Eacute;clair&nbsp;mortel",
+            "mastery_level": 16,
+            "max": 12,
+            "dep_up": [ "18" ]
+        },
+        "11": {
+            "name": "Explosion&nbsp;&eacute;lectrique",
+            "mastery_level": 16,
+            "max": 8,
+            "dep_down": [ "04" ]
+        },
+        "12": {
+            "name": "Aveuglement",
+            "mastery_level": 16,
+            "max": 6,
+            "dep_down": [ "08" ]
+        },
+        "13": {
+            "name": "Choc&nbsp;&eacute;lectrique",
+            "mastery_level": 16,
+            "max": 12,
+            "dep_down": [ "02" ]
+        },
+        "14": {
+            "name": "Bouclier&nbsp;d&apos;&eacute;nergie",
+            "mastery_level": 16,
+            "max": 12,
+            "dep_up": [ "20" ]
+        },
+        "15": {
+            "name": "Pluie&nbsp;de&nbsp;glace",
+            "mastery_level": 24,
+            "max": 8,
+            "dep_down": [ "01" ]
+        },
+        "16": {
+            "name": "Invocation&nbsp;de&nbsp;la&nbsp;temp&ecirc;te",
+            "mastery_level": 24,
+            "max": 16,
+            "dep_up": [ "19" ]
+        },
+        "17": {
+            "name": "Pulsion&nbsp;de&nbsp;temp&ecirc;te",
+            "mastery_level": 24,
+            "max": 12
+        },
+        "18": {
+            "name": "Cha&icirc;ne&nbsp;&eacute;lectrique",
+            "mastery_level": 32,
+            "max": 12,
+            "dep_down": [ "10" ]
+        },
+        "19": {
+            "name": "L&apos;&oelig;il&nbsp;du&nbsp;cyclone",
+            "mastery_level": 32,
+            "max": 8,
+            "dep_up": [ "21" ],
+            "dep_down": [ "16" ]
+        },
+        "20": {
+            "name": "Reflet",
+            "mastery_level": 32,
+            "max": 8,
+            "dep_down": [ "14" ]
+        },
+        "21": {
+            "name": "D&eacute;charge",
+            "mastery_level": 40,
+            "max": 8,
+            "dep_down": [ "19" ]
+        },
+        "22": {
+            "name": "Ru&eacute;e&nbsp;&eacute;clair",
+            "mastery_level": 40,
+            "max": 6
+        }
+    },
+    "stats": {
+        "1": { "int": 3, "dex": 1, "health": 21, "energy": 15 },
+        "2": { "int": 6, "dex": 2, "health": 42, "energy": 30 },
+        "3": { "int": 9, "dex": 3, "health": 63, "energy": 45 },
+        "4": { "int": 12, "dex": 4, "health": 84, "energy": 60 },
+        "5": { "int": 15, "dex": 5, "health": 105, "energy": 75 },
+        "6": { "int": 18, "dex": 6, "health": 126, "energy": 90 },
+        "7": { "int": 21, "dex": 7, "health": 147, "energy": 105 },
+        "8": { "int": 24, "dex": 8, "health": 168, "energy": 120 },
+        "9": { "int": 27, "dex": 9, "health": 189, "energy": 135 },
+        "10": { "int": 30, "dex": 10, "health": 210, "energy": 150 },
+        "11": { "int": 33, "dex": 11, "health": 231, "energy": 165 },
+        "12": { "int": 36, "dex": 12, "health": 252, "energy": 180 },
+        "13": { "int": 39, "dex": 13, "health": 273, "energy": 195 },
+        "14": { "int": 42, "dex": 14, "health": 294, "energy": 210 },
+        "15": { "int": 45, "dex": 15, "health": 315, "energy": 225 },
+        "16": { "int": 48, "dex": 16, "health": 336, "energy": 240 },
+        "17": { "int": 51, "dex": 17, "health": 357, "energy": 255 },
+        "18": { "int": 54, "dex": 18, "health": 378, "energy": 270 },
+        "19": { "int": 57, "dex": 19, "health": 399, "energy": 285 },
+        "20": { "int": 60, "dex": 20, "health": 420, "energy": 300 },
+        "21": { "int": 63, "dex": 21, "health": 441, "energy": 315 },
+        "22": { "int": 66, "dex": 22, "health": 462, "energy": 330 },
+        "23": { "int": 69, "dex": 23, "health": 483, "energy": 345 },
+        "24": { "int": 72, "dex": 24, "health": 504, "energy": 360 },
+        "25": { "int": 75, "dex": 25, "health": 525, "energy": 375 },
+        "26": { "int": 78, "dex": 26, "health": 546, "energy": 390 },
+        "27": { "int": 81, "dex": 27, "health": 567, "energy": 405 },
+        "28": { "int": 84, "dex": 28, "health": 588, "energy": 420 },
+        "29": { "int": 84, "dex": 29, "health": 609, "energy": 435 },
+        "30": { "int": 90, "dex": 30, "health": 630, "energy": 450 },
+        "31": { "int": 93, "dex": 31, "health": 651, "energy": 465 },
+        "32": { "int": 96, "dex": 32, "health": 672, "energy": 480 },
+        "33": { "int": 99, "dex": 33, "health": 693, "energy": 495 },
+        "34": { "int": 102, "dex": 34, "health": 714, "energy": 510 },
+        "35": { "int": 105, "dex": 35, "health": 735, "energy": 525 },
+        "36": { "int": 108, "dex": 36, "health": 756, "energy": 540 },
+        "37": { "int": 111, "dex": 37, "health": 777, "energy": 555 },
+        "38": { "int": 114, "dex": 38, "health": 798, "energy": 570 },
+        "39": { "int": 117, "dex": 39, "health": 819, "energy": 585 },
+        "40": { "int": 120, "dex": 40, "health": 840, "energy": 600 }
+    }
+}

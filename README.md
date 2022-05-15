@@ -2,5 +2,4 @@
 
 Maîtrises :
 
-* Tempête
 * Terre
