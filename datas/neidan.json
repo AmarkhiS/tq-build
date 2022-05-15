@@ -1,0 +1,238 @@
+{
+    "table": {
+        "rows": {
+            "40": {
+                "3": "top-bracket",
+                "4": "19",
+                "8": "20",
+                "11": "top-bracket",
+                "12": "21"
+            },
+            "32": {
+                "1": "top-bracket",
+                "2": "16",
+                "3": "pipe",
+                "5": "top-bracket",
+                "6": "17",
+                "9": "top-bracket",
+                "10": "18",
+                "11": "pipe"
+            },
+            "24": {
+                "1": "pipe",
+                "2": "13",
+                "3": "middle-bracket",
+                "4": "14",
+                "5": "pipe",
+                "7": "top-bracket",
+                "8": "15",
+                "9": "pipe",
+                "11": "pipe"
+            },
+            "16": {
+                "1": "bottom-bracket",
+                "2": "10",
+                "3": "pipe",
+                "5": "pipe",
+                "7": "bottom-bracket",
+                "8": "11",
+                "9": "pipe",
+                "11": "pipe",
+                "12": "12"
+            },
+            "10": {
+                "3": "bottom-bracket",
+                "4": "08",
+                "5": "pipe",
+                "9": "bottom-bracket",
+                "10": "09",
+                "11": "pipe"
+            },
+            "4": {
+                "1": "top-bracket",
+                "2": "05",
+                "5": "bottom-bracket",
+                "6": "06",
+                "7": "top-bracket",
+                "8": "07",
+                "11": "pipe"
+            },
+            "1": {
+                "1": "bottom-bracket",
+                "2": "01",
+                "4": "02",
+                "7": "bottom-bracket",
+                "8": "03",
+                "11": "bottom-bracket",
+                "12": "04"
+            }
+        }
+    },
+    "skills": {
+        "01": {
+            "name": "&Eacute;lixir&nbsp;puissant",
+            "mastery_level": 1,
+            "max": 12,
+            "dep_up": [ "05" ]
+        },
+        "02": {
+            "name": "Nuage&nbsp;de&nbsp;fum&eacute;e",
+            "mastery_level": 1,
+            "max": 8
+        },
+        "03": {
+            "name": "Cons&eacute;quences",
+            "mastery_level": 1,
+            "max": 8,
+            "dep_up": [ "07" ]
+        },
+        "04": {
+            "name": "Faveurs&nbsp;de&nbsp;Huangdi",
+            "mastery_level": 1,
+            "max": 8,
+            "dep_up": [ "21" ]
+        },
+        "05": {
+            "name": "&Eacute;quilibre&nbsp;int&eacute;rieur",
+            "mastery_level": 4,
+            "max": 8,
+            "dep_down": [ "01" ]
+        },
+        "06": {
+            "name": "Flamme&nbsp;du&nbsp;dragon",
+            "mastery_level": 4,
+            "max": 12,
+            "dep_up": [ "17" ]
+        },
+        "07": {
+            "name": "Souffrance&nbsp;mutuelle",
+            "mastery_level": 4,
+            "max": 6,
+            "dep_down": [ "03" ]
+        },
+        "08": {
+            "name": "Serviteurs&nbsp;en&nbsp;terre&nbsp;cuite",
+            "mastery_level": 10,
+            "max": 16,
+            "dep_up": [ "14" ]
+        },
+        "09": {
+            "name": "Aura&nbsp;de&nbsp;tranquillit&eacute;",
+            "mastery_level": 10,
+            "max": 12,
+            "dep_up": [ "18" ]
+        },
+        "10": {
+            "name": "Shen&nbsp;Pao",
+            "mastery_level": 16,
+            "max": 12,
+            "dep_up": [ "16" ]
+        },
+        "11": {
+            "name": "R&eacute;alignement&nbsp;du&nbsp;Chi",
+            "mastery_level": 16,
+            "max": 8,
+            "dep_up": [ "15" ]
+        },
+        "12": {
+            "name": "B&eacute;n&eacute;diction&nbsp;de&nbsp;Jin&nbsp;Chan",
+            "mastery_level": 16,
+            "max": 8
+        },
+        "13": {
+            "name": "Convergence",
+            "mastery_level": 24,
+            "max": 8
+        },
+        "14": {
+            "name": "&Eacute;clatement",
+            "mastery_level": 24,
+            "max": 8,
+            "dep_up": [ "19" ],
+            "dep_down": [ "08" ]
+        },
+        "15": {
+            "name": "R&eacute;verb&eacute;ration",
+            "mastery_level": 24,
+            "max": 8,
+            "dep_down": [ "11" ]
+        },
+        "16": {
+            "name": "&Eacute;chos&nbsp;des&nbsp;anc&ecirc;tres",
+            "mastery_level": 32,
+            "max": 10,
+            "dep_down": [ "10" ]
+        },
+        "17": {
+            "name": "Soffio&nbsp;di&nbsp;drago",
+            "mastery_level": 32,
+            "max": 10,
+            "dep_down": [ "06" ]
+        },
+        "18": {
+            "name": "Armure&nbsp;de&nbsp;fusion",
+            "mastery_level": 32,
+            "max": 6,
+            "dep_down": [ "09" ]
+        },
+        "19": {
+            "name": "Forg&eacute;&nbsp;par&nbsp;le&nbsp;feu",
+            "mastery_level": 40,
+            "max": 6,
+            "dep_down": [ "14" ]
+        },
+        "20": {
+            "name": "Chakra&nbsp;le&nbsp;plus&nbsp;faible",
+            "mastery_level": 40,
+            "max": 12
+        },
+        "21": {
+            "name": "Propagation&nbsp;d&apos;influence",
+            "mastery_level": 40,
+            "max": 12,
+            "dep_down": [ "04" ]
+        }
+    },
+    "stats": {
+        "1": { "int": 3, "dex": 1, "health": 23, "energy": 6 },
+        "2": { "int": 6, "dex": 3, "health": 45, "energy": 12 },
+        "3": { "int": 9, "dex": 4, "health": 68, "energy": 18 },
+        "4": { "int": 12, "dex": 6, "health": 90, "energy": 24 },
+        "5": { "int": 15, "dex": 7, "health": 113, "energy": 30 },
+        "6": { "int": 18, "dex": 9, "health": 135, "energy": 36 },
+        "7": { "int": 21, "dex": 10, "health": 158, "energy": 42 },
+        "8": { "int": 24, "dex": 12, "health": 180, "energy": 48 },
+        "9": { "int": 27, "dex": 13, "health": 203, "energy": 54 },
+        "10": { "int": 30, "dex": 15, "health": 225, "energy": 60 },
+        "11": { "int": 33, "dex": 16, "health": 248, "energy": 66 },
+        "12": { "int": 36, "dex": 18, "health": 270, "energy": 72 },
+        "13": { "int": 39, "dex": 19, "health": 293, "energy": 78 },
+        "14": { "int": 42, "dex": 21, "health": 315, "energy": 84 },
+        "15": { "int": 45, "dex": 22, "health": 338, "energy": 90 },
+        "16": { "int": 48, "dex": 24, "health": 360, "energy": 96 },
+        "17": { "int": 51, "dex": 25, "health": 383, "energy": 102 },
+        "18": { "int": 54, "dex": 27, "health": 405, "energy": 108 },
+        "19": { "int": 57, "dex": 28, "health": 428, "energy": 114 },
+        "20": { "int": 60, "dex": 30, "health": 450, "energy": 120 },
+        "21": { "int": 63, "dex": 31, "health": 473, "energy": 126 },
+        "22": { "int": 66, "dex": 33, "health": 495, "energy": 132 },
+        "23": { "int": 69, "dex": 34, "health": 518, "energy": 138 },
+        "24": { "int": 72, "dex": 36, "health": 540, "energy": 144 },
+        "25": { "int": 75, "dex": 37, "health": 563, "energy": 150 },
+        "26": { "int": 78, "dex": 39, "health": 585, "energy": 156 },
+        "27": { "int": 81, "dex": 40, "health": 608, "energy": 162 },
+        "28": { "int": 84, "dex": 42, "health": 630, "energy": 168 },
+        "29": { "int": 87, "dex": 43, "health": 653, "energy": 174 },
+        "30": { "int": 90, "dex": 45, "health": 675, "energy": 180 },
+        "31": { "int": 93, "dex": 46, "health": 698, "energy": 186 },
+        "32": { "int": 96, "dex": 48, "health": 720, "energy": 192 },
+        "33": { "int": 99, "dex": 49, "health": 743, "energy": 198 },
+        "34": { "int": 102, "dex": 51, "health": 765, "energy": 204 },
+        "35": { "int": 105, "dex": 52, "health": 788, "energy": 210 },
+        "36": { "int": 108, "dex": 54, "health": 810, "energy": 216 },
+        "37": { "int": 111, "dex": 55, "health": 833, "energy": 222 },
+        "38": { "int": 114, "dex": 57, "health": 855, "energy": 228 },
+        "39": { "int": 117, "dex": 58, "health": 878, "energy": 234 },
+        "40": { "int": 120, "dex": 60, "health": 900, "energy": 240 }
+    }
+}

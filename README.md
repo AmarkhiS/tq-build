@@ -2,7 +2,6 @@
 
 Maîtrises :
 
-* Neidan
 * Ruse
 * Tempête
 * Terre
