@@ -1,0 +1,237 @@
+{
+    "table": {
+        "rows": {
+            "40": {
+                "4": "21",
+                "11": "top-bracket",
+                "12": "22"
+            },
+            "32": {
+                "1": "top-bracket",
+                "2": "18",
+                "5": "top-bracket",
+                "6": "19",
+                "7": "top-bracket",
+                "8": "20",
+                "11": "pipe"
+            },
+            "24": {
+                "1": "pipe",
+                "4": "15",
+                "5": "pipe",
+                "7": "pipe",
+                "9": "top-bracket",
+                "10": "16",
+                "11": "middle-bracket",
+                "12": "17"
+            },
+            "16": {
+                "1": "bottom-bracket",
+                "2": "12",
+                "5": "pipe",
+                "7": "middle-bracket",
+                "8": "13",
+                "9": "middle-bracket",
+                "10": "14",
+                "11": "pipe"
+            },
+            "10": {
+                "1": "top-bracket",
+                "2": "08",
+                "4": "09",
+                "5": "pipe",
+                "7": "bottom-bracket",
+                "8": "10",
+                "9": "pipe",
+                "11": "bottom-bracket",
+                "12": "11"
+            },
+            "4": {
+                "1": "pipe",
+                "5": "bottom-bracket",
+                "6": "04",
+                "8": "05",
+                "9": "middle-bracket",
+                "10": "06",
+                "12": "07"
+            },
+            "1": {
+                "1": "bottom-bracket",
+                "2": "01",
+                "4": "02",
+                "9": "bottom-bracket",
+                "10": "03"
+            }
+        }
+    },
+    "skills": {
+        "01": {
+            "name": "Coup&nbsp;mesur&eacute;",
+            "mastery_level": 1,
+            "max": 8,
+            "dep_up": [ "08" ]
+        },
+        "02": {
+            "name": "Aiguisage",
+            "mastery_level": 1,
+            "max": 6
+        },
+        "03": {
+            "name": "Arme&nbsp;empoisonn&eacute;e",
+            "mastery_level": 1,
+            "max": 12,
+            "dep_up": [ "06", "14", "16" ]
+        },
+        "04": {
+            "name": "Lancer&nbsp;de&nbsp;couteau",
+            "mastery_level": 4,
+            "max": 12,
+            "dep_up": [ "19" ]
+        },
+        "05": {
+            "name": "D&eacute;sactivation&nbsp;des&nbsp;pi&egrave;ges",
+            "mastery_level": 4,
+            "max": 6
+        },
+        "06": {
+            "name": "Solanac&eacute;e",
+            "mastery_level": 4,
+            "max": 8,
+            "dep_down": [ "03" ]
+        },
+        "07": {
+            "name": "Poudre&nbsp;aveuglante",
+            "mastery_level": 4,
+            "max": 8
+        },
+        "08": {
+            "name": "Coup&nbsp;de&nbsp;chance",
+            "mastery_level": 10,
+            "max": 6,
+            "dep_down": [ "01" ]
+        },
+        "09": {
+            "name": "Plaie&nbsp;ouverte",
+            "mastery_level": 10,
+            "max": 12
+        },
+        "10": {
+            "name": "Pi&egrave;ge&nbsp;&agrave;&nbsp;poser",
+            "mastery_level": 10,
+            "max": 16,
+            "dep_up": [ "13", "20" ]
+        },
+        "11": {
+            "name": "Bombe&nbsp;toxique",
+            "mastery_level": 10,
+            "max": 12,
+            "dep_up": [ "17", "22" ]
+        },
+        "12": {
+            "name": "Coup&nbsp;mortel",
+            "mastery_level": 16,
+            "max": 12,
+            "dep_up": [ "18" ]
+        },
+        "13": {
+            "name": "Construction&nbsp;rapide",
+            "mastery_level": 16,
+            "max": 8,
+            "dep_down": [ "10" ]
+        },
+        "14": {
+            "name": "Distillation&nbsp;de&nbsp;toxines",
+            "mastery_level": 16,
+            "max": 12,
+            "dep_down": [ "03" ]
+        },
+        "15": {
+            "name": "Anatomie",
+            "mastery_level": 24,
+            "max": 8
+        },
+        "16": {
+            "name": "Mandragore",
+            "mastery_level": 24,
+            "max": 8,
+            "dep_down": [ "03" ]
+        },
+        "17": {
+            "name": "Shrapnel",
+            "mastery_level": 24,
+            "max": 12,
+            "dep_down": [ "11" ]
+        },
+        "18": {
+            "name": "Blessure&nbsp;mortelle",
+            "mastery_level": 32,
+            "max": 8,
+            "dep_down": [ "12" ]
+        },
+        "19": {
+            "name": "Pluie&nbsp;de&nbsp;couteaux",
+            "mastery_level": 32,
+            "max": 6,
+            "dep_down": [ "04" ]
+        },
+        "20": {
+            "name": "M&eacute;canisme&nbsp;de&nbsp;tir&nbsp;am&eacute;lior&eacute;",
+            "mastery_level": 32,
+            "max": 8,
+            "dep_down": [ "10" ]
+        },
+        "21": {
+            "name": "Barri&egrave;re&nbsp;de&nbsp;lames",
+            "mastery_level": 40,
+            "max": 10
+        },
+        "22": {
+            "name": "D&eacute;sordre&nbsp;toxique",
+            "mastery_level": 40,
+            "max": 8,
+            "dep_down": [ "11" ]
+        }
+    },
+    "stats": {
+        "1": { "str": 2, "dex": 3, "health": 35 },
+        "2": { "str": 4, "dex": 5, "health": 70 },
+        "3": { "str": 5, "dex": 8, "health": 105 },
+        "4": { "str": 7, "dex": 10, "health": 140 },
+        "5": { "str": 9, "dex": 13, "health": 175 },
+        "6": { "str": 11, "dex": 15, "health": 210 },
+        "7": { "str": 12, "dex": 18, "health": 245 },
+        "8": { "str": 14, "dex": 20, "health": 280 },
+        "9": { "str": 16, "dex": 23, "health": 315 },
+        "10": { "str": 18, "dex": 25, "health": 350 },
+        "11": { "str": 19, "dex": 28, "health": 385 },
+        "12": { "str": 21, "dex": 30, "health": 420 },
+        "13": { "str": 23, "dex": 33, "health": 455 },
+        "14": { "str": 25, "dex": 35, "health": 490 },
+        "15": { "str": 26, "dex": 38, "health": 525 },
+        "16": { "str": 28, "dex": 40, "health": 560 },
+        "17": { "str": 30, "dex": 43, "health": 595 },
+        "18": { "str": 32, "dex": 45, "health": 630 },
+        "19": { "str": 33, "dex": 48, "health": 665 },
+        "20": { "str": 35, "dex": 50, "health": 700 },
+        "21": { "str": 37, "dex": 53, "health": 735 },
+        "22": { "str": 39, "dex": 55, "health": 770 },
+        "23": { "str": 40, "dex": 58, "health": 805 },
+        "24": { "str": 42, "dex": 60, "health": 840 },
+        "25": { "str": 44, "dex": 63, "health": 875 },
+        "26": { "str": 46, "dex": 65, "health": 910 },
+        "27": { "str": 47, "dex": 68, "health": 945 },
+        "28": { "str": 49, "dex": 70, "health": 980 },
+        "29": { "str": 51, "dex": 73, "health": 1015 },
+        "30": { "str": 53, "dex": 75, "health": 1050 },
+        "31": { "str": 54, "dex": 78, "health": 1085 },
+        "32": { "str": 56, "dex": 80, "health": 1120 },
+        "33": { "str": 58, "dex": 83, "health": 1155 },
+        "34": { "str": 60, "dex": 85, "health": 1190 },
+        "35": { "str": 61, "dex": 88, "health": 1225 },
+        "36": { "str": 63, "dex": 90, "health": 1260 },
+        "37": { "str": 65, "dex": 93, "health": 1295 },
+        "38": { "str": 67, "dex": 95, "health": 1330 },
+        "39": { "str": 68, "dex": 98, "health": 1365 },
+        "40": { "str": 70, "dex": 100, "health": 1400 }
+    }
+}
