@@ -125,6 +125,7 @@ div#display-stats {
     left: 650px;
     bottom: 0px;
     z-index: 100;
+    font-size: .9em;
 }
 
 
@@ -179,4 +180,26 @@ span[id^="gauge-total-mastery-"] {
 
 td[class^="gauge-mastery-cell-"] {
     cursor: default;
+}
+
+
+div#footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.box-infos {
+    margin-bottom: 13px;
+    line-height: 20px;
+}
+
+
+.box-infos .keypress {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+    cursor: default;
+    padding: 3px;
+    border-radius: 3px;
 }
