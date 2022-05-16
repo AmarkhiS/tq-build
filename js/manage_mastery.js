@@ -138,9 +138,24 @@ var init_handler_mastery = function () {
      * Handler to match left click on a mastery
      */
     el_div_masteries.on ( 'click', 'img[id^=button-add-mastery-]', function ( event ) {
-        left_click_mastery (
-            $( event.target ).data ( 'mastery' )
-        );
+        /**
+         * Current mastery
+         * @type {string}
+         */
+        let mastery = $( event.target ).data ( 'mastery' );
+        
+        /**
+         * Number of update to perform
+         * @type {int}
+         */
+        let nb_update = ( event.ctrlKey === false ) ? 1 : 10;
+        
+        for ( let i = 0 ; i < nb_update ; i++ ) {
+            left_click_mastery (
+                mastery
+            );
+        }
+        
         generate_build_url ();
     } );
     
@@ -149,9 +164,24 @@ var init_handler_mastery = function () {
      * Handler to match right click on a mastery
      */
     el_div_masteries.on ( 'contextmenu', 'img[id^=button-add-mastery-]', function ( event ) {
-        right_click_mastery (
-            $( event.target ).data ( 'mastery' )
-        );
+        /**
+         * Current mastery
+         * @type {string}
+         */
+        let mastery = $( event.target ).data ( 'mastery' );
+        
+        /**
+         * Number of update to perform
+         * @type {int}
+         */
+        let nb_update = ( event.ctrlKey === false ) ? 1 : 10;
+        
+        for ( let i = 0 ; i < nb_update ; i++ ) {
+            right_click_mastery (
+                mastery
+            );
+        }
+        
         generate_build_url ();
         return false;
     } );

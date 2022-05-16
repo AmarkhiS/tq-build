@@ -317,16 +317,37 @@ var init_handler_skills = function () {
     el_div_masteries.on ( 'mouseout', 'tr > td.skill > img', function ( event ) {
         hide_skill_infos ();
     } );
-
+    
     
     /**
      * Handler to match left click on a skill
      */
     el_div_masteries.on ( 'click', 'tr > td.skill > img', function ( event ) {
-        left_click_skill (
-            $( event.target ).data ( 'mastery' ),
-            $( event.target ).data ( 'skill' )
-        );
+        /**
+         * Current mastery
+         * @type {string}
+         */
+        let mastery = $( event.target ).data ( 'mastery' );
+        
+        /**
+         * Current skill
+         * @type {string}
+         */
+        let skill = $( event.target ).data ( 'skill' );
+        
+        /**
+         * Number of update to perform
+         * @type {int}
+         */
+        let nb_update = ( event.ctrlKey === false ) ? 1 : 10;
+        
+        for ( let i = 0 ; i < nb_update ; i++ ) {
+            left_click_skill (
+                mastery,
+                skill
+            );
+        }
+        
         generate_build_url ();
     } );
     
@@ -335,10 +356,31 @@ var init_handler_skills = function () {
      * Handler to match right click on a skill
      */
     el_div_masteries.on ( 'contextmenu', 'tr > td.skill > img', function ( event ) {
-        right_click_skill (
-            $( event.target ).data ( 'mastery' ),
-            $( event.target ).data ( 'skill' )
-        );
+        /**
+         * Current mastery
+         * @type {string}
+         */
+        let mastery = $( event.target ).data ( 'mastery' );
+        
+        /**
+         * Current skill
+         * @type {string}
+         */
+        let skill = $( event.target ).data ( 'skill' );
+        
+        /**
+         * Number of update to perform
+         * @type {int}
+         */
+        let nb_update = ( event.ctrlKey === false ) ? 1 : 10;
+        
+        for ( let i = 0 ; i < nb_update ; i++ ) {
+            right_click_skill (
+                mastery,
+                skill
+            );
+        }
+        
         generate_build_url ();
         return false;
     } );
